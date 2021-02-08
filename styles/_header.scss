@@ -3,8 +3,18 @@
 }
 
 .main-logo {
-  height: 25vh;
+  height: 22vh;
   padding: 2rem;
+}
+
+header {
+  //background-color: #373737;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgb(0, 0, 0) 100%
+  );
 }
 
 nav {
