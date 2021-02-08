@@ -324,6 +324,11 @@ section {
 }
 
 .card:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, rgba(255, 255, 255, 0.418)), color-stop(90%, rgba(0, 0, 0, 0)), to(black)), url("img/quotes-background.jpg");
+  background-image: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.418) 50%, rgba(0, 0, 0, 0) 90%, black 100%), url("img/quotes-background.jpg");
+}
+
+.card:hover {
   -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.9);
           box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.9);
 }

@@ -65,6 +65,16 @@ section {
 }
 
 .card:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255) 0%,
+      rgba(255, 255, 255, 0.418) 50%,
+      rgba(0, 0, 0, 0) 90%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("img/quotes-background.jpg");
+}
+.card:hover {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.9);
 }
 
