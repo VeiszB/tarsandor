@@ -8,6 +8,13 @@ html {
   font-size: 62.5%;
 }
 
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @import "hang";
 @import "header";
 @import "gallery";
+@import "footer";

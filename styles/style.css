@@ -98,7 +98,7 @@ body {
   padding: 10px;
   background-color: #373737;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 2rem;
 }
 
 .playlist-track-ctn {
@@ -158,55 +158,73 @@ body {
   font-size: 20px;
 }
 
+#logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.main-logo {
+  height: 25vh;
+  padding: 2rem;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
   margin: auto;
-  padding: 2rem;
-  min-height: 10vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 20rem;
+          flex: 4 1 20rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li a {
+  font-size: 3rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.4rem;
+}
+
+nav ul li a:hover {
+  color: #af8443;
+  text-shadow: 1px 1px 1px #182b53;
+}
+
+li {
   list-style-type: none;
 }
 
-nav ul a {
-  font-size: 2rem;
-  color: white;
+a {
   text-decoration: none;
-}
-
-nav ul a:hover {
-  color: #dfd288;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-}
-
-#logo {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 40rem;
-          flex: 2 1 40rem;
-  font-family: "Pattaya", sans-serif;
-  font-weight: 400;
+  color: white;
 }
 
 section {
@@ -219,11 +237,17 @@ section {
 }
 
 .gallery {
+  height: auto;
+  width: 90%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gallery-item {
@@ -238,6 +262,7 @@ section {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  border: 0.5px solid #ffc26662;
 }
 
 .gallery-item.item-2x3 {
@@ -526,5 +551,31 @@ section {
 
 .lightbox .spinner {
   display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+  width: 100%;
+  margin: auto;
+  background-color: #ffc266d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  color: #2d2d2d;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
