@@ -45,8 +45,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #af8443;
-  text-shadow: 1px 1px 1px #182b53;
+  color: #ffab66c0;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+.underline:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 li {

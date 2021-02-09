@@ -3,6 +3,11 @@ body {
   color: #ffc266;
   font-family: "Roboto", sans-serif;
 }
+
+main {
+  min-height: 66vh;
+}
+
 #myProgress {
   background-color: #d9d9f2;
   cursor: pointer;
