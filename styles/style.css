@@ -706,7 +706,6 @@ footer {
   bottom: 0;
   height: 5vh;
   width: 100%;
-  margin-top: 5rem;
   background-color: #ffc266d0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,6 +799,7 @@ footer p {
   cursor: default;
   -webkit-box-shadow: 0px 0px 30px -5px #000;
           box-shadow: 0px 0px 30px -5px #000;
+  background-size: contain;
 }
 
 .hovereffect .overlay {
@@ -820,7 +820,8 @@ footer p {
   transition: all 0.35s;
   overflow: hidden;
   background-position: cover;
-  max-width: 50vh;
+  height: 35vh;
+  width: auto;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
@@ -963,6 +964,13 @@ footer p {
   filter: alpha(opacity=100);
 }
 
+@media screen and (max-width: 1600px) {
+  .hovereffect img {
+    height: 45vh;
+    width: auto;
+  }
+}
+
 #underline {
   display: inline-block;
   padding: 5px 15px;
@@ -991,6 +999,84 @@ footer p {
 @media screen and (max-height: 300px) {
   ul {
     margin-top: 40px;
+  }
+}
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(25%, rgba(0, 0, 0, 0.247)), color-stop(50%, rgba(0, 0, 0, 0.253)), to(#2d2d2d)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0.473)), color-stop(75%, rgba(0, 0, 0, 0.445)), to(#2d2d2d)), url(../img/herobg.jpg);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.247) 25%, rgba(0, 0, 0, 0.253) 50%, #2d2d2d 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.473) 50%, rgba(0, 0, 0, 0.445) 75%, #2d2d2d 100%), url(../img/herobg.jpg);
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.typewriter {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+}
+
+.typewriter h1 {
+  font-size: 4.6rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 20vh;
+  padding-top: 3vh;
+}
+
+.typewriter h2 {
+  font-size: 3.2rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 25vh;
+  line-height: 5rem;
+}
+
+.typewriter h3 {
+  font-size: 3rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 30vh;
+}
+
+.typewriter a {
+  font-size: 3rem;
+  color: #cf864a;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 2vh;
+}
+
+@media screen and (max-width: 1600px) {
+  .typewriter h1 {
+    margin-left: 10vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+  .typewriter h2 {
+    margin: 4vh 15vh;
+  }
+  .typewriter h3 {
+    margin: 2vh 20vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

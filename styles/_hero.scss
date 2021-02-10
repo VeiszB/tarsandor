@@ -1,0 +1,88 @@
+.hero {
+  height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.247) 25%,
+      rgba(0, 0, 0, 0.253) 50%,
+      rgb(45, 45, 45) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.473) 50%,
+      rgba(0, 0, 0, 0.445) 75%,
+      rgb(45, 45, 45) 100%
+    ),
+    url(../img/herobg.jpg);
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.typewriter {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.typewriter h1 {
+  font-size: 4.6rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 20vh;
+  padding-top: 3vh;
+}
+
+.typewriter h2 {
+  font-size: 3.2rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 25vh;
+  line-height: 5rem;
+}
+
+.typewriter h3 {
+  font-size: 3rem;
+  color: #ffc266;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 30vh;
+}
+
+.typewriter a {
+  font-size: 3rem;
+  color: #cf864a;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin: 4vh 2vh;
+}
+
+//----------------------------------------------------
+// MEDIA QUERY
+
+@media screen and (max-width: 1600px) {
+  .typewriter h1 {
+    margin-left: 10vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .typewriter h2 {
+    margin: 4vh 15vh;
+  }
+
+  .typewriter h3 {
+    margin: 2vh 20vh;
+  }
+}
