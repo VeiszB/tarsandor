@@ -1,0 +1,38 @@
+.norajon {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  padding: 5vh;
+  background-color: #464646fb;
+  display: block;
+  position: relative;
+}
+
+.norajon::after {
+  content: "";
+  background: url(../img/bio/fenykepesz2.jpg);
+  background-size: contain;
+  background-position: top;
+  opacity: 0.08;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.norajon h1 {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.norajon p {
+  text-align: left;
+  padding-top: 3vh;
+  line-height: 3.4rem;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+}
