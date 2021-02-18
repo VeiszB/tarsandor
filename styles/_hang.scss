@@ -8,6 +8,16 @@ main {
   min-height: 66vh;
 }
 
+.hanglejatszo {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #myProgress {
   background-color: #d9d9f2;
   cursor: pointer;

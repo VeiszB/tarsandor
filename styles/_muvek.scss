@@ -12,10 +12,10 @@
   padding: 0;
 }
 
-::before,
+/*::before,
 ::after {
   content: "";
-}
+}*/
 
 .component {
   width: 80%;
@@ -42,7 +42,7 @@ ul {
   text-transform: uppercase;
   border: 2px solid #2c3e50;
   margin-top: 7.5rem;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   font-size: 0.7rem;
   font-weight: 700;
   padding: 1rem;
@@ -153,6 +153,7 @@ ul {
 }
 
 /* page */
+
 .page > li {
   background: linear-gradient(to right, #e1ddd8 0%, #fffbf6 100%);
   box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
@@ -286,7 +287,7 @@ ul {
 }
 
 .hardcover_front li:last-child:before {
-  box-shadow: 0px 0px 30px 5px #333;
+  box-shadow: 0px 0px 30px 5px rgb(0, 0, 0);
   transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px)
     translateY(-78px);
 }

@@ -120,12 +120,14 @@ p {
 }
 
 .gallery-item {
-  $basis-factor: 175px;
+  $basis-factor: 20vw;
   flex: 1 1 auto;
   flex-basis: $basis-factor;
-  margin: 0.5em;
-  max-width: 530px;
-  max-height: 300px;
+  margin: 1rem;
+  width: 300px;
+  height: auto;
+  max-height: 400px;
+  max-width: 400px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -182,13 +184,15 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1em 0;
-    line-height: 1em;
-    color: #fff;
+    padding: 0.5rem 0;
+    line-height: 2rem;
+    color: #ffc266;
     background-color: rgba(#000, 0.6);
     transform: translateY(4em);
     transition: transform 250ms;
     z-index: 20;
+    font-family: "Play", sans-serif;
+    text-transform: none;
 
     span {
       display: inline-block;
@@ -196,6 +200,7 @@ p {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
+      font-size: 1.6rem;
     }
   }
 
@@ -241,7 +246,7 @@ p {
 
 .lightbox-wrapper {
   display: none;
-  background-color: #2e2e35;
+  background-color: #464646;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -261,10 +266,14 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(#000, 0.3);
+    background-color: rgba(45, 45, 45, 1);
     padding: 1em;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
+    font-size: 1.6rem;
+    color: #ffc266;
+    font-family: "Play", sans-serif;
+    text-transform: none;
 
     & > * {
       opacity: 0.75;
