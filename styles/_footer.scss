@@ -1,5 +1,5 @@
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   height: 5vh;
   width: 100%;
@@ -7,6 +7,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.1rem;
 }
 
 footer p {
@@ -15,4 +16,16 @@ footer p {
   font-size: 1.4rem;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
+}
+
+footer a {
+  color: #2d2d2d;
+  padding: 0.5rem;
+}
+
+footer a:hover {
+  color: #ffab66c0;
+  background-color: #464646;
+  padding: 0.5rem;
+  transition: 0.5s ease-in-out;
 }

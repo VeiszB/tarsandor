@@ -432,7 +432,7 @@ p {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  border: 0.5px solid #ffc26662;
+  border-bottom: 1px solid #ffab66c0;
 }
 
 .gallery-item.item-2x3 {
@@ -629,7 +629,7 @@ p {
   content: "";
   height: 4px;
   width: 80%;
-  background-color: #fff;
+  background-color: #ffc266;
 }
 
 .lightbox .lightbox-close::before {
@@ -731,7 +731,7 @@ p {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   height: 5vh;
   width: 100%;
@@ -745,6 +745,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  letter-spacing: 0.1rem;
 }
 
 footer p {
@@ -753,6 +754,19 @@ footer p {
   font-size: 1.4rem;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
+}
+
+footer a {
+  color: #2d2d2d;
+  padding: 0.5rem;
+}
+
+footer a:hover {
+  color: #ffab66c0;
+  background-color: #464646;
+  padding: 0.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #maingallery {
@@ -797,15 +811,26 @@ footer p {
 }
 
 .gallery-head h1 {
-  width: 90vh;
-  height: 10vh;
-  margin: 0rem 2rem;
+  margin: 1rem 2rem;
   text-align: center;
   font-size: 4.5rem;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   color: #ffc266;
   letter-spacing: 0.7rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.gallery-head h1:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
 }
 
 .outer {
@@ -838,6 +863,11 @@ footer p {
   overflow: hidden;
   top: 0;
   left: 0;
+}
+
+.overlay h2 {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
 }
 
 .hovereffect img {
@@ -1000,6 +1030,24 @@ footer p {
   }
 }
 
+.current {
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+  color: #ffab66c0;
+}
+
+.current:after {
+  content: "";
+  width: 95%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  color: #ffc266;
+}
+
 #underline {
   display: inline-block;
   padding: 5px 15px;
@@ -1021,7 +1069,7 @@ footer p {
 }
 
 #underline:hover:after {
-  width: 100%;
+  width: 95%;
   left: 0;
 }
 

@@ -131,7 +131,7 @@ p {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  border: 0.5px solid #ffc26662;
+  border-bottom: 1px solid #ffab66c0;
 
   &.item-2x3 {
     flex-basis: calc(#{$basis-factor} * 0.666);
@@ -297,7 +297,7 @@ p {
       content: "";
       height: 4px;
       width: 80%;
-      background-color: #fff;
+      background-color: rgb(255, 194, 102);
     }
 
     &::before {

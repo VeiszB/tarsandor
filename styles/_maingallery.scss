@@ -28,15 +28,26 @@
 }
 
 .gallery-head h1 {
-  width: 90vh;
-  height: 10vh;
-  margin: 0rem 2rem;
+  margin: 1rem 2rem;
   text-align: center;
   font-size: 4.5rem;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   color: #ffc266;
   letter-spacing: 0.7rem;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.gallery-head h1:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
 }
 
 .outer {
@@ -68,6 +79,11 @@
   overflow: hidden;
   top: 0;
   left: 0;
+}
+
+.overlay h2 {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
 }
 
 .hovereffect img {
