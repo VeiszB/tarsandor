@@ -2103,7 +2103,7 @@ figcaption p {
 }
 
 .main-bakelit {
-  max-width: 40w;
+  max-width: 40vw;
   margin: 2rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2117,7 +2117,8 @@ figcaption p {
       -ms-flex-align: center;
           align-items: center;
   background-color: #464646;
-  padding: 3rem;
+  border-bottom: 1px solid #ffc266;
+  padding: 2rem;
   border-radius: 5%;
 }
 
@@ -2150,8 +2151,8 @@ figcaption p {
   text-transform: uppercase;
   color: #ffc266;
   letter-spacing: 0.1rem;
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  font-size: 2.4rem;
+  padding-bottom: 1.5rem;
 }
 
 .bekelit-text-main {
