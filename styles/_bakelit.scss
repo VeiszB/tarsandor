@@ -29,13 +29,21 @@
   padding: 3vh;
 }
 
+.bakelit-text-sec {
+  max-width: 18vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 3vh;
+}
+
 .bekelit-title {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   color: #ffc266;
   letter-spacing: 0.1rem;
   font-size: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .bekelit-title-main {
@@ -54,6 +62,17 @@
   letter-spacing: 0.1rem;
   font-size: 2rem;
   line-height: 3vh;
+}
+
+.bekelit-sub-text {
+  max-width: 20vw;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  color: #ffc266;
+  letter-spacing: 0.1rem;
+  font-size: 1.6rem;
+  line-height: 3vh;
+  text-align: left;
 }
 
 .turntable-main:hover {
