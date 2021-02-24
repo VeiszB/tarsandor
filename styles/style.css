@@ -2089,6 +2089,14 @@ figcaption p {
   text-transform: none;
 }
 
+.bakelit {
+  background-color: #373737;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  background-position: center;
+  background-size: cover;
+}
+
 .hanganyagok-main {
   width: 90%;
   height: auto;
@@ -2159,6 +2167,7 @@ figcaption p {
   letter-spacing: 0.1rem;
   font-size: 2rem;
   margin-top: 2rem;
+  text-align: left;
 }
 
 .bekelit-title-main {
@@ -2188,6 +2197,7 @@ figcaption p {
   font-size: 1.6rem;
   line-height: 3vh;
   text-align: left;
+  padding: 0 2rem;
 }
 
 .turntable-main:hover {
