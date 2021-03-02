@@ -58,6 +58,7 @@ ul {
 
 /* basic grid, only for this demo */
 .align {
+  padding-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -66,14 +67,29 @@ ul {
   height: auto;
 }
 
-.align > li {
-  width: 30vw;
+#book1 {
+  width: 80%;
   height: auto;
   vertical-align: top;
-  margin-top: 10rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   margin-right: 10rem;
-  padding-left: 8rem;
+  padding-left: 15rem;
+  padding-bottom: 5rem;
+  display: inline-block;
+  position: relative;
+}
+
+#book1::after {
+  content: "";
+  width: 105%;
+  position: absolute;
+  left: 8%;
+  bottom: 0.1px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  color: #ffc266;
+  margin: auto;
 }
 
 /* ///////////////////////////////////////////////////
@@ -98,8 +114,8 @@ ul {
   */
 .book {
   position: relative;
-  width: 160px;
-  height: 220px;
+  width: 150px;
+  height: 210px;
   perspective: 1000px;
   transform-style: preserve-3d;
 }
@@ -562,12 +578,12 @@ ul {
 
 /* figcaption */
 figcaption {
-  padding-left: 40px;
+  padding-left: 6rem;
   text-align: left;
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 15rem;
-  width: 25vw;
+  width: 50vw;
 }
 
 figcaption h1 {
