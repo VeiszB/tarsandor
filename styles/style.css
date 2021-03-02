@@ -2074,11 +2074,59 @@ figcaption p {
   z-index: 1;
 }
 
+.norajon-title {
+  width: 95%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .norajon h1 {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 3.2rem;
   text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.norajon h2 {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  display: inline-block;
+  position: relative;
+  color: #ffab66c0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.norajon h2::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  color: #ffc266;
+  margin: auto;
 }
 
 .norajon p {
