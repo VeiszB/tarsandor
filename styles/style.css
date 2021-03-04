@@ -2074,13 +2074,14 @@ figcaption p {
   background-color: #464646fb;
   display: block;
   position: relative;
-}
-
-.norajon::after {
-  content: "";
-  background: url(../img/bio/fenykepesz2.jpg);
+  background: url(../img/tarmuvekbg1.png);
   background-size: contain;
   background-position: top;
+}
+
+/*.norajon::after {
+  content: "";
+  background: url(../img/bio/fenykepesz2.jpg);
   opacity: 0.08;
   top: 0;
   left: 0;
@@ -2088,8 +2089,7 @@ figcaption p {
   right: 0;
   position: absolute;
   z-index: 1;
-}
-
+}*/
 .norajon-title {
   width: 95%;
   margin: auto;
@@ -2114,6 +2114,28 @@ figcaption p {
   font-size: 3.2rem;
   text-align: center;
   letter-spacing: 0.1rem;
+  position: relative;
+  color: #ffab66c0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.norajon-title a {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: relative;
+  color: #ffab66c0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.norajon-title a:hover {
+  color: #ffc266;
 }
 
 .norajon h2 {
@@ -2133,7 +2155,7 @@ figcaption p {
   width: max-content;
 }
 
-.norajon h2::after {
+.norajon a::after {
   content: "";
   width: 100%;
   position: absolute;
