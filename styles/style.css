@@ -2175,6 +2175,13 @@ figcaption p {
   text-transform: none;
 }
 
+.norajon-title img {
+  position: relative;
+  width: 80%;
+  margin: 5vh auto;
+  border: 5px solid #2d2d2d;
+}
+
 .bakelit {
   background-color: #373737;
   border-top-left-radius: 5%;
