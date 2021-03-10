@@ -739,16 +739,23 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.1rem;
 }
 
-footer p {
+.footer-make {
+  width: 60%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer-make p {
   color: #2d2d2d;
   text-align: center;
   font-size: 1.4rem;
@@ -756,15 +763,36 @@ footer p {
   text-transform: uppercase;
 }
 
-footer a {
+.footer-make a {
   color: #2d2d2d;
   padding: 0.5rem;
 }
 
-footer a:hover {
+.footer-make a:hover {
   color: #ffab66c0;
   background-color: #464646;
   padding: 0.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.footer-menu {
+  width: 30%;
+}
+
+.footer-menu a {
+  color: #2d2d2d;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  margin: 3rem;
+  padding: 0.5rem;
+}
+
+.footer-menu a:hover {
+  color: #ffab66c0;
+  background-color: #464646;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -2552,5 +2580,97 @@ figcaption p {
   height: 5px;
   background: white;
   border-radius: 50%;
+}
+
+.impresszum-head {
+  width: 75%;
+  margin: auto;
+  margin-top: 1vh;
+}
+
+.impresszum-head h1 {
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.impresszum-head h2 {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2rem;
+  margin: 2rem 4rem;
+  letter-spacing: 0.3rem;
+  line-height: 2;
+}
+
+.impresszum-main {
+  width: 70%;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.impresszum-dih-img img {
+  width: 11vw;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+
+.impresszum-main h2 {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+
+.impresszum-szerkeszto h2 {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  margin: 1rem;
+  margin-left: 5rem;
+}
+
+.impresszum-text-head {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2.6rem;
+  letter-spacing: 0.3rem;
+  margin: 1rem;
+  margin-left: 5rem;
+}
+
+.impresszum-text {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  margin-left: 10rem;
+  padding-bottom: 2.4rem;
+}
+
+#impresszum-text-a {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  color: #ffc266;
+}
+
+#impresszum-text-a:hover {
+  color: #ffab66c0;
 }
 /*# sourceMappingURL=style.css.map */
