@@ -2778,6 +2778,8 @@ figcaption p {
   text-align: center;
   height: calc(var(--base-grid) * 2);
   font-size: calc(var(--base-grid) * 2);
+  font-family: "Play", sans-serif;
+  text-transform: none;
   display: none;
   bottom: calc(var(--base-grid) * 8.5);
   -webkit-animation: text 0.3s ease-in-out forwards;
