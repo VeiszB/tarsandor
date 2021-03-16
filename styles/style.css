@@ -2237,6 +2237,17 @@ figcaption p {
   border: 5px solid #2d2d2d;
 }
 
+#parbeszed {
+  margin-left: 10vh;
+  text-align: left;
+  padding-top: 2vh;
+  padding-bottom: 3rem;
+  line-height: 0;
+  font-size: 2rem;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+}
+
 .bakelit {
   background-color: #373737;
   border-top-left-radius: 5%;
@@ -2709,6 +2720,20 @@ figcaption p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80%;
+  margin: auto;
+}
+
+.links__list2 {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
   margin: auto;
 }
 

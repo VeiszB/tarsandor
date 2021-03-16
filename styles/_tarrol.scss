@@ -32,6 +32,16 @@
   margin: auto;
 }
 
+.links__list2 {
+  //position: relative;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
+}
+
 .links__item {
   width: var(--link-size);
   height: var(--link-size);
