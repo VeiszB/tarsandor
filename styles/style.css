@@ -2242,7 +2242,7 @@ figcaption p {
   text-align: left;
   padding-top: 2vh;
   padding-bottom: 3rem;
-  line-height: 0;
+  line-height: 3rem;
   font-size: 2rem;
   font-family: "Play", sans-serif;
   text-transform: none;
