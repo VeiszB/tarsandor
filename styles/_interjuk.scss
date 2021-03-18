@@ -1,21 +1,21 @@
 .interjuk-left-main {
   background-color: #373737;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   background-position: center;
   background-size: cover;
   align-items: center;
+  padding-top: 3rem;
 }
 
 .interjuk-left-content {
-  width: 95%;
+  width: 90%;
   height: auto;
   display: flex;
-  margin: auto;
   flex-direction: column;
-  margin: 1rem;
+  margin: auto;
   background-color: #e2ad5f;
-  border-radius: 5%;
+  border-radius: 25px;
   padding: 2rem;
 }
 
@@ -35,32 +35,84 @@
   letter-spacing: 0.2rem;
   font-family: "Play", sans-serif;
   text-transform: none;
+  margin: 0 2rem;
 }
 
-.player-ctn {
-  border-radius: 15px;
+.interju-main {
+  border-radius: 25px;
   width: 70%;
-  padding: 10px;
+  padding: 2rem;
   background-color: #373737;
   margin: auto;
   margin-top: 2rem;
 }
 
-.playlist-ctn {
-  padding-bottom: 20px;
+.interju-list {
+  display: flex;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.playlist-track-ctn {
-  display: flex;
+.interju-main li {
   background-color: #464646;
-  margin-top: 3px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.interju-main li:hover {
+  background-color: #4646467a;
+}
+
+.interju-list-icon {
+  width: 5vw;
+}
+
+.interjuk_icon2 {
+  //width: calc(var(--base-grid) * 15);
+  //height: calc(var(--base-grid) * 9);
+  //transition: all 0.3s ease-in-out;
+  //fill: var(--colour-black);
+  width: 5vw;
+  height: auto;
+  margin: auto;
+  margin-right: 3rem;
+}
+
+.interju-list-text {
+  padding-left: 3.2rem;
+}
+
+.interju-list-title {
   font-family: "Play", sans-serif;
   text-transform: none;
-  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  color: #ffc266;
 }
 
-.playlist-track-ctn > div {
-  margin: 10px;
+.interju-list-dec {
+  color: #ffab66c0;
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 0;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+}
+
+.interju-list-cit {
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  text-align: left;
+  line-height: 2.6rem;
+  font-size: 1.6rem;
+  padding-left: 2rem;
 }
