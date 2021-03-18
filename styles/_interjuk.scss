@@ -1,0 +1,66 @@
+.interjuk-left-main {
+  background-color: #373737;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.interjuk-left-content {
+  width: 95%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #e2ad5f;
+  border-radius: 5%;
+  padding: 2rem;
+}
+
+.interjuk_icon {
+  //width: calc(var(--base-grid) * 15);
+  //height: calc(var(--base-grid) * 9);
+  //transition: all 0.3s ease-in-out;
+  //fill: var(--colour-black);
+  width: 7vw;
+  height: auto;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.interjuk-left-title {
+  color: #2d2d2d;
+  letter-spacing: 0.2rem;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+}
+
+.player-ctn {
+  border-radius: 15px;
+  width: 70%;
+  padding: 10px;
+  background-color: #373737;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.playlist-ctn {
+  padding-bottom: 20px;
+}
+
+.playlist-track-ctn {
+  display: flex;
+  background-color: #464646;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2rem;
+}
+
+.playlist-track-ctn > div {
+  margin: 10px;
+}

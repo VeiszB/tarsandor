@@ -53,6 +53,8 @@ main {
   margin: 10px;
   display: flex;
   justify-content: space-around;
+  font-family: "Play", sans-serif;
+  text-transform: none;
 }
 
 .btn-ctn > div {
@@ -100,6 +102,9 @@ main {
   margin-top: 3px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  font-size: 2rem;
 }
 /*.playlist-track-ctn:last-child {
   border: 1px solid #ffc266;
