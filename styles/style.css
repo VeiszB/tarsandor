@@ -3023,6 +3023,7 @@ figcaption p {
 
 .interju-main li:hover {
   background-color: #4646467a;
+  border-bottom: 1px solid #ffc266;
 }
 
 .interju-list-icon {
