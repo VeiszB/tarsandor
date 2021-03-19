@@ -2254,6 +2254,11 @@ figcaption p {
   text-transform: none;
 }
 
+.diary-date {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
 .bakelit {
   background-color: #373737;
   border-top-left-radius: 25px;
