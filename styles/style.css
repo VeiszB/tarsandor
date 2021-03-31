@@ -252,6 +252,13 @@ nav ul li a:hover {
   text-shadow: 1px 1px 1px #000000;
 }
 
+/*  BURGER NAV */
+.burger,
+.menu-check {
+  display: none;
+}
+
+/* ----------------------------------------------*/
 .underline:after {
   content: "";
   position: relative;
@@ -3204,6 +3211,9 @@ figcaption p {
 }
 
 @media screen and (max-width: 900px) {
+  main {
+    min-height: 50vh !important;
+  }
   .typewriter {
     width: 90%;
     margin: auto;
@@ -3223,6 +3233,204 @@ figcaption p {
   }
   .footer-menu a {
     font-size: 1.2rem;
+  }
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+}
+
+.toggler {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 574px) {
+  main {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  #main-nav {
+    display: none;
+  }
+  .main-logo {
+    height: 20vh;
+    padding: 1.5rem 2rem;
+  }
+  /* ------------------------------------------------*/
+  /* ---- BURGER NAV ---*/
+  .toggler {
+    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 2vh;
+    right: 3vh;
+    cursor: pointer;
+    opacity: 0;
+    display: block;
+  }
+  .hamburger {
+    position: fixed;
+    top: 2vh;
+    right: 5vw;
+    height: 50px;
+    width: 50px;
+    padding: 0.6rem;
+    display: block;
+    /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+  .hamburger > div {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #ffc266;
+    height: 2px;
+    width: 60%;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  /* CREATING THE TOP AND BOTTOM LINES : 
+  TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+  .hamburger > div::before,
+  .hamburger > div::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    background: #ffc266;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .hamburger > div::after {
+    top: 10px;
+  }
+  /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+  .toggler:checked + .hamburger > div {
+    background: rgba(0, 0, 0, 0);
+  }
+  .toggler:checked + .hamburger > div::before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #ffab66c0;
+  }
+  /* AND ROTATING THE TOP AND BOTTOM LINES :  */
+  .toggler:checked + .hamburger > div::after {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    background: #ffab66c0;
+  }
+  /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+  .menu {
+    background: #464646;
+    width: 0%;
+    height: 30vh;
+    display: block;
+    /* APPLYING TRANSITION TO THE MENU :  */
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+  .toggler:checked ~ .menu {
+    width: 45%;
+  }
+  /* STYLING THE LIST :  */
+  .menu > div > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 70px;
+    padding-left: 10px;
+    /* HIDDEN INITIALLY  :  */
+    visibility: hidden;
+  }
+  .menu > div > ul > li {
+    list-style: none;
+    padding: 0.5rem;
+  }
+  .menu > div > ul > li > a {
+    color: #ffc266;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Kelly Slab", cursive;
+    text-transform: uppercase;
+  }
+  /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+  .toggler:checked ~ .menu > div > ul {
+    -webkit-transition: visibility 0.4s ease;
+    transition: visibility 0.4s ease;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+    visibility: visible;
+  }
+  .toggler:checked ~ .menu > div > ul > li > a:hover {
+    color: orange;
+  }
+  /* ---- BURGER NAV END ---*/
+  /* ------------------------------------------------*/
+  .typewriter {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .typewriter h1 {
+    font-size: 2.6rem;
+  }
+  .typewriter h2 {
+    font-size: 2rem;
+  }
+  .typewriter h3 {
+    font-size: 1.8;
+  }
+  .footer-make p {
+    font-size: 1rem;
+  }
+  .footer-menu a {
+    font-size: 1rem;
+  }
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .footer-make {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

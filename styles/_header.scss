@@ -49,6 +49,14 @@ nav ul li a:hover {
   text-shadow: 1px 1px 1px #000000;
 }
 
+/*  BURGER NAV */
+.burger,
+.menu-check {
+  display: none;
+}
+
+/* ----------------------------------------------*/
+
 .underline:after {
   content: "";
   position: relative;
