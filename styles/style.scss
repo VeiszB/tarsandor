@@ -138,4 +138,52 @@ html {
   .footer-menu a {
     font-size: 1.2rem;
   }
+
+  footer {
+    flex-wrap: wrap;
+    height: min-content;
+  }
+
+  .footer-make {
+    width: 100%;
+  }
+  .footer-menu {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: min-content;
+  }
+
+  .footer-menu a {
+    margin: 0rem 3rem 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .typewriter {
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .typewriter h1 {
+    margin: 4vh 0vh 2vh 5vh;
+  }
+
+  .typewriter h2 {
+    margin: 2vh 0vh 2vh 10vh;
+  }
+
+  .typewriter h3 {
+    margin: 2vh 0vh 2vh 15vh;
+  }
+
+  .footer-make p {
+    font-size: 1.2rem;
+  }
+
+  .footer-menu a {
+    font-size: 1.2rem;
+  }
 }
