@@ -57,12 +57,25 @@ html {
     font-size: 2.8rem;
   }
 
+  .typewriter a {
+    font-size: 2.8rem;
+  }
+
   #logo {
     flex: 1 1 5rem;
   }
 }
 
 @media screen and (max-width: 1270px) {
+  /*main {
+    min-height: 76.68vh !important;
+  }*/
+
+  .main-logo {
+    height: 18vh;
+    padding: 1.5rem;
+  }
+
   nav ul li a {
     font-size: 2.6rem;
   }
@@ -77,5 +90,52 @@ html {
 
   .typewriter h3 {
     font-size: 2.6rem;
+  }
+
+  .typewriter a {
+    font-size: 2.6rem;
+  }
+
+  footer {
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #logo {
+    flex: 1 1 1rem;
+  }
+
+  .main-logo {
+    height: 13vh;
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul li a {
+    font-size: 2rem;
+  }
+
+  .typewriter h1 {
+    font-size: 3rem;
+  }
+
+  .typewriter h2 {
+    font-size: 2.2rem;
+  }
+
+  .typewriter h3 {
+    font-size: 2rem;
+  }
+
+  .typewriter a {
+    font-size: 2rem;
+  }
+
+  .footer-make p {
+    font-size: 1.2rem;
+  }
+
+  .footer-menu a {
+    font-size: 1.2rem;
   }
 }
