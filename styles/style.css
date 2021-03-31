@@ -3433,4 +3433,22 @@ figcaption p {
         flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 502px) {
+  .hero {
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    padding-bottom: 5vh;
+  }
+  footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    position: relative;
+    bottom: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

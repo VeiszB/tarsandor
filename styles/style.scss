@@ -404,4 +404,15 @@ html {
 }
 
 @media screen and (max-width: 502px) {
+  .hero {
+    height: min-content;
+    padding-bottom: 5vh;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    height: min-content;
+    position: relative;
+    bottom: 0;
+  }
 }
