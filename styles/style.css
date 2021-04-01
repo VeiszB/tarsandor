@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -3092,6 +3093,248 @@ figcaption p {
   padding-left: 2rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.fa-2x {
+  font-size: 3rem !important;
+}
+
+.burger-container {
+  max-width: 1368px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.burger-container .navbar {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.burger-container .navbar .logo {
+  font-size: 2.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffc266;
+  font-weight: 700;
+}
+
+.burger-container .navbar .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-container .navbar .nav-links li {
+  list-style-type: none;
+}
+
+.burger-container .navbar .nav-links li a {
+  text-decoration: none;
+  color: #ffc266;
+  margin: 0 1.25rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.burger-container .navbar .nav-links li a::after {
+  position: absolute;
+  content: "";
+  background-color: #ffc266;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+header .burger-container .navbar .nav-links li a:hover::after {
+  width: 100%;
+}
+
+header .burger-container .navbar .nav-links button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  margin: 0 1rem;
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid #ffc266;
+  color: #ffc266;
+  font-weight: 500;
+}
+
+header .burger-container .navbar i {
+  display: none;
+  color: #ffc266;
+  cursor: pointer;
+}
+
+header .burger-container .showcase {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 35rem;
+}
+
+header .burger-container .showcase h1 {
+  color: #ffc266;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header .burger-container .showcase p {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  width: 30rem;
+}
+
+header .burger-container .showcase button {
+  margin-top: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+header .video-container {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+header .video-container video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.82);
+}
+
+@media (max-width: 850px) {
+  header .burger-container .navbar .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 225px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.4s ease all;
+    transition: 0.4s ease all;
+    z-index: 10;
+  }
+  header .burger-container .navbar .nav-links li a {
+    color: #000;
+  }
+  header .burger-container .navbar .nav-links li a::after {
+    background-color: #000;
+  }
+  header .burger-container .navbar .nav-links button {
+    border-color: #000;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+  }
+  header .burger-container .navbar .nav-links.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  header .burger-container .navbar i {
+    display: block;
+  }
+  header .burger-container .showcase {
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  header .burger-container .showcase h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header .burger-container .showcase h1 {
+    font-size: 2.1rem;
+  }
+  header .burger-container .showcase p {
+    font-size: 0.85rem;
+    width: 300px;
+  }
+}
+
 /* MEDIA QUERIES */
 /* HOME PAGE */
 @media screen and (max-width: 1462px) {
@@ -3243,15 +3486,7 @@ figcaption p {
   }
 }
 
-.toggler {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-}
-
-.menu {
+.burger-container {
   display: none;
 }
 
@@ -3270,131 +3505,8 @@ figcaption p {
   }
   /* ------------------------------------------------*/
   /* ---- BURGER NAV ---*/
-  .toggler {
-    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-    z-index: 2;
-    height: 60px;
-    width: 60px;
-    position: fixed;
-    top: 2vh;
-    right: 3vh;
-    cursor: pointer;
-    opacity: 0;
+  .burger-container {
     display: block;
-  }
-  .hamburger {
-    position: fixed;
-    top: 2vh;
-    right: 5vw;
-    height: 50px;
-    width: 50px;
-    padding: 0.6rem;
-    display: block;
-    /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-  .hamburger > div {
-    position: relative;
-    top: 0;
-    left: 0;
-    background: #ffc266;
-    height: 2px;
-    width: 60%;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  /* CREATING THE TOP AND BOTTOM LINES : 
-  TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
-  .hamburger > div::before,
-  .hamburger > div::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    background: #ffc266;
-    width: 100%;
-    height: 2px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  .hamburger > div::after {
-    top: 10px;
-  }
-  /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-  .toggler:checked + .hamburger > div {
-    background: rgba(0, 0, 0, 0);
-  }
-  .toggler:checked + .hamburger > div::before {
-    top: 0;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    background: #ffab66c0;
-  }
-  /* AND ROTATING THE TOP AND BOTTOM LINES :  */
-  .toggler:checked + .hamburger > div::after {
-    top: 0;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-    background: #ffab66c0;
-  }
-  /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
-  .menu {
-    background: #464646;
-    width: 0%;
-    height: 30vh;
-    display: block;
-    /* APPLYING TRANSITION TO THE MENU :  */
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-  /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
-  .toggler:checked ~ .menu {
-    width: 45%;
-  }
-  /* STYLING THE LIST :  */
-  .menu > div > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: fixed;
-    top: 70px;
-    padding-left: 10px;
-    /* HIDDEN INITIALLY  :  */
-    visibility: hidden;
-  }
-  .menu > div > ul > li {
-    list-style: none;
-    padding: 0.5rem;
-  }
-  .menu > div > ul > li > a {
-    color: #ffc266;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: "Kelly Slab", cursive;
-    text-transform: uppercase;
-  }
-  /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
-  .toggler:checked ~ .menu > div > ul {
-    -webkit-transition: visibility 0.4s ease;
-    transition: visibility 0.4s ease;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-    visibility: visible;
-  }
-  .toggler:checked ~ .menu > div > ul > li > a:hover {
-    color: orange;
   }
   /* ---- BURGER NAV END ---*/
   /* ------------------------------------------------*/
