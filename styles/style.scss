@@ -241,7 +241,11 @@ html {
   }
 
   .typewriter h3 {
-    font-size: 1.8;
+    font-size: 1.8rem;
+  }
+
+  .typewriter a {
+    font-size: 1.8rem;
   }
 
   .footer-make p {
@@ -264,15 +268,41 @@ html {
 }
 
 @media screen and (max-width: 502px) {
-  .hero {
-    height: min-content;
-    padding-bottom: 5vh;
+  .typewriter {
+    width: 90%;
+    margin: auto;
+    padding-top: 5rem;
   }
 
-  footer {
-    flex-wrap: wrap;
-    height: min-content;
-    position: relative;
-    bottom: 0;
+  .typewriter h1 {
+    font-size: 2.2rem;
+    margin: 2vh 0vh 2vh 2vh;
+  }
+
+  .typewriter h2 {
+    font-size: 1.6rem;
+    margin: 2vh 0vh 2vh 5vh;
+  }
+
+  .typewriter a {
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+
+  .typewriter h3 {
+    font-size: 1.4rem;
+    margin: 2vh 0vh 2vh 8vh;
+  }
+
+  .footer-make p {
+    font-size: 1rem;
+  }
+
+  .footer-menu a {
+    font-size: 1rem;
+  }
+
+  .impresszum-link {
+    display: none;
   }
 }
