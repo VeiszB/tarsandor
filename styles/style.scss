@@ -308,7 +308,7 @@ html {
 }
 
 /* -----------------------------------------------------------------*/
-/* ---------------- MÜVEK MEDIA QUERY START ------------------------*/
+/* ---------------- ÉLETÚT MEDIA QUERY START ------------------------*/
 
 @media screen and (max-width: 770px) {
   .timeline {
@@ -330,5 +330,47 @@ html {
   }
 }
 
-/* ---------------- MÜVEK MEDIA QUERY END ------------------------*/
+/* ---------------- ÉLETÚT MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------*/
+/* ---------------- MÜVEK MEDIA QUERY START ------------------------*/
+
+@media screen and (max-width: 1700px) {
+  .links__list2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    --base-grid: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .links__list2 {
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+  }
+
+  .links__item {
+    margin: 2rem;
+  }
+
+  :root {
+    --base-grid: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 5vh;
+  }
+}
+
+/* ---------------- MŰVEK MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
