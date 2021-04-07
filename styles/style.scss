@@ -334,7 +334,7 @@ html {
 /* -----------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------*/
-/* ---------------- MÜVEK MEDIA QUERY START ------------------------*/
+/* ---------------- MÜVEK MAIN MEDIA QUERY START ------------------------*/
 
 @media screen and (max-width: 1700px) {
   .links__list2 {
@@ -365,7 +365,7 @@ html {
 
   .hero {
     height: auto;
-    overflow: auto;
+    overflow: scroll;
     padding-bottom: 5vh;
   }
 }
@@ -373,7 +373,7 @@ html {
 @media screen and (max-width: 500px) {
   .hero {
     height: auto;
-    overflow: auto;
+    overflow: scroll;
     padding-bottom: 5vh;
   }
   .links__text {
@@ -388,4 +388,211 @@ html {
 }
 
 /* ---------------- MŰVEK MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------*/
+/* ---------------- MÜVEK SUB MEDIA QUERY START ------------------------*/
+
+@media screen and (max-width: 1606px) {
+  .component {
+    width: 90%;
+  }
+
+  #book1 {
+    width: 95%;
+    padding-left: 6rem;
+    padding-right: 0;
+  }
+
+  #book1::after {
+    left: 3vw;
+  }
+
+  figcaption {
+    position: absolute;
+    width: 68vw;
+  }
+
+  .component {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .component {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+
+  .book {
+    width: 120px;
+    height: 180px;
+  }
+
+  .btn {
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+  }
+
+  .book a {
+    font-size: 1.6rem;
+  }
+
+  figcaption {
+    padding-left: 1.5rem;
+    padding-right: 15vh;
+  }
+
+  figcaption p {
+    padding: 0 !important;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .component {
+    margin-top: 2rem;
+  }
+
+  #book1 {
+    padding-left: 5rem;
+  }
+
+  .book {
+    width: 100px;
+    height: 160px;
+  }
+
+  .btn {
+    margin-top: 4.5rem;
+    margin-left: 1rem;
+  }
+
+  .book a {
+    font-size: 1.4rem;
+    text-transform: none;
+  }
+
+  figcaption {
+    padding-left: 0rem;
+    padding-right: 12vh;
+  }
+
+  figcaption p {
+    padding: 0 !important;
+    font-size: 1.6rem;
+  }
+  #book1::after {
+    bottom: -3rem;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .component {
+    margin-top: 2rem;
+  }
+
+  .align {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+    padding-bottom: 10vh;
+    padding-top: 0;
+  }
+
+  #book1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5vh;
+    padding: 3rem 0 !important;
+    height: auto;
+  }
+
+  #book1::after {
+    display: none;
+  }
+
+  .book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  figcaption {
+    width: 65vw;
+    left: 13rem;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .component {
+    margin-top: 2rem;
+  }
+
+  .align {
+    padding-top: 0rem;
+  }
+
+  .align > li {
+    min-height: unset;
+  }
+
+  .book {
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .hardcover_front {
+    display: none;
+  }
+
+  .book_spine {
+    display: none;
+  }
+
+  .page {
+    display: none;
+  }
+
+  .hardcover_back {
+    display: none;
+  }
+
+  .book_spine {
+    display: none;
+  }
+
+  figcaption {
+    width: 95vw;
+    left: -5vw;
+    margin: auto;
+    height: auto;
+  }
+
+  figcaption p {
+    padding-bottom: 2rem !important;
+  }
+
+  .book-btn {
+    display: block;
+    position: relataive;
+  }
+}
+
+/* ---------------- MŰVEK SUB MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/

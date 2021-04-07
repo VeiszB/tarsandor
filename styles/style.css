@@ -1500,6 +1500,29 @@ ul {
   color: #747474;
 }
 
+.book-btn {
+  display: inline-block;
+  font-family: "Play", sans-serif;
+  text-transform: uppercase !important;
+  color: #ffab66c0 !important;
+  background-color: #2d2d2d;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  -webkit-transition: color 0.3s, border-color 0.3s;
+  transition: color 0.3s, border-color 0.3s;
+  letter-spacing: 0.2rem;
+  display: none;
+  width: 10rem;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.book-btn:hover {
+  border-color: #ffab66c0;
+  color: #747474;
+}
+
 /* basic grid, only for this demo */
 .align {
   padding-top: 5rem;
@@ -3607,7 +3630,7 @@ header .video-container::after {
 /* ---------------- ÉLETÚT MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
 /* -----------------------------------------------------------------*/
-/* ---------------- MÜVEK MEDIA QUERY START ------------------------*/
+/* ---------------- MÜVEK MAIN MEDIA QUERY START ------------------------*/
 @media screen and (max-width: 1700px) {
   .links__list2 {
     width: 90%;
@@ -3637,7 +3660,7 @@ header .video-container::after {
   }
   .hero {
     height: auto;
-    overflow: auto;
+    overflow: scroll;
     padding-bottom: 5vh;
   }
 }
@@ -3645,7 +3668,7 @@ header .video-container::after {
 @media screen and (max-width: 500px) {
   .hero {
     height: auto;
-    overflow: auto;
+    overflow: scroll;
     padding-bottom: 5vh;
   }
   .links__text {
@@ -3659,5 +3682,212 @@ header .video-container::after {
 }
 
 /* ---------------- MŰVEK MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* ---------------- MÜVEK SUB MEDIA QUERY START ------------------------*/
+@media screen and (max-width: 1606px) {
+  .component {
+    width: 90%;
+  }
+  #book1 {
+    width: 95%;
+    padding-left: 6rem;
+    padding-right: 0;
+  }
+  #book1::after {
+    left: 3vw;
+  }
+  figcaption {
+    position: absolute;
+    width: 68vw;
+  }
+  .component {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 1182px) {
+  .component {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  .book {
+    width: 120px;
+    height: 180px;
+  }
+  .btn {
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+  }
+  .book a {
+    font-size: 1.6rem;
+  }
+  figcaption {
+    padding-left: 1.5rem;
+    padding-right: 15vh;
+  }
+  figcaption p {
+    padding: 0 !important;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .component {
+    margin-top: 2rem;
+  }
+  #book1 {
+    padding-left: 5rem;
+  }
+  .book {
+    width: 100px;
+    height: 160px;
+  }
+  .btn {
+    margin-top: 4.5rem;
+    margin-left: 1rem;
+  }
+  .book a {
+    font-size: 1.4rem;
+    text-transform: none;
+  }
+  figcaption {
+    padding-left: 0rem;
+    padding-right: 12vh;
+  }
+  figcaption p {
+    padding: 0 !important;
+    font-size: 1.6rem;
+  }
+  #book1::after {
+    bottom: -3rem;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .component {
+    margin-top: 2rem;
+  }
+  .align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: visible;
+    padding-bottom: 10vh;
+    padding-top: 0;
+  }
+  #book1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: 5vh;
+    padding: 3rem 0 !important;
+    height: auto;
+  }
+  #book1::after {
+    display: none;
+  }
+  .book {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  figcaption {
+    width: 65vw;
+    left: 13rem;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .component {
+    margin-top: 2rem;
+  }
+  .align {
+    padding-top: 0rem;
+  }
+  .align > li {
+    min-height: unset;
+  }
+  .book {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .hardcover_front {
+    display: none;
+  }
+  .book_spine {
+    display: none;
+  }
+  .page {
+    display: none;
+  }
+  .hardcover_back {
+    display: none;
+  }
+  .book_spine {
+    display: none;
+  }
+  figcaption {
+    width: 95vw;
+    left: -5vw;
+    margin: auto;
+    height: auto;
+  }
+  figcaption p {
+    padding-bottom: 2rem !important;
+  }
+  .book-btn {
+    display: block;
+    position: relataive;
+  }
+}
+
+/* ---------------- MŰVEK SUB MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

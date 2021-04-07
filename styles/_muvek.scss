@@ -83,6 +83,28 @@ ul {
   color: #747474;
 }
 
+.book-btn {
+  display: inline-block;
+  font-family: "Play", sans-serif;
+  text-transform: uppercase !important;
+  color: #ffab66c0 !important;
+  background-color: #2d2d2d;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: color 0.3s, border-color 0.3s;
+  letter-spacing: 0.2rem;
+  display: none;
+  width: 10rem;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.book-btn:hover {
+  border-color: #ffab66c0;
+  color: #747474;
+}
+
 /* basic grid, only for this demo */
 .align {
   padding-top: 5rem;
