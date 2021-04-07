@@ -3643,6 +3643,14 @@ header .video-container::after {
     overflow: auto;
     padding-bottom: 5vh;
   }
+  .links__text {
+    display: block;
+    font-size: calc(var(--base-grid) * 1.8);
+    padding-top: 0.5vh;
+  }
+  .links__link::after {
+    opacity: 1;
+  }
 }
 
 /* ---------------- MŰVEK MEDIA QUERY END ------------------------*/
