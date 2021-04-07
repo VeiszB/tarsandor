@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
@@ -3582,4 +3583,31 @@ header .video-container::after {
     display: none;
   }
 }
+
+/* -----------------------------------------------------------------*/
+/* ---------------- MÜVEK MEDIA QUERY START ------------------------*/
+@media screen and (max-width: 770px) {
+  .timeline {
+    max-width: 70%;
+  }
+  .timeline-item:before {
+    left: -55px !important;
+  }
+  .timeline__content-title {
+    font-size: 5rem;
+    padding-top: 3.5vh;
+  }
+  .timeline__content-desc {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .timeline-item:before {
+    left: -45px !important;
+  }
+}
+
+/* ---------------- MÜVEK MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

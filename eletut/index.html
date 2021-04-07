@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <title>Tar Sándor | Életút</title>
   </head>
 </html>
@@ -33,13 +35,37 @@
           <img class="main-logo" src="../img/tarlogo.png" alt="logo">
         </a>
       </div>
-      <ul>
+      <ul id="main-nav">
         <li><a class="current" href="./index.html">Életút</a></li>
         <li><a id="underline" href="../muvek/muvek-main.html">Művek</a></li>
         <li><a id="underline" href="../gallery/index.html">Fotók</a></li>
         <li><a id="underline" href="../hanganyagok/index.html">Hanganyagok</a></li>
         <li><a id="underline" href="../tarrol/tarrol.html">T.S.-ról</a></li>
       </ul>
+
+<!-- Burger nav-------------------------------->
+
+          
+      <div class="burger-container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../eletut/index.html"">Életút</a></li>
+                <li><a href="../muvek/muvek-main.html">Művek</a></li>
+                <li><a href="../gallery/index.html">Fotók</a></li>
+                <li><a href="../hanganyagok/index.html">Hanganyagok</a></li>
+                <li><a href="../tarrol/tarrol.html">T.S.-ról</a></li>
+                <li><a href="../impresszum.html">Impresszum</a></li>
+
+              
+            </ul>
+            <i class="fas fa-bars fa-2x" id="burger"></i>
+        </nav>
+        
+      </div>
+
+
+<!-- Burger nav end--------------------------->
+
     </nav>
     
   </header>
@@ -53,7 +79,7 @@
           <div class="timeline-item" data-text="A munkás">
             <div class="timeline__content"><img class="timeline__img" src="../img/bio/ertekezlet03.jpg"/>
               <h2 class="timeline__content-title">1959-1961</h2>
-              <p class="timeline__content-desc">VI. 23. - VII. 23.: Debreceni Gázmű, műszaki rajzoló<br>VII. 25. - VIII. 24.: Gördülőcsapágy Gyár, köszörűs<br>VII. 26. - : Debreceni Orvosi Műszergyár, technikus<br>VIII. 26 - 1961. X. 13.: melegműhelyi meós</p>
+              <p class="timeline__content-desc">- VI. 23. - VII. 23.: Debreceni Gázmű, műszaki rajzoló<br>- VII. 25. - VIII. 24.: Gördülőcsapágy Gyár, köszörűs<br>VII. 26. - : Debreceni Orvosi Műszergyár, technikus<br>VIII. 26 - 1961. X. 13.: melegműhelyi meós</p>
             </div>
           </div>
           <div class="timeline-item" data-text="A katona">
@@ -184,6 +210,7 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../burgermenu.js"></script>
   <script src="./eletut.js"></script>
 </body>
 </html>
