@@ -312,11 +312,12 @@ html {
 
 @media screen and (max-width: 770px) {
   .timeline {
-    max-width: 70%;
+    max-width: 90%;
   }
 
   .timeline-item:before {
-    left: -55px !important;
+    left: -10px !important;
+    font-size: 1.5rem;
   }
 
   .timeline__content-title {
@@ -326,12 +327,6 @@ html {
 
   .timeline__content-desc {
     font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .timeline-item:before {
-    left: -45px !important;
   }
 }
 
