@@ -3635,6 +3635,11 @@ header .video-container::after {
   :root {
     --base-grid: 0.8rem;
   }
+  .hero {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 5vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
