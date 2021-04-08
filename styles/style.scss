@@ -584,3 +584,59 @@ html {
 
 /* ---------------- MŰVEK SUB MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
+
+@media screen and (max-width: 1346px) {
+  .norajon {
+    padding-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .norajon-title a {
+    font-size: 2.8rem;
+  }
+
+  .norajon-title h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .norajon-title a {
+    font-size: 2.4rem;
+  }
+
+  .norajon-title h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  main {
+    padding-bottom: 5vh;
+  }
+
+  .norajon {
+    width: 95%;
+    padding: 10vh 3vh;
+    border-radius: 25px;
+  }
+
+  .norajon-title a {
+    font-size: 2.2rem;
+    width: 95%;
+  }
+  .norajon-title a::after {
+    display: none;
+  }
+
+  .norajon-title h2 {
+    font-size: 2rem;
+  }
+}
+
+/* -----------------------------------------------------------------*/
+/* ---------------- MŰVEK Text MEDIA QUERY START ------------------------*/
+
+/* ---------------- MŰVEK Text MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
