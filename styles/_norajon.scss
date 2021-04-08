@@ -9,6 +9,8 @@
   background: url(../img/tarmuvekbg1.png);
   background-size: contain;
   background-position: top;
+  padding-top: 10vh;
+  border-radius: 25px;
 }
 
 /*.norajon::after {
@@ -71,6 +73,7 @@
   position: relative;
   color: #ffab66c0;
   width: max-content;
+  text-align: center;
 }
 
 .norajon a::after {

@@ -2201,6 +2201,8 @@ figcaption p {
   background: url(../img/tarmuvekbg1.png);
   background-size: contain;
   background-position: top;
+  padding-top: 10vh;
+  border-radius: 25px;
 }
 
 /*.norajon::after {
@@ -2277,6 +2279,7 @@ figcaption p {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  text-align: center;
 }
 
 .norajon a::after {
@@ -3722,7 +3725,7 @@ header .video-container::after {
   }
   #book1 {
     width: 90%;
-    padding-left: 6rem;
+    padding-left: 9rem;
     padding-right: 0;
   }
   #book1::after {
@@ -3918,6 +3921,7 @@ header .video-container::after {
   }
   .norajon-title h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
