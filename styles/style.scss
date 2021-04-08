@@ -395,11 +395,11 @@ html {
 
 @media screen and (max-width: 1606px) {
   .component {
-    width: 90%;
+    width: 95%;
   }
 
   #book1 {
-    width: 95%;
+    width: 90%;
     padding-left: 6rem;
     padding-right: 0;
   }
@@ -453,10 +453,11 @@ html {
 @media screen and (max-width: 810px) {
   .component {
     margin-top: 2rem;
+    padding-bottom: 10vh;
   }
 
   #book1 {
-    padding-left: 5rem;
+    padding-left: 6.5rem;
   }
 
   .book {
@@ -488,109 +489,64 @@ html {
   }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 650px) {
+  #book1::after {
+    bottom: -5rem;
+    margin-bottom: 3vh;
+  }
+
+  #book1 {
+    padding-left: 7rem;
+  }
+
+  figcaption {
+    left: 13rem;
+    padding-right: 10vh;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  main {
+    overflow: scroll;
+  }
+
   .component {
-    margin-top: 2rem;
+    padding-bottom: 20vh;
   }
 
   .align {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-    overflow: visible;
-    padding-bottom: 10vh;
     padding-top: 0;
   }
 
   #book1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 5vh;
-    padding: 3rem 0 !important;
-    height: auto;
+    margin: auto;
+    padding: 0;
   }
 
   #book1::after {
-    display: none;
-  }
-
-  .book {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  figcaption {
-    width: 65vw;
-    left: 13rem;
-    top: 0;
-  }
-}
-
-@media screen and (max-width: 606px) {
-  .component {
-    margin-top: 2rem;
-  }
-
-  .align {
-    padding-top: 0rem;
-  }
-
-  .align > li {
-    min-height: unset;
+    width: 95%;
   }
 
   .book {
     margin: 0;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 534px) {
-  .hardcover_front {
-    display: none;
   }
 
-  .book_spine {
-    display: none;
-  }
-
-  .page {
-    display: none;
-  }
-
-  .hardcover_back {
-    display: none;
-  }
-
-  .book_spine {
-    display: none;
+  .book ul {
+    margin-top: 8vh !important;
+    margin-left: 32vw !important;
   }
 
   figcaption {
-    width: 95vw;
-    left: -5vw;
+    left: 0;
+    padding-right: 0;
+    width: 80vw;
     margin: auto;
-    height: auto;
   }
+}
 
-  figcaption p {
-    padding-bottom: 2rem !important;
-  }
-
-  .book-btn {
-    display: block;
-    position: relataive;
+@media screen and (max-width: 440px) {
+  #book1::after {
+    display: none;
   }
 }
 

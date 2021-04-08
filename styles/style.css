@@ -3687,10 +3687,10 @@ header .video-container::after {
 /* ---------------- MÜVEK SUB MEDIA QUERY START ------------------------*/
 @media screen and (max-width: 1606px) {
   .component {
-    width: 90%;
+    width: 95%;
   }
   #book1 {
-    width: 95%;
+    width: 90%;
     padding-left: 6rem;
     padding-right: 0;
   }
@@ -3736,9 +3736,10 @@ header .video-container::after {
 @media screen and (max-width: 810px) {
   .component {
     margin-top: 2rem;
+    padding-bottom: 10vh;
   }
   #book1 {
-    padding-left: 5rem;
+    padding-left: 6.5rem;
   }
   .book {
     width: 100px;
@@ -3765,126 +3766,55 @@ header .video-container::after {
   }
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 650px) {
+  #book1::after {
+    bottom: -5rem;
+    margin-bottom: 3vh;
+  }
+  #book1 {
+    padding-left: 7rem;
+  }
+  figcaption {
+    left: 13rem;
+    padding-right: 10vh;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  main {
+    overflow: scroll;
+  }
   .component {
-    margin-top: 2rem;
+    padding-bottom: 20vh;
   }
   .align {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: visible;
-    padding-bottom: 10vh;
     padding-top: 0;
   }
   #book1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 90%;
-    margin: 5vh;
-    padding: 3rem 0 !important;
-    height: auto;
+    margin: auto;
+    padding: 0;
   }
   #book1::after {
-    display: none;
-  }
-  .book {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  figcaption {
-    width: 65vw;
-    left: 13rem;
-    top: 0;
-  }
-}
-
-@media screen and (max-width: 606px) {
-  .component {
-    margin-top: 2rem;
-  }
-  .align {
-    padding-top: 0rem;
-  }
-  .align > li {
-    min-height: unset;
+    width: 95%;
   }
   .book {
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .book ul {
+    margin-top: 8vh !important;
+    margin-left: 32vw !important;
+  }
+  figcaption {
+    left: 0;
+    padding-right: 0;
+    width: 80vw;
+    margin: auto;
   }
 }
 
-@media screen and (max-width: 534px) {
-  .hardcover_front {
+@media screen and (max-width: 440px) {
+  #book1::after {
     display: none;
-  }
-  .book_spine {
-    display: none;
-  }
-  .page {
-    display: none;
-  }
-  .hardcover_back {
-    display: none;
-  }
-  .book_spine {
-    display: none;
-  }
-  figcaption {
-    width: 95vw;
-    left: -5vw;
-    margin: auto;
-    height: auto;
-  }
-  figcaption p {
-    padding-bottom: 2rem !important;
-  }
-  .book-btn {
-    display: block;
-    position: relataive;
   }
 }
 
