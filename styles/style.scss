@@ -585,6 +585,9 @@ html {
 /* ---------------- MŰVEK SUB MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
 
+/* -----------------------------------------------------------------*/
+/* ---------------- MŰVEK Text MEDIA QUERY START ------------------------*/
+
 @media screen and (max-width: 1346px) {
   .norajon {
     padding-bottom: 15vh;
@@ -635,9 +638,82 @@ html {
     text-align: center;
   }
 }
+/* ---------------- MŰVEK Text MEDIA QUERY END ------------------------*/
+/* -----------------------------------------------------------------*/
 
 /* -----------------------------------------------------------------*/
-/* ---------------- MŰVEK Text MEDIA QUERY START ------------------------*/
+/* ---------------- FOTÓK MEDIA QUERY START ------------------------*/
 
-/* ---------------- MŰVEK Text MEDIA QUERY END ------------------------*/
+@media screen and (max-width: 1300px) {
+  #maingallery {
+    padding-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .outer {
+    width: 432px;
+    height: 245px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .outer {
+    width: 350px;
+    height: 250px;
+  }
+
+  #maingallery {
+    padding-bottom: 15vh;
+  }
+
+  .hovereffect h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .outer {
+    width: 290px;
+    height: 250px;
+  }
+
+  #maingallery {
+    padding-bottom: 15vh;
+  }
+
+  .hovereffect h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ---------------- FOTÓK ALMAPPÁK MEDIA QUERY START ------------------------*/
+
+@media screen and (max-width: 862px) {
+  .gallerysection {
+    padding-bottom: 15vh;
+  }
+
+  .gallery-item.item-3x4 {
+    flex-basis: calc(40vw * 0.75);
+  }
+
+  .gallery-item.item-4x3 {
+    flex-basis: calc(40vw * 0.75);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gallery-item.item-3x4 {
+    flex-basis: calc(60vw * 0.75);
+  }
+
+  .gallery-item.item-4x3 {
+    flex-basis: calc(60vw * 0.75);
+  }
+}
+
+/* ---------------- FOTÓK ALMAPPÁK MEDIA QUERY END  ------------------------*/
+
+/* ---------------- FOTÓK MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
