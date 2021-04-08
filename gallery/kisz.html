@@ -11,6 +11,7 @@
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="../img/favicon.ico" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,13 +32,36 @@
           <img class="main-logo" src="../img/tarlogo.png" alt="logo">
         </a>
       </div>
-      <ul>
+      <ul id="main-nav">
         <li><a id="underline" href="../eletut/index.html">Életút</a></li>
         <li><a id="underline" href="../muvek/muvek-main.html">Művek</a></li>
         <li><a class="current" href="../gallery/index.html">Fotók</a></li>
         <li><a id="underline" href="../hanganyagok/index.html">Hanganyagok</a></li>
         <li><a id="underline" href="../tarrol/tarrol.html">T.S.-ról</a></li>
       </ul>
+
+       <!-- Burger nav-------------------------------->
+
+          
+ <div class="burger-container">
+  <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="../eletut/index.html"">Életút</a></li>
+          <li><a href="../muvek/muvek-main.html">Művek</a></li>
+          <li><a href="../gallery/index.html">Fotók</a></li>
+          <li><a href="../hanganyagok/index.html">Hanganyagok</a></li>
+          <li><a href="../tarrol/tarrol.html">T.S.-ról</a></li>
+          <li><a href="../impresszum.html">Impresszum</a></li>
+
+        
+      </ul>
+      <i class="fas fa-bars fa-2x" id="burger"></i>
+  </nav>
+  
+</div>
+
+
+<!-- Burger nav end--------------------------->
     </nav>
     
   </header>
@@ -72,6 +96,6 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="./script.js"></script>
-  
+  <script src="../burgermenu.js"></script>
 </body>
 </html>

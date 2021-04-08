@@ -425,6 +425,18 @@ html {
     padding-bottom: 10vh;
   }
 
+  .component-title {
+    font-size: 2.6rem;
+  }
+
+  .component-title a {
+    font-size: 2.6rem;
+  }
+
+  #book1 {
+    padding-left: 7.5rem;
+  }
+
   .book {
     width: 120px;
     height: 180px;
@@ -454,6 +466,26 @@ html {
   .component {
     margin-top: 2rem;
     padding-bottom: 10vh;
+  }
+
+  .component-title {
+    font-size: 2.4rem;
+    width: 80%;
+    line-height: 3.5rem;
+  }
+
+  .component-title a {
+    font-size: 2.4rem;
+    width: 80%;
+    line-height: 3.5rem;
+  }
+
+  .component-title::after {
+    display: none;
+  }
+
+  .component-title a::after {
+    display: none;
   }
 
   #book1 {
@@ -511,7 +543,7 @@ html {
   }
 
   .component {
-    padding-bottom: 20vh;
+    padding-bottom: 30vh;
   }
 
   .align {
@@ -533,7 +565,7 @@ html {
 
   .book ul {
     margin-top: 8vh !important;
-    margin-left: 32vw !important;
+    margin-left: 27vw !important;
   }
 
   figcaption {

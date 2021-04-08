@@ -30,7 +30,7 @@
   text-align: center;
   font-family: "Kelly Slab", cursive;
   //text-transform: uppercase;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding-top: 5vh;
   letter-spacing: 0.2rem;
   position: relative;
@@ -39,7 +39,37 @@
   color: #ffab66c0;
 }
 
+.component-title a {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Kelly Slab", cursive;
+  //text-transform: uppercase;
+  text-transform: uppercase;
+  padding-top: 5vh;
+  letter-spacing: 0.2rem;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  color: #ffab66c0;
+}
+
+.component-title a:hover {
+  color: #ffc266;
+}
+
 .component-title::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  color: #ffc266;
+  margin: auto;
+}
+
+.component-title a::after {
   content: "";
   width: 100%;
   position: absolute;

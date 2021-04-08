@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Tar Sándor | Forgatókönyvek</title>
   </head>
 </html>
@@ -34,13 +35,36 @@
           <img class="main-logo" src="../../img/tarlogo.png" alt="logo">
         </a>
       </div>
-      <ul>
+      <ul id="main-nav">
         <li><a id="underline" href="../../eletut/index.html">Életút</a></li>
         <li><a class="current" href=".././muvek-main.html">Művek</a></li>
         <li><a id="underline" href="../../gallery/index.html">Fotók</a></li>
         <li><a id="underline" href="../../hanganyagok/index.html">Hanganyagok</a></li>
         <li><a id="underline" href="../../tarrol/tarrol.html">T.S.-ról</a></li>
       </ul>
+
+       <!-- Burger nav-------------------------------->
+
+          
+ <div class="burger-container">
+  <nav class="navbar">
+      <ul class="nav-links">
+          <li><a href="../../eletut/index.html"">Életút</a></li>
+          <li><a href="../../muvek/muvek-main.html">Művek</a></li>
+          <li><a href="../../gallery/index.html">Fotók</a></li>
+          <li><a href="../../hanganyagok/index.html">Hanganyagok</a></li>
+          <li><a href="../../tarrol/tarrol.html">T.S.-ról</a></li>
+          <li><a href="../../impresszum.html">Impresszum</a></li>
+
+        
+      </ul>
+      <i class="fas fa-bars fa-2x" id="burger"></i>
+  </nav>
+  
+</div>
+
+
+<!-- Burger nav end--------------------------->
     </nav>
     
   </header>
@@ -92,18 +116,20 @@
             </figure>
           </li>  
 
+
+          
           <!-- Forgatókönyv 2 -- Barta -->
-          <li id="book1">
+          <!--<li id="book1">
             <figure class=book>        
-              <!-- Front -->        
+                    
               <ul class=hardcover_front>
                 <li>
                   <img src="../../img/barta.jpg" alt="" width="100%" height="100%">
-                  <!--<span class="ribbon new">NEW</span>-->
+                  
                 </li>
                 <li></li>
               </ul>        
-              <!-- Pages -->        
+                   
               <ul class=page>
                 <li></li>
                 <li>
@@ -113,7 +139,7 @@
                 <li></li>
                 <li></li>
               </ul>        
-              <!-- Back -->        
+                    
               <ul class=hardcover_back>
                 <li></li>
                 <li></li>
@@ -128,19 +154,19 @@
                 <p>„Valami lehet a levegőben mostanában, vagy csak a hőség teszi, érzi ember, állat, hogy valami nincs rendben. Dorogi lova, a Palkó például úgy issza a sört újabban, hogy felemeli a farkát közben. Mérő Lajos pedig a műfogát vesztette el valahol, de a sört ugyanúgy issza, talán kicsit kevesebbet, vagy csak Esztike, a pultos nem húz neki annyi vonást. Lajost valaki fejbe vágta egy fülledt, zavart éjszakán… Akkor tűnt el az az adonyi alak is, aki hozott patkánnyal rágcsálót irtott, és kedvelte, ha pofozzák. Azóta valami vibrál a levegőben.”</p>
               </figcaption>
             </figure>
-          </li>  
+          </li> -->
 
           <!-- Forgatókönyv 3 -- Egyszer élünk -->
-          <li id="book1">
+          <!--<li id="book1">
             <figure class=book>       
-              <!-- Front -->        
+                  
               <ul class=hardcover_front>
                 <li>
                   <img src="../../img/egyszerelunk.jpg" alt="" width="100%" height="100%">
                 </li>
                 <li></li>
               </ul>        
-              <!-- Pages -->        
+                  
               <ul class=page>
                 <li></li>
                 <li>
@@ -150,7 +176,7 @@
                 <li></li>
                 <li></li>
               </ul>        
-              <!-- Back -->        
+                    
               <ul class=hardcover_back>
                 <li></li>
                 <li></li>
@@ -165,7 +191,7 @@
                 <p>"A rossz hangulatú ember azt magyarázza a lopva ásítozó, unott pszichiáternek, ha egyáltalán odakerül, hogy úgy érzi magát, mint a partra vetett hal. Ezt nem jegyzi fel a tudós ember, mert közhely, mélyebbre szeretne ásni, de nem is tudja mi célból, úgyis tudja, mit talál majd ott, a mélyben. Semmit. Űrt. A keserű arcú ember azt magyarázza a mellette könyöklő pofának a kocsma pultjánál, hogy neki a hite veszett el. Hol hagyta, kérdezi amaz, mert csak azt érti, hogy valami elveszett. "</p>
               </figcaption>
             </figure>
-          </li>
+          </li>-->
          
         </ul>  
       </div>
@@ -183,6 +209,6 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./typewriter.js"></script>
+  <script src="../../burgermenu.js"></script>
 </body>
 </html>

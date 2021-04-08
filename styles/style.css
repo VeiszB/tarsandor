@@ -1444,7 +1444,7 @@ footer {
   font-size: 3.4rem;
   text-align: center;
   font-family: "Kelly Slab", cursive;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding-top: 5vh;
   letter-spacing: 0.2rem;
   position: relative;
@@ -1455,7 +1455,38 @@ footer {
   color: #ffab66c0;
 }
 
+.component-title a {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  padding-top: 5vh;
+  letter-spacing: 0.2rem;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  color: #ffab66c0;
+}
+
+.component-title a:hover {
+  color: #ffc266;
+}
+
 .component-title::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0.1px;
+  border-width: 0 0 2px;
+  border-style: solid;
+  color: #ffc266;
+  margin: auto;
+}
+
+.component-title a::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -3712,6 +3743,15 @@ header .video-container::after {
     height: auto;
     padding-bottom: 10vh;
   }
+  .component-title {
+    font-size: 2.6rem;
+  }
+  .component-title a {
+    font-size: 2.6rem;
+  }
+  #book1 {
+    padding-left: 7.5rem;
+  }
   .book {
     width: 120px;
     height: 180px;
@@ -3737,6 +3777,22 @@ header .video-container::after {
   .component {
     margin-top: 2rem;
     padding-bottom: 10vh;
+  }
+  .component-title {
+    font-size: 2.4rem;
+    width: 80%;
+    line-height: 3.5rem;
+  }
+  .component-title a {
+    font-size: 2.4rem;
+    width: 80%;
+    line-height: 3.5rem;
+  }
+  .component-title::after {
+    display: none;
+  }
+  .component-title a::after {
+    display: none;
   }
   #book1 {
     padding-left: 6.5rem;
@@ -3785,7 +3841,7 @@ header .video-container::after {
     overflow: scroll;
   }
   .component {
-    padding-bottom: 20vh;
+    padding-bottom: 30vh;
   }
   .align {
     padding-top: 0;
@@ -3802,7 +3858,7 @@ header .video-container::after {
   }
   .book ul {
     margin-top: 8vh !important;
-    margin-left: 32vw !important;
+    margin-left: 27vw !important;
   }
   figcaption {
     left: 0;
