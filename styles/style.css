@@ -2199,7 +2199,7 @@ figcaption p {
   display: block;
   position: relative;
   background: url(../img/tarmuvekbg1.png);
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   padding-top: 10vh;
   border-radius: 25px;
@@ -3393,6 +3393,114 @@ header .video-container::after {
     font-size: 0.85rem;
     width: 300px;
   }
+}
+
+.component-subtitle {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  color: #ffab66c0;
+}
+
+.tajekoztatokonyv {
+  padding-top: 5rem;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.tajekoztato-borito img {
+  height: 30vw;
+  width: auto;
+  border-radius: 25px;
+}
+
+.tajekoztato-text {
+  width: 50vw;
+}
+
+.hangjatek-meta {
+  padding-top: 15vh;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hangjatek-borito img {
+  height: 23vw;
+  width: auto;
+  border-radius: 25px;
+}
+
+.hangjatek-text {
+  width: 50vw;
+}
+
+.tajekoztato-lejatszo {
+  padding-top: 15vh;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bakelit-tajekoztato {
+  background-color: #373737;
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
 }
 
 /* MEDIA QUERIES */

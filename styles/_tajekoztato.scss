@@ -1,0 +1,76 @@
+.component-subtitle {
+  font-size: 3.4rem;
+  text-align: center;
+  font-family: "Kelly Slab", cursive;
+  //text-transform: uppercase;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  color: #ffab66c0;
+}
+
+.tajekoztatokonyv {
+  padding-top: 5rem;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tajekoztato-borito img {
+  height: 30vw;
+  width: auto;
+  border-radius: 25px;
+}
+
+.tajekoztato-text {
+  width: 50vw;
+}
+
+.hangjatek-meta {
+  padding-top: 15vh;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.hangjatek-borito img {
+  height: 23vw;
+  width: auto;
+  border-radius: 25px;
+}
+
+.hangjatek-text {
+  width: 50vw;
+}
+
+.tajekoztato-lejatszo {
+  padding-top: 15vh;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.bakelit-tajekoztato {
+  background-color: #373737;
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+}
