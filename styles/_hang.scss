@@ -38,8 +38,8 @@ main {
 
 .btn-action {
   cursor: pointer;
-  padding-top: 10px;
-  width: 30px;
+  padding-top: 0.625rem;
+  width: 1.875rem;
 }
 
 .btn-ctn,
@@ -49,8 +49,8 @@ main {
   justify-content: center;
 }
 .infos-ctn {
-  padding-top: 20px;
-  margin: 10px;
+  padding-top: 1.25rem;
+  margin: 0.625rem;
   display: flex;
   justify-content: space-around;
   font-family: "Play", sans-serif;
@@ -58,18 +58,18 @@ main {
 }
 
 .btn-ctn > div {
-  padding: 5px;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  padding: 0.313rem;
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem;
 }
 
 .infos-ctn > div {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #ffc266;
 }
 
 .first-btn {
-  margin-left: 3px;
+  margin-left: 3rem;
 }
 
 .duration {
@@ -78,7 +78,7 @@ main {
 }
 
 .title {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   text-align: center;
   font-size: 1.6rem;
 }
@@ -90,7 +90,7 @@ main {
 .player-ctn {
   border-radius: 15px;
   width: 70%;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #373737;
   margin: auto;
   margin-top: 2rem;
@@ -99,8 +99,8 @@ main {
 .playlist-track-ctn {
   display: flex;
   background-color: #464646;
-  margin-top: 3px;
-  border-radius: 5px;
+  margin-top: 0.188rem;
+  border-radius: 0.313rem;
   cursor: pointer;
   font-family: "Play", sans-serif;
   text-transform: none;
@@ -111,21 +111,21 @@ main {
 }*/
 
 .playlist-track-ctn > div {
-  margin: 10px;
+  margin: 0.625rem;
 }
 .playlist-info-track {
   width: 80%;
 }
 .playlist-info-track,
 .playlist-duration {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 0.438rem;
+  padding-bottom: 0.438rem;
   color: #e9cc95;
   font-size: 1.4rem;
   pointer-events: none;
 }
 .playlist-ctn {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 .active-track {
   background: #4d4d4d;
@@ -141,10 +141,10 @@ main {
 
 .playlist-btn-play {
   pointer-events: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
 }
 .fas {
   color: #ffc266;
-  font-size: 20px;
+  font-size: 1.25rem;
 }

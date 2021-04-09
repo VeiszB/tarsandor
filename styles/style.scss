@@ -724,27 +724,27 @@ html {
 
 @media screen and (max-width: 1750px) {
   .turntable-main {
-    width: 260px;
-    height: 230px;
+    width: 16.25rem;
+    height: 14.375rem;
   }
 
   .turntable {
-    width: 260px;
-    height: 230px;
+    width: 16.25rem;
+    height: 14.375rem;
   }
 
   .record {
-    width: 130px;
-    height: 130px;
-    left: 55px;
-    top: 55px;
+    width: 8.125rem;
+    height: 8.125rem;
+    left: 3.438rem;
+    top: 3.438rem;
   }
 
   .overlay-bakelit {
-    width: 175px;
-    height: 175px;
-    left: 32px;
-    top: 32px;
+    width: 10.938rem;
+    height: 10.938rem;
+    left: 2rem;
+    top: 2rem;
   }
 }
 
@@ -754,20 +754,20 @@ html {
   }
 
   .turntable-main {
-    width: 210px;
-    height: 180px;
+    width: 13.125rem;
+    height: 11.25rem;
   }
 
   .turntable {
-    width: 210px;
-    height: 180px;
+    width: 13.125rem;
+    height: 11.25rem;
   }
 
   .record {
-    width: 130px;
-    height: 130px;
-    left: 25px;
-    top: 25px;
+    width: 8.125rem;
+    height: 8.125rem;
+    left: 1.563rem;
+    top: 1.563rem;
   }
 
   .record::before {
@@ -776,33 +776,33 @@ html {
   }
 
   .overlay-bakelit {
-    width: 130px;
-    height: 130px;
-    left: 25px;
-    top: 25px;
+    width: 8.125rem;
+    height: 8.125rem;
+    left: 1.563rem;
+    top: 1.563rem;
   }
 
   .arm-holder {
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
   }
 
   .arm-holder::after {
-    width: 25px;
-    height: 25px;
+    width: 1.563rem;
+    height: 1.563rem;
     left: 47%;
   }
 
   .arm {
-    width: 30px;
-    height: 80px;
+    width: 1.875rem;
+    height: 5rem;
   }
 
   .arm::before {
-    width: 15px;
-    height: 25px;
-    top: 55px;
-    left: -12px;
+    width: 0.938rem;
+    height: 1.563rem;
+    top: 3.438rem;
+    left: -0.75rem;
   }
 
   .bekelit-title-main {
@@ -827,7 +827,7 @@ html {
 @media screen and (max-width: 1250px) {
   .main-bakelit {
     width: 40vw;
-    height: 30vh;
+    //height: 30vh;
   }
 
   .bakelit {
@@ -839,30 +839,30 @@ html {
   }
 
   .turntable-main {
-    width: 160px;
-    height: 130px;
+    width: 10rem;
+    height: 8.125rem;
   }
 
   .turntable {
-    width: 160px;
-    height: 130px;
+    width: 10rem;
+    height: 8.125rem;
   }
 
   .record {
-    width: 80px;
-    height: 80px;
-    left: 25px;
-    top: 25px;
+    width: 5rem;
+    height: 5rem;
+    left: 1.563rem;
+    top: 1.563rem;
   }
 
   .record::before {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
   }
 
   .inner {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .inner::after {
@@ -870,35 +870,35 @@ html {
   }
 
   .overlay-bakelit {
-    width: 100px;
-    height: 100px;
-    left: 16px;
-    top: 16px;
+    width: 6.25rem;
+    height: 6.25rem;
+    left: 1rem;
+    top: 1rem;
   }
 
   .arm-holder {
-    width: 25px;
-    height: 25px;
-    right: 15px;
-    top: 25px;
+    width: 1.563rem;
+    height: 1.563rem;
+    right: 0.938rem;
+    top: 1.563rem;
   }
 
   .arm-holder::after {
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
     left: 47%;
   }
 
   .arm {
-    width: 10px;
-    height: 50px;
+    width: 0.625rem;
+    height: 3.125rem;
   }
 
   .arm::before {
-    width: 15px;
-    height: 25px;
-    top: 35px;
-    left: -15px;
+    width: 0.938rem;
+    height: 1.563rem;
+    top: 2.188rem;
+    left: -0.938rem;
   }
 }
 
