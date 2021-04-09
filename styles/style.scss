@@ -1034,10 +1034,187 @@ html {
 /* ---------------- HANGANYAGOK END ------------------------------------ */
 /* -----------------------------------------------------------------*/
 
+/* ---------------- IMPRESSZUM START ------------------------------------ */
+
+@media screen and (max-width: 1650px) {
+  .impresszum-head h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .impresszum-szerkeszto h2 {
+    font-size: 2.6rem;
+    margin: 1rem 4rem;
+  }
+
+  .impresszum-main {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .impresszum-head {
+    width: 85%;
+  }
+
+  .impresszum-head h1 {
+    font-size: 2.8rem;
+  }
+
+  .impresszum-main {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .impresszum-head {
+    width: 80%;
+  }
+
+  .impresszum-head h1 {
+    font-size: 2.4rem;
+  }
+
+  .impresszum-main {
+    width: 85%;
+  }
+  .impresszum-szerkeszto h2 {
+    font-size: 2rem;
+  }
+
+  .impresszum-text {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .impresszum-main {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15vh;
+  }
+
+  .impresszum-szerkeszto {
+    width: 85vw;
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+  }
+
+  .impresszum-dih {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .impresszum-text {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .impresszum-main {
+    width: 95%;
+  }
+
+  .impresszum-dih-img img {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .impresszum-head h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 2rem 2rem;
+  }
+
+  #impresszum-text-a {
+    font-size: 1.6rem;
+  }
+
+  .impresszum-szerkeszto h2 {
+    margin: 1rem 1rem;
+  }
+
+  .impresszum-text {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .impresszum-dih {
+    flex-wrap: wrap;
+  }
+
+  .impresszum-dih-img img {
+    width: 20vw;
+  }
+
+  .impresszum-dih-cim {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .impresszum-main {
+    padding: 0rem;
+  }
+
+  .impresszum-head {
+    width: 85%;
+  }
+  .impresszum-head h1 {
+    font-size: 2rem;
+  }
+
+  .impresszum-szerkeszto {
+    width: 95%;
+    margin-left: 8vw;
+  }
+
+  .impresszum-szerkeszto h2 {
+    margin: 0;
+  }
+
+  .impresszum-head h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 1rem;
+  }
+
+  .impresszum-dih {
+    width: 90%;
+    padding-bottom: 10vh;
+  }
+  .impresszum-dih-img img {
+    width: 30vw;
+  }
+
+  .impresszum-dih-cim {
+    width: 95%;
+  }
+
+  .impresszum-text {
+    margin-left: 0;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+
+  #impresszum-text-a {
+    font-size: 1.3rem;
+  }
+}
+
+/* ---------------- IMPRESSZUM END -------------------------------------------*/
+
 /* ---------------- TÁJÉKOZTATÓ ALOLDAL ------------------------------------ */
 
 @media screen and (max-width: 1650px) {
   .tajekoztato-lejatszo {
+    overflow: scroll;
     padding-bottom: 15vh;
   }
 }
