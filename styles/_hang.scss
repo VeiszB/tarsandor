@@ -57,6 +57,12 @@ main {
   text-transform: none;
 }
 
+.btn-ctn {
+  width: 60%;
+  justify-content: space-between;
+  margin: auto;
+}
+
 .btn-ctn > div {
   padding: 0.313rem;
   margin-top: 1.125rem;

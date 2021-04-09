@@ -993,6 +993,20 @@ html {
   .main-bakelit {
     height: auto;
   }
+
+  .bakelit {
+    width: 95%;
+  }
+
+  .player-ctn {
+    width: 98%;
+  }
+
+  .playlist-ctn {
+    width: 98%;
+    margin: auto;
+  }
+
   .bakelit-text {
     min-width: 70vw;
     text-align: center;
@@ -1004,6 +1018,16 @@ html {
 
   #myProgress {
     margin: 2rem 3rem;
+  }
+
+  .btn-ctn {
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .first-btn {
+    margin-left: 1rem;
   }
 }
 
