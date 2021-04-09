@@ -718,3 +718,219 @@ html {
 
 /* ---------------- FOTÓK MEDIA QUERY END ------------------------*/
 /* -----------------------------------------------------------------*/
+
+/* -----------------------------------------------------------------*/
+/* ---------------- HANGANYAGOK START ------------------------------------ */
+
+@media screen and (max-width: 1750px) {
+  .turntable-main {
+    width: 260px;
+    height: 230px;
+  }
+
+  .record {
+    width: 130px;
+    height: 130px;
+    left: 55px;
+    top: 55px;
+  }
+
+  .overlay-bakelit {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .hanganyagok-main {
+    padding-bottom: 10vh;
+  }
+
+  .turntable-main {
+    width: 210px;
+    height: 180px;
+  }
+
+  .record {
+    width: 130px;
+    height: 130px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .record::before {
+    width: 130px;
+    height: 130px;
+  }
+
+  .overlay-bakelit {
+    width: 130px;
+    height: 130px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .arm-holder {
+    width: 35px;
+    height: 35px;
+  }
+
+  .arm-holder::after {
+    width: 25px;
+    height: 25px;
+    left: 47%;
+  }
+
+  .arm {
+    width: 30px;
+    height: 80px;
+  }
+
+  .arm::before {
+    width: 15px;
+    height: 25px;
+    top: 55px;
+    left: -12px;
+  }
+
+  .bekelit-title-main {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .bekelit-text-main {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .main-bakelit {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .hanganyagok-main {
+    width: 95%;
+  }
+
+  .turntable-main {
+    width: 160px;
+    height: 130px;
+  }
+
+  .record {
+    width: 80px;
+    height: 80px;
+    left: 25px;
+    top: 25px;
+  }
+
+  .record::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .inner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .inner::after {
+    display: none;
+  }
+
+  .overlay-bakelit {
+    width: 100px;
+    height: 100px;
+    left: 16px;
+    top: 16px;
+  }
+
+  .arm-holder {
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    top: 25px;
+  }
+
+  .arm-holder::after {
+    width: 15px;
+    height: 15px;
+    left: 47%;
+  }
+
+  .arm {
+    width: 10px;
+    height: 50px;
+  }
+
+  .arm::before {
+    width: 15px;
+    height: 25px;
+    top: 35px;
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .bakelit-text {
+    padding: 2vh;
+  }
+
+  .bekelit-title-main {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    text-transform: none;
+  }
+
+  .bekelit-text-main {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-bakelit {
+    min-width: 75vw;
+  }
+
+  .bakelit-text {
+    min-width: 40vw;
+  }
+
+  .bekelit-title-main {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    text-transform: none;
+  }
+
+  .bekelit-text-main {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .main-bakelit {
+    height: auto;
+  }
+  .bakelit-text {
+    min-width: 70vw;
+    text-align: center;
+  }
+
+  .bekelit-title-main {
+    margin: auto;
+  }
+}
+
+/* ---------------- HANGANYAGOK END ------------------------------------ */
+/* -----------------------------------------------------------------*/
+
+/* ---------------- TÁJÉKOZTATÓ ALOLDAL ------------------------------------ */
+
+@media screen and (max-width: 1650px) {
+  .tajekoztato-lejatszo {
+    padding-bottom: 15vh;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
