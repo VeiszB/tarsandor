@@ -4114,6 +4114,10 @@ header .video-container::after {
     width: 260px;
     height: 230px;
   }
+  .turntable {
+    width: 260px;
+    height: 230px;
+  }
   .record {
     width: 130px;
     height: 130px;
@@ -4121,8 +4125,10 @@ header .video-container::after {
     top: 55px;
   }
   .overlay-bakelit {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
+    left: 32px;
+    top: 32px;
   }
 }
 
@@ -4131,6 +4137,10 @@ header .video-container::after {
     padding-bottom: 10vh;
   }
   .turntable-main {
+    width: 210px;
+    height: 180px;
+  }
+  .turntable {
     width: 210px;
     height: 180px;
   }
@@ -4173,7 +4183,14 @@ header .video-container::after {
     font-size: 2rem;
     padding-bottom: 1rem;
   }
+  .bekelit-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
   .bekelit-text-main {
+    font-size: 1.6rem;
+  }
+  .bekelit-sub-text {
     font-size: 1.6rem;
   }
 }
@@ -4183,10 +4200,17 @@ header .video-container::after {
     width: 40vw;
     height: 30vh;
   }
+  .bakelit {
+    border-radius: 25px;
+  }
   .hanganyagok-main {
     width: 95%;
   }
   .turntable-main {
+    width: 160px;
+    height: 130px;
+  }
+  .turntable {
     width: 160px;
     height: 130px;
   }
@@ -4240,13 +4264,27 @@ header .video-container::after {
   .bakelit-text {
     padding: 2vh;
   }
+  .bakelit-text-sec {
+    padding: 2vh;
+  }
   .bekelit-title-main {
     font-size: 1.8rem;
     padding-bottom: 1rem;
     text-transform: none;
   }
+  .bekelit-title {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    text-transform: none;
+    text-align: center;
+  }
   .bekelit-text-main {
     font-size: 1.4rem;
+  }
+  .bekelit-sub-text {
+    font-size: 1.4rem;
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -4254,16 +4292,48 @@ header .video-container::after {
   .main-bakelit {
     min-width: 75vw;
   }
+  .bakelit {
+    min-width: 75vw;
+  }
   .bakelit-text {
     min-width: 40vw;
+  }
+  .bakelit-text-sec {
+    min-width: 80vw !important;
+    margin: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
   }
   .bekelit-title-main {
     font-size: 2rem;
     padding-bottom: 1rem;
     text-transform: none;
   }
+  .bekelit-title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+  }
   .bekelit-text-main {
     font-size: 1.6rem;
+  }
+  .bekelit-sub-text {
+    font-size: 1.6rem;
+    min-width: 70vw;
+    padding-bottom: 5vh;
+  }
+  .player-ctn {
+    width: 85%;
+    border-radius: 25px;
+    padding-bottom: 15vh;
+  }
+  #myProgress {
+    margin: 2rem 5rem;
   }
 }
 
@@ -4277,6 +4347,9 @@ header .video-container::after {
   }
   .bekelit-title-main {
     margin: auto;
+  }
+  #myProgress {
+    margin: 2rem 3rem;
   }
 }
 
