@@ -2215,7 +2215,7 @@ figcaption p {
   display: block;
   position: relative;
   background: url(../img/tarmuvekbg1.png);
-  background-size: cover;
+  background-size: contain;
   background-position: top;
   padding-top: 10vh;
   border-radius: 25px;
