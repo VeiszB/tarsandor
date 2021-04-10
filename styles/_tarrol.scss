@@ -96,6 +96,14 @@
   margin-top: 2vh;
 }
 
+.links__icon4 {
+  width: calc(var(--base-grid) * 10);
+  height: calc(var(--base-grid) * 10);
+  transition: all 0.3s ease-in-out;
+  fill: var(--colour-black);
+  margin-top: 2vh;
+}
+
 .links__text {
   position: absolute;
   width: 100%;
@@ -137,6 +145,11 @@
 }
 
 .links__link:hover .links__icon3 {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(calc(var(--base-grid) * -1));
+}
+
+.links__link:hover .links__icon4 {
   transition: all 0.3s ease-in-out;
   transform: translateY(calc(var(--base-grid) * -1));
 }

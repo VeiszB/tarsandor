@@ -2898,6 +2898,15 @@ figcaption p {
   margin-top: 2vh;
 }
 
+.links__icon4 {
+  width: calc(var(--base-grid) * 10);
+  height: calc(var(--base-grid) * 10);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: var(--colour-black);
+  margin-top: 2vh;
+}
+
 .links__text {
   position: absolute;
   width: 100%;
@@ -2946,6 +2955,13 @@ figcaption p {
 }
 
 .links__link:hover .links__icon3 {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateY(calc(var(--base-grid) * -1));
+          transform: translateY(calc(var(--base-grid) * -1));
+}
+
+.links__link:hover .links__icon4 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   -webkit-transform: translateY(calc(var(--base-grid) * -1));
@@ -3763,22 +3779,29 @@ header .video-container::after {
     width: 90%;
     margin: auto;
     padding-top: 5rem;
+    height: 55vh;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .typewriter a {
+    margin: 4vh 0;
   }
   .typewriter h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin: 2vh 0vh 2vh 2vh;
   }
   .typewriter h2 {
-    font-size: 1.6rem;
-    margin: 2vh 0vh 2vh 5vh;
+    font-size: 1.9rem;
+    margin: 2vh 0vh 2vh 3vh;
   }
   .typewriter a {
     font-size: 1.6rem;
     line-height: 3rem;
   }
   .typewriter h3 {
-    font-size: 1.4rem;
-    margin: 2vh 0vh 2vh 8vh;
+    font-size: 1.6rem;
+    margin: 2vh 0vh 2vh 6vh;
   }
   .footer-make p {
     font-size: 1rem;
@@ -4745,7 +4768,7 @@ header .video-container::after {
   .interjuk_icon2 {
     display: none;
   }
-  .links__icon3 {
+  .links__icon4 {
     display: none;
   }
   .interjuk_icon {

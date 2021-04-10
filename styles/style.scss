@@ -273,16 +273,22 @@ html {
     width: 90%;
     margin: auto;
     padding-top: 5rem;
+    height: 55vh;
+    justify-content: unset;
+  }
+
+  .typewriter a {
+    margin: 4vh 0;
   }
 
   .typewriter h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin: 2vh 0vh 2vh 2vh;
   }
 
   .typewriter h2 {
-    font-size: 1.6rem;
-    margin: 2vh 0vh 2vh 5vh;
+    font-size: 1.9rem;
+    margin: 2vh 0vh 2vh 3vh;
   }
 
   .typewriter a {
@@ -291,8 +297,8 @@ html {
   }
 
   .typewriter h3 {
-    font-size: 1.4rem;
-    margin: 2vh 0vh 2vh 8vh;
+    font-size: 1.6rem;
+    margin: 2vh 0vh 2vh 6vh;
   }
 
   .footer-make p {
@@ -1393,7 +1399,7 @@ html {
     display: none;
   }
 
-  .links__icon3 {
+  .links__icon4 {
     display: none;
   }
 
