@@ -3788,25 +3788,26 @@ header .video-container::after {
     margin: 4vh 0;
   }
   .typewriter h1 {
-    font-size: 2.6rem;
-    margin: 2vh 0vh 2vh 2vh;
-    text-transform: unset !important;
+    font-size: 2.4rem;
+    margin: 2vh 0vh 2vh 0vh;
     font-weight: 500;
+    text-align: center;
   }
   .typewriter h2 {
-    font-size: 2.2rem;
-    margin: 2vh 0vh 2vh 3vh;
-    text-transform: unset !important;
+    font-size: 2rem;
+    margin: 2vh 0vh 2vh 0vh;
+    font-weight: 500;
+    text-align: center;
   }
   .typewriter a {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     line-height: 3rem;
-    text-transform: unset !important;
+    font-weight: 500;
   }
   .typewriter h3 {
-    font-size: 1.9rem;
-    margin: 2vh 0vh 2vh 6vh;
-    text-transform: unset !important;
+    font-size: 1.6rem;
+    margin: 2vh 0vh 2vh 3vh;
+    font-weight: 500;
   }
   .footer-make p {
     font-size: 1rem;
