@@ -284,21 +284,25 @@ html {
   .typewriter h1 {
     font-size: 2.3rem;
     margin: 2vh 0vh 2vh 2vh;
+    text-transform: unset !important;
   }
 
   .typewriter h2 {
     font-size: 1.9rem;
     margin: 2vh 0vh 2vh 3vh;
+    text-transform: unset !important;
   }
 
   .typewriter a {
     font-size: 1.6rem;
     line-height: 3rem;
+    text-transform: unset !important;
   }
 
   .typewriter h3 {
     font-size: 1.6rem;
     margin: 2vh 0vh 2vh 6vh;
+    text-transform: unset !important;
   }
 
   .footer-make p {
