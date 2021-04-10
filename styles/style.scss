@@ -341,11 +341,26 @@ html {
   .links__list2 {
     width: 90%;
   }
+
+  .links__list {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   :root {
     --base-grid: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .links__item {
+    margin: 2rem;
+  }
+  .links__list {
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
   }
 }
 
@@ -1249,6 +1264,10 @@ html {
     min-width: 75vw;
     display: flex;
   }
+
+  .tajekoztato-bekelit-title {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1268,6 +1287,10 @@ html {
   .tajekoztato-hangjatek p {
     font-size: 1.8rem;
     padding: 1rem !important;
+  }
+
+  .tajekoztato-bekelit-title {
+    text-align: center !important;
   }
 }
 

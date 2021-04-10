@@ -3795,11 +3795,28 @@ header .video-container::after {
   .links__list2 {
     width: 90%;
   }
+  .links__list {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
   :root {
     --base-grid: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .links__item {
+    margin: 2rem;
+  }
+  .links__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
   }
 }
 
@@ -4587,6 +4604,9 @@ header .video-container::after {
     display: -ms-flexbox;
     display: flex;
   }
+  .tajekoztato-bekelit-title {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -4603,6 +4623,9 @@ header .video-container::after {
   .tajekoztato-hangjatek p {
     font-size: 1.8rem;
     padding: 1rem !important;
+  }
+  .tajekoztato-bekelit-title {
+    text-align: center !important;
   }
 }
 
