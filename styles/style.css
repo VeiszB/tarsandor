@@ -3068,6 +3068,20 @@ figcaption p {
   padding-top: 2rem;
 }
 
+.esvita-main-icon {
+  width: 6vw;
+  height: auto;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.tanulmanyok-main-icon {
+  width: 6vw;
+  height: auto;
+  margin: auto;
+  padding-top: 2rem;
+}
+
 .interjuk-left-title {
   color: #2d2d2d;
   letter-spacing: 0.2rem;
@@ -3078,6 +3092,15 @@ figcaption p {
 }
 
 .tanulmanyok-left-title {
+  color: #2d2d2d;
+  letter-spacing: 0.2rem;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  margin: 0 2rem;
+  max-width: 14vw;
+}
+
+.esvita-left-title {
   color: #2d2d2d;
   letter-spacing: 0.2rem;
   font-family: "Play", sans-serif;
@@ -4635,6 +4658,12 @@ header .video-container::after {
   .interju-main {
     padding-bottom: 10vh;
   }
+  .esvita-left-title {
+    font-size: 1.8rem !important;
+    padding: 1rem !important;
+    margin: 1rem !important;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -4648,8 +4677,8 @@ header .video-container::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -4665,11 +4694,50 @@ header .video-container::after {
     margin: 2rem;
     width: 10vw;
   }
+  .kritika-main-icon {
+    margin: 2rem;
+    width: 12vw;
+  }
+  .esvita-main-icon {
+    margin: 2rem;
+    width: 12vw;
+  }
+  .tanulmanyok-main-icon {
+    margin: 2rem;
+    width: 9vw;
+  }
   .interjuk-left-title {
     max-width: 80% !important;
   }
+  .tanulmanyok-left-title {
+    max-width: 70% !important;
+  }
+  .esvita-left-title {
+    max-width: 70% !important;
+  }
   .interju-main {
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .tanulmanyok-left-title {
+    max-width: 80% !important;
+    margin: 0;
+    padding: 1rem;
+  }
+  .esvita-left-title {
+    max-width: 80% !important;
+    margin: 0;
+    padding: 1rem;
+  }
+  .tanulmanyok-main-icon {
+    margin: 1rem;
+    width: 12vw;
+  }
+  .esvita-main-icon {
+    margin: 1rem;
+    width: 18vw;
   }
 }
 
@@ -4677,12 +4745,41 @@ header .video-container::after {
   .interjuk_icon2 {
     display: none;
   }
+  .links__icon3 {
+    display: none;
+  }
   .interjuk_icon {
     margin: 0;
+  }
+  .kritika-main-icon {
+    margin: 0;
+    width: 18vw;
+  }
+  .esvita-main-icon {
+    margin: 0;
+    width: 18vw;
+  }
+  .tanulmanyok-main-icon {
+    margin: 1rem;
+    width: 15vw;
+  }
+  .tanulmanyok-left-title {
+    max-width: 75% !important;
+    margin: 0;
+    padding: 1rem;
+  }
+  .esvita-left-title {
+    max-width: 75% !important;
+    margin: 0;
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 615px) {
+  .interjuk-left-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .interjuk-left-main {
     width: 85vw;
     padding: 1rem;
@@ -4692,11 +4789,54 @@ header .video-container::after {
     padding: 1rem;
     margin: 0;
   }
+  .kritika-main-icon {
+    width: 16vw;
+    padding: 1rem;
+    margin: 0;
+  }
+  .esvita-main-icon {
+    width: 16vw;
+    padding: 1rem;
+    margin: 0;
+  }
   .interjuk-left-title {
     padding: 0 !important;
   }
   .interju-list-text {
     padding-left: 1rem;
+  }
+  .tanulmanyok-main-icon {
+    margin: 1rem;
+    width: 10vw;
+  }
+  .tanulmanyok-left-title {
+    max-width: 75% !important;
+    margin: 0;
+    padding: 1rem;
+  }
+  .esvita-left-title {
+    max-width: 75% !important;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tanulmanyok-main-icon {
+    margin: 1rem;
+    width: 13vw;
+  }
+  .tanulmanyok-left-title {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .esvita-left-title {
+    max-width: 100% !important;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
   }
 }
 

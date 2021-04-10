@@ -41,6 +41,28 @@
   padding-top: 2rem;
 }
 
+.esvita-main-icon {
+  //width: calc(var(--base-grid) * 15);
+  //height: calc(var(--base-grid) * 9);
+  //transition: all 0.3s ease-in-out;
+  //fill: var(--colour-black);
+  width: 6vw;
+  height: auto;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.tanulmanyok-main-icon {
+  //width: calc(var(--base-grid) * 15);
+  //height: calc(var(--base-grid) * 9);
+  //transition: all 0.3s ease-in-out;
+  //fill: var(--colour-black);
+  width: 6vw;
+  height: auto;
+  margin: auto;
+  padding-top: 2rem;
+}
+
 .interjuk-left-title {
   color: #2d2d2d;
   letter-spacing: 0.2rem;
@@ -51,6 +73,15 @@
 }
 
 .tanulmanyok-left-title {
+  color: #2d2d2d;
+  letter-spacing: 0.2rem;
+  font-family: "Play", sans-serif;
+  text-transform: none;
+  margin: 0 2rem;
+  max-width: 14vw;
+}
+
+.esvita-left-title {
   color: #2d2d2d;
   letter-spacing: 0.2rem;
   font-family: "Play", sans-serif;
