@@ -31,77 +31,77 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"01: Felvezető – Vajland Judit, Oláh Andrea, Fórizs Ildikó, Kádár Gyula, Seres Lajos, Tornyi Ferenc riportjai",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmfelvezeto16.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmfelvezeto16.mp3",
       duration:"0:55"
     },
     {
       name:"02: Molnár György, a rendező: a 90-es éveket legjobban megíró alkotó, aktuális, ugyanakkor archetipikus",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmmolnargy17.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmmolnargy17.mp3",
       duration:"4:10"
     },
     {
       name:"03: Felvételvezető",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmfelvetelvezeto18.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmfelvetelvezeto18.mp3",
       duration:"2:36"
     },
     {
       name:"04: Két gyerekszereplő: Vas Teréz és Hajdu Szabolcs",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmgyerekszereplok19.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmgyerekszereplok19.mp3",
       duration:"1:51"
     },
     {
       name:"05: Kardos Sándor, operatőr",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmkardoss20.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmkardoss20.mp3",
       duration:"4:38"
     },
     {
       name:"06: Kardos Sándor Tar Sándorról: kegyetlen humora van",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmkardosshumor20a.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmkardosshumor20a.mp3",
       duration:"1:08"
     },
     {
       name:"07: A rápoltiak	",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmrapoltiak21.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmrapoltiak21.mp3",
       duration:"6:07"
     },
     {
       name:"08: A svájci szobrász, aki Rápolton él",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmsvájciszobrasz22.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmsvájciszobrasz22.mp3",
       duration:"2:40"
     },
     {
       name:"09: A főszereplő: Szarvas József",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmszarvasjfoszereplo23.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmszarvasjfoszereplo23.mp3",
       duration:"5:50"
     },
     {
       name:"10: Szarvas József a főhősről beszél",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmszarvasjfohos23a.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmszarvasjfohos23a.mp3",
       duration:"2:51"
     },
     {
       name:"11: Szarvas József a hősök modelljeiről",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmszarvasjmodell24.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmszarvasjmodell24.mp3",
       duration:"1:36"
     },
     {
       name:"12: Tar Sándor",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmtarsandor25.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmtarsandor25.mp3",
       duration:"9:06"
     },
     {
       name:"13: Tar Sándor a kívül rekedtekről",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmtarsandorkivulrekedtek25a.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmtarsandorkivulrekedtek25a.mp3",
       duration:"1:09"
     },
     {
       name:"14: Tar Sándor mesél arról, honnan a Lassú teher cím",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmtarsandorlassucim25b.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmtarsandorlassucim25b.mp3",
       duration:"1:24"
     },
     {
       name:"15: Tar és a többi író (Darvas László, Nádas Péter, Esterházy Péter, Zoltán Gábor, Halász Margit)",
-      file:"http://tarsandor.bochus.hu/hanganyag/filmtaresatobbiiro25c.mp3",
+      file:"http://tarsandor.hu/hanganyag/filmtaresatobbiiro25c.mp3",
       duration:"1:20"
     },
   ]

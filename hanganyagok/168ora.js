@@ -31,7 +31,7 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Rangos Katalin beszélgetése Berkovits Györggyel",
-      file:"http://tarsandor.bochus.hu/hanganyag/168ora08.mp3",
+      file:"http://tarsandor.hu/hanganyag/168ora08.mp3",
       duration:"16:16"
     }
     

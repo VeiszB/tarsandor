@@ -31,7 +31,7 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Tar Sándor: A lehetőség (részlet)",
-      file:"http://tarsandor.bochus.hu/hanganyag/alehetoseg.mp3",
+      file:"http://tarsandor.hu/hanganyag/alehetoseg.mp3",
       duration:"25:15"
     }
     

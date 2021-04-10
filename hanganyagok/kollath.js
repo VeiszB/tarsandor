@@ -31,27 +31,27 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"01: Az átlag élet alatti életek (Váci Mihály)",
-      file:"http://tarsandor.bochus.hu/hanganyag/kaatlagalatti11.mp3",
+      file:"http://tarsandor.hu/hanganyag/kaatlagalatti11.mp3",
       duration:"1:19"
     },
     {
       name:"02: Hogyan látja a gyárat, a felmondásokat",
-      file:"http://tarsandor.bochus.hu/hanganyag/kafelmondasok12.mp3",
+      file:"http://tarsandor.hu/hanganyag/kafelmondasok12.mp3",
       duration:"1:11"
     },
     {
       name:"03: Gyár – figurák – magukra ismernek",
-      file:"http://tarsandor.bochus.hu/hanganyag/kagyár13.mp3",
+      file:"http://tarsandor.hu/hanganyag/kagyár13.mp3",
       duration:"1:21"
     },
     {
       name:"04: Medicor és mióta ír",
-      file:"http://tarsandor.bochus.hu/hanganyag/kamedicor14.mp3",
+      file:"http://tarsandor.hu/hanganyag/kamedicor14.mp3",
       duration:"0:23"
     },
     {
       name:"05: Író és munkás egyszerre, közönsége",
-      file:"http://tarsandor.bochus.hu/hanganyag/kairoesmunkas15.mp3",
+      file:"http://tarsandor.hu/hanganyag/kairoesmunkas15.mp3",
       duration:"2:59"
     },
   ]

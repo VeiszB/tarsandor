@@ -2352,8 +2352,7 @@ figcaption p {
 
 .bakelit {
   background-color: #373737;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 25px;
   background-position: center;
   background-size: cover;
 }
@@ -4228,6 +4227,9 @@ header .video-container::after {
     left: 2rem;
     top: 2rem;
   }
+  .main-bakelit {
+    min-height: 30vh;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -4291,11 +4293,15 @@ header .video-container::after {
   .bekelit-sub-text {
     font-size: 1.6rem;
   }
+  .main-bakelit {
+    min-height: 30vh;
+  }
 }
 
 @media screen and (max-width: 1250px) {
   .main-bakelit {
     width: 40vw;
+    min-height: 30vh;
   }
   .bakelit {
     border-radius: 25px;
@@ -4388,6 +4394,7 @@ header .video-container::after {
 @media screen and (max-width: 1000px) {
   .main-bakelit {
     min-width: 75vw;
+    min-height: 20vh;
   }
   .bakelit {
     min-width: 75vw;

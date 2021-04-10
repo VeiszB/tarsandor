@@ -31,12 +31,12 @@ function createTrackItem(index,name,duration){
   var listAudio = [
     {
       name:"Tar Sándor és a munkásábrázolás – M. Pásztor József bevezetőjét Török Annamária olvasta fel",
-      file:"http://tarsandor.bochus.hu/hanganyag/arcelek09.mp3",
+      file:"http://tarsandor.hu/hanganyag/arcelek09.mp3",
       duration:"2:46"
     },
     {
       name:"Celofánvirágok – Rendezte: Éles Béla, Közreműködtek: Perkali István, Bence Ferenc, Helyei László, Balázs Gyula, Bodó Györgyi, Giller Ferenc, Szerkesztette: Simon László",
-      file:"http://tarsandor.bochus.hu/hanganyag/arcelek10.mp3",
+      file:"http://tarsandor.hu/hanganyag/arcelek10.mp3",
       duration:"22:24"
     },
     

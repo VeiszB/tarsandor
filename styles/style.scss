@@ -773,6 +773,10 @@ html {
     left: 2rem;
     top: 2rem;
   }
+
+  .main-bakelit {
+    min-height: 30vh;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -849,11 +853,16 @@ html {
   .bekelit-sub-text {
     font-size: 1.6rem;
   }
+
+  .main-bakelit {
+    min-height: 30vh;
+  }
 }
 
 @media screen and (max-width: 1250px) {
   .main-bakelit {
     width: 40vw;
+    min-height: 30vh;
     //height: 30vh;
   }
 
@@ -965,6 +974,7 @@ html {
 @media screen and (max-width: 1000px) {
   .main-bakelit {
     min-width: 75vw;
+    min-height: 20vh;
   }
 
   .bakelit {
