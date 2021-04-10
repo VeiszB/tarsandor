@@ -334,6 +334,7 @@ a {
   font-size: 5rem;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
+  font-weight: 500;
   color: #ffc266;
   letter-spacing: 0.7rem;
   z-index: 3;
@@ -863,6 +864,7 @@ footer {
   margin: 1rem 2rem;
   text-align: center;
   font-size: 4.5rem;
+  font-weight: 500;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   color: #ffc266;
@@ -916,6 +918,7 @@ footer {
 
 .overlay h2 {
   font-family: "Kelly Slab", cursive;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -946,6 +949,7 @@ footer {
 .hovereffect h2 {
   text-transform: uppercase;
   color: #ffc266;
+  font-weight: 500;
   text-align: center;
   font-size: 3rem;
   padding: 10px;
@@ -2054,6 +2058,7 @@ ul {
 .coverDesign h1 {
   color: #fff;
   font-size: 2.2em;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-align: center;
   margin: 54% 0 0 0;
@@ -2156,6 +2161,7 @@ figcaption h1 {
   margin: 0;
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
+  font-weight: 500;
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
@@ -2246,6 +2252,7 @@ figcaption p {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   font-size: 3.2rem;
+  font-weight: 500;
   text-align: center;
   letter-spacing: 0.1rem;
   position: relative;
@@ -2274,6 +2281,7 @@ figcaption p {
 
 .norajon h2 {
   font-family: "Kelly Slab", cursive;
+  font-weight: 500;
   text-transform: uppercase;
   font-size: 2.8rem;
   letter-spacing: 0.1rem;
@@ -2705,6 +2713,7 @@ figcaption p {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   font-size: 4rem;
+  font-weight: 500;
   letter-spacing: 0.3rem;
   margin-bottom: 3rem;
 }
