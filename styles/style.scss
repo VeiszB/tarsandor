@@ -1295,3 +1295,72 @@ html {
 }
 
 /* -------------------------------------------------------------------------- */
+
+/* ----------------- TARRÓL ALOLDALAK START ---------------------------------- */
+
+@media screen and (max-width: 1272px) {
+  .interju-main {
+    padding-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .interjuk-left-main {
+    width: 70vw;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 25px;
+  }
+
+  .interjuk-left-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interjuk_icon {
+    margin: 2rem;
+    width: 10vw;
+  }
+  .interjuk-left-title {
+    max-width: 80% !important;
+  }
+
+  .interju-main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .interjuk_icon2 {
+    display: none;
+  }
+
+  .interjuk_icon {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .interjuk-left-main {
+    width: 85vw;
+    padding: 1rem;
+  }
+  .interjuk_icon {
+    width: 20vw;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .interjuk-left-title {
+    padding: 0 !important;
+  }
+  .interju-list-text {
+    padding-left: 1rem;
+  }
+}
+
+/* ----------------- TARRÓL ALOLDALAK END ---------------------------------- */
+/* -------------------------------------------------------------------------- */
