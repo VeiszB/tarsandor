@@ -4555,8 +4555,54 @@ header .video-container::after {
 /* ---------------- TÁJÉKOZTATÓ ALOLDAL ------------------------------------ */
 @media screen and (max-width: 1650px) {
   .tajekoztato-lejatszo {
-    overflow: scroll;
     padding-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .tajekoztatokonyv {
+    width: 100%;
+  }
+  .tajekoztato-text {
+    width: 80vw;
+  }
+  .tajekoztato-borito {
+    margin: auto;
+  }
+  .tajekoztato-borito img {
+    height: 50vh;
+  }
+  .hangjatek-borito {
+    margin: auto;
+  }
+  .hangjatek-borito img {
+    height: 40vh;
+  }
+  .hangjatek-text {
+    width: 100%;
+  }
+  .bakelit-tajekoztato {
+    min-width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tajekoztato-borito img {
+    height: 40vh;
+  }
+  .hangjatek-borito img {
+    height: 30vh;
+  }
+  .tajekoztatokonyv p {
+    font-size: 1.8rem;
+    padding: 1rem !important;
+  }
+  .tajekoztato-hangjatek p {
+    font-size: 1.8rem;
+    padding: 1rem !important;
   }
 }
 
