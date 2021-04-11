@@ -3918,6 +3918,9 @@ header .video-container::after {
   .links__link::after {
     opacity: 1;
   }
+  .links__list2 {
+    padding-bottom: 10vh;
+  }
 }
 
 /* ---------------- MŰVEK MEDIA QUERY END ------------------------*/
