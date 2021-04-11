@@ -3918,6 +3918,9 @@ header .video-container::after {
   .links__link::after {
     opacity: 1;
   }
+  .links__list {
+    padding-bottom: 10vh;
+  }
   .links__list2 {
     padding-bottom: 10vh;
   }
@@ -4890,6 +4893,18 @@ header .video-container::after {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+  }
+  .interju-list-text {
+    padding-left: 0;
+  }
+  .interju-main {
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 15vh;
+  }
+  .interju-list-cit {
+    padding: 2vh 0vh;
   }
 }
 
