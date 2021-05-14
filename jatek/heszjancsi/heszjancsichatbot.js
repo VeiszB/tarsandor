@@ -70,7 +70,7 @@ $(document).ready(() => {
 		let reply = [`Sajnálom, nem értem.`, `Próbáld újra!`];
 
 		// Generate some different replies
-		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá/.test(message)) reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan
+		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan
 		baj van, és akkor menni kell. De azért, ha valami van, mondjad. Itt mindig üzenhetsz nekem.`, `Szóval ahhoz, hogy ki tudd nyomozni, hova lett a misebor, menj a Görbe utcába, keresd P - - r - - át. Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked.`, `A házszámot nem nagyon tudják errefelé, ne is kérdezd.
 		Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az
 		orvosnak, hogy drága doktor úr, hazatalálok én magamtól is,
