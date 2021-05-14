@@ -18,7 +18,7 @@
 // There is also the ZIM Scrambler() for a quick puzzle along the same lines 
 // https://zimjs.com/cat/scrambler.html - less jig and more saw.
 
-const frame = new Frame("fit", 1084, 818, light, darker, "menetrend.jpg", "./img/");
+const frame = new Frame("fit", 1184, 918, light, darker, "menetrend.jpg", "./img/");
 frame.on("ready", () => {// ES6 Arrow Function - similar to function(){}
   zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
 
@@ -287,7 +287,7 @@ frame.on("ready", () => {// ES6 Arrow Function - similar to function(){}
           // normally just zgo("index.html") to reload 
           // but it is different in CodePen and they have disabled document.location.reload()
           // so not sure what to do... here is a the puzzle on ZIM
-          .tap(() => {zgo("https://zimjs.com/puzzle", "_blank");});
+          .tap(() => {zgo("http://www.tarsandor.hu/", "_blank");});
         });
       } else stats.text = `Helyére került ${placed} elem${placed == 1 ? "" : ""} a ${num}ből`;
     } else stage.update();
