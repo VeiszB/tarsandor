@@ -18,7 +18,7 @@
 // There is also the ZIM Scrambler() for a quick puzzle along the same lines 
 // https://zimjs.com/cat/scrambler.html - less jig and more saw.
 
-const frame = new Frame("fit", 1084, 818, light, darker, "menetrend.jpg", "img/");
+const frame = new Frame("fit", 1084, 818, light, darker, "menetrend.jpg", "./img/");
 frame.on("ready", () => {// ES6 Arrow Function - similar to function(){}
   zog("ready from ZIM Frame"); // logs in console (F12 - choose console)
 
