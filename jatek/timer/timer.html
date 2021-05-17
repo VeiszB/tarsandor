@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./timer.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">
+            <div class="timer__footer">
+                <p>Indíts el a számlálót, hogy elinduljon a játék!<br>Vigyázz, minden másodperccel egy korty bort veszítesz!<br>(Ne zárd be ezt az oldalt.)</p>
+              </div>
+          <div class="timer__header">
+
+            
+            <div class="timer__form">
+              <span class="timer__input" role="textbox" contenteditable id="input-minutes">60 </span>
+              <span class="timer__caret">üveg</span>
+              
+              <span class="timer__input" role="textbox" contenteditable id="input-seconds">00</span>
+              <span class="timer__caret">korty bor maradt</span>
+            </div>
+            <div class="timer__buttons">
+
+                <a href="http://www.tarsandor.hu/" target="_blank">
+
+                    <button class="btn btn--svg" type="button" id="btn-start">Játék indítása
+                      <svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.861 163.861">
+                        <path d="M34.857 3.613C20.084-4.861 8.107 2.081 8.107 19.106v125.637c0 17.042 11.977 23.975 26.75 15.509L144.67 97.275c14.778-8.477 14.778-22.211 0-30.686L34.857 3.613z" />
+                      </svg>
+                    </button>
+
+                </a>
+            
+                <button class="btn btn--svg hidden" type="button" id="btn-pause">
+                <svg class="btn__svg btn-play hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.861 163.861">
+                  <path d="M34.857 3.613C20.084-4.861 8.107 2.081 8.107 19.106v125.637c0 17.042 11.977 23.975 26.75 15.509L144.67 97.275c14.778-8.477 14.778-22.211 0-30.686L34.857 3.613z" />
+                </svg>
+                <svg class="btn__svg btn-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M181.333 0H74.667c-17.643 0-32 14.357-32 32v448c0 17.643 14.357 32 32 32h106.667c17.643 0 32-14.357 32-32V32c-.001-17.643-14.358-32-32.001-32zM437.333 0H330.667c-17.643 0-32 14.357-32 32v448c0 17.643 14.357 32 32 32h106.667c17.643 0 32-14.357 32-32V32c-.001-17.643-14.358-32-32.001-32z" />
+                </svg>
+              </button>
+              <button class="btn btn--svg btn--restart hidden" type="button" id="btn-restart">
+                <!--<svg class="btn__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.155 14.155">
+                  <path d="M12.083 1.887A7.054 7.054 0 009.356.19v2.135c.48.239.935.55 1.334.95a5.118 5.118 0 010 7.229 5.123 5.123 0 01-7.229 0 5.121 5.121 0 010-7.229c.005-.006.021-.016.028-.025h.002l1.181 1.179L4.665.685.923.68l1.176 1.176a.118.118 0 01-.027.031 7.078 7.078 0 1010.011 0z" />
+                </svg>-->
+    
+              </button>
+           
+
+                
+            </div>
+          </div>
+      
+          <div class="timer__canvas hidden">
+            <canvas id="canvas"></canvas>
+          </div>
+      
+          
+      
+        </div>
+      </div>
+      <script src="./timer.js"></script>
+</body>
+</html>
