@@ -70,7 +70,7 @@ $(document).ready(() => {
 		let reply = [`Sajnálom, nem értem.`, `Próbáld újra!`];
 
 		// Generate some different replies
-		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!` `Mi a telefonszámom?`];
+		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!` `Mi a telefonszámom?`];
 		else if (/822-591|822591/.test(message)) reply = [`Szia ${$userName}! Itt Piroska.`, `Biztos te vagy, akit a Jancsi küldött a bor miatt. Sajnos nem sokat tudok. Csak annyit, hogy szerdán valahogy elterjedt, hogy előző nap látták a tiszteletest egy rekesz borral. Meg is nőtt a népszerűsége rögvest. Nem elég, hogy beállított hozzá Jézus a hármas busszal, még ezek is megrohamozták. Valószínűleg megpróbálták kiimádkozni belőle még az úrvacsora előtt, elvégre az is csak bor. De állítólag akkor már nem volt meg. Egyedül a mindenható a megmondhatója, hova lett. Hozzá pedig Végső Márton tiszteletes van a legközelebb. Próbáld megkeresni Facebookon! Aztán ne felejts el beszámolni Hesz Jancsinak arról, hogy mire jutottál.`];
 		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Mi a telefonszámom? Megtaláltad?`];
 
