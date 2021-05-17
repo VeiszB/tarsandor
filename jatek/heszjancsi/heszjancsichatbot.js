@@ -76,7 +76,7 @@ $(document).ready(() => {
 		orvosnak, hogy drága doktor úr, hazatalálok én magamtól is,
 		nem kell nekem tudni, hogy hány szám alatt lakok. Úgyhogy ebben nem tudok én se segíteni neked, de nézz körül a Facebook profilomban, ott hátha találsz valami használhatót.`];
 		else if (/test/.test(message)) reply = [`Ok`, `Feel free to test as much as you want`];
-		else if (/help|sos|emergency|support/.test(message)) reply = [`I am here to help.`, `What seems to be the problem?`];
+		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Illik először köszönni, nemde?`];
 		else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
 		else if (/how|what|why/.test(message)) reply = userMessage + " what?";
 		else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];

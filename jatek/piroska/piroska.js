@@ -70,13 +70,10 @@ $(document).ready(() => {
 		let reply = [`Sajnálom, nem értem.`, `Próbáld újra!`];
 
 		// Generate some different replies
-		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan
-		baj van, és akkor menni kell. De azért, ha valami van, mondjad. Itt mindig üzenhetsz nekem.`, `Szóval ahhoz, hogy ki tudd nyomozni, hova lett a misebor, menj a Görbe utcába, keresd P - - r - - át. Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked.`, `A házszámot nem nagyon tudják errefelé, ne is kérdezd.
-		Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az
-		orvosnak, hogy drága doktor úr, hazatalálok én magamtól is,
-		nem kell nekem tudni, hogy hány szám alatt lakok. Úgyhogy ebben nem tudok én se segíteni neked, de nézz körül a Facebook profilomban, ott hátha találsz valami használhatót.`];
+		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!` `Mi a telefonszámom?`];
 		else if (/822-591|822591/.test(message)) reply = [`Szia ${$userName}! Itt Piroska.`, `Biztos te vagy, akit a Jancsi küldött a bor miatt. Sajnos nem sokat tudok. Csak annyit, hogy szerdán valahogy elterjedt, hogy előző nap látták a tiszteletest egy rekesz borral. Meg is nőtt a népszerűsége rögvest. Nem elég, hogy beállított hozzá Jézus a hármas busszal, még ezek is megrohamozták. Valószínűleg megpróbálták kiimádkozni belőle még az úrvacsora előtt, elvégre az is csak bor. De állítólag akkor már nem volt meg. Egyedül a mindenható a megmondhatója, hova lett. Hozzá pedig Végső Márton tiszteletes van a legközelebb. Próbáld megkeresni Facebookon! Aztán ne felejts el beszámolni Hesz Jancsinak arról, hogy mire jutottál.`];
-		else if (/help|sos|emergency|support/.test(message)) reply = [`I am here to help.`, `What seems to be the problem?`];
+		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Mi a telefonszámom? Megtaláltad?`];
+
 		else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
 		else if (/how|what|why/.test(message)) reply = userMessage + " what?";
 		else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
