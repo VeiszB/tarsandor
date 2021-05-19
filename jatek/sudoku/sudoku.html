@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="A Debreceni Irodalom Háza honlapja Tar Sándor íróról."
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./sudoku.css">
+    <title>Sudoku</title>
+</head>
+<body>
+    <input type="radio" name="mode" id="pen" checked="checked">
+    <input type="radio" name="mode" id="pencil">
+    
+    <input type="radio" name="a1" id="a1-0" checked="checked">
+    <input type="checkbox" name="a1-pencil" id="a1-1-pencil">
+    <input type="radio" name="a1" id="a1-1">
+    <input type="checkbox" name="a1-pencil" id="a1-2-pencil">
+    <input type="radio" name="a1" id="a1-2">
+    <input type="checkbox" name="a1-pencil" id="a1-3-pencil">
+    <input type="radio" name="a1" id="a1-3">
+    <input type="checkbox" name="a1-pencil" id="a1-4-pencil">
+    <input type="radio" name="a1" id="a1-4">
+    <input type="checkbox" name="a1-pencil" id="a1-5-pencil">
+    <input type="radio" name="a1" id="a1-5">
+    <input type="checkbox" name="a1-pencil" id="a1-6-pencil">
+    <input type="radio" name="a1" id="a1-6">
+    <input type="checkbox" name="a1-pencil" id="a1-7-pencil">
+    <input type="radio" name="a1" id="a1-7">
+    <input type="checkbox" name="a1-pencil" id="a1-8-pencil">
+    <input type="radio" name="a1" id="a1-8">
+    <input type="checkbox" name="a1-pencil" id="a1-9-pencil">
+    <input type="radio" name="a1" id="a1-9">
+
+    <input type="radio" name="a2" id="a2-0" checked="checked">
+    <input type="checkbox" name="a2-pencil" id="a2-1-pencil">
+    <input type="radio" name="a2" id="a2-1">
+    <input type="checkbox" name="a2-pencil" id="a2-2-pencil">
+    <input type="radio" name="a2" id="a2-2">
+    <input type="checkbox" name="a2-pencil" id="a2-3-pencil">
+    <input type="radio" name="a2" id="a2-3">
+    <input type="checkbox" name="a2-pencil" id="a2-4-pencil">
+    <input type="radio" name="a2" id="a2-4">
+    <input type="checkbox" name="a2-pencil" id="a2-5-pencil">
+    <input type="radio" name="a2" id="a2-5">
+    <input type="checkbox" name="a2-pencil" id="a2-6-pencil">
+    <input type="radio" name="a2" id="a2-6">
+    <input type="checkbox" name="a2-pencil" id="a2-7-pencil">
+    <input type="radio" name="a2" id="a2-7">
+    <input type="checkbox" name="a2-pencil" id="a2-8-pencil">
+    <input type="radio" name="a2" id="a2-8">
+    <input type="checkbox" name="a2-pencil" id="a2-9-pencil">
+    <input type="radio" name="a2" id="a2-9">
+
+    <input type="radio" name="a3" id="a3-0" checked="checked">
+    <input type="checkbox" name="a3-pencil" id="a3-1-pencil">
+    <input type="radio" name="a3" id="a3-1">
+    <input type="checkbox" name="a3-pencil" id="a3-2-pencil">
+    <input type="radio" name="a3" id="a3-2">
+    <input type="checkbox" name="a3-pencil" id="a3-3-pencil">
+    <input type="radio" name="a3" id="a3-3">
+    <input type="checkbox" name="a3-pencil" id="a3-4-pencil">
+    <input type="radio" name="a3" id="a3-4">
+    <input type="checkbox" name="a3-pencil" id="a3-5-pencil">
+    <input type="radio" name="a3" id="a3-5">
+    <input type="checkbox" name="a3-pencil" id="a3-6-pencil">
+    <input type="radio" name="a3" id="a3-6">
+    <input type="checkbox" name="a3-pencil" id="a3-7-pencil">
+    <input type="radio" name="a3" id="a3-7">
+    <input type="checkbox" name="a3-pencil" id="a3-8-pencil">
+    <input type="radio" name="a3" id="a3-8">
+    <input type="checkbox" name="a3-pencil" id="a3-9-pencil">
+    <input type="radio" name="a3" id="a3-9">
+
+    <input type="radio" name="a6" id="a6-0" checked="checked">
+    <input type="checkbox" name="a6-pencil" id="a6-1-pencil">
+    <input type="radio" name="a6" id="a6-1">
+    <input type="checkbox" name="a6-pencil" id="a6-2-pencil">
+    <input type="radio" name="a6" id="a6-2">
+    <input type="checkbox" name="a6-pencil" id="a6-3-pencil">
+    <input type="radio" name="a6" id="a6-3">
+    <input type="checkbox" name="a6-pencil" id="a6-4-pencil">
+    <input type="radio" name="a6" id="a6-4">
+    <input type="checkbox" name="a6-pencil" id="a6-5-pencil">
+    <input type="radio" name="a6" id="a6-5">
+    <input type="checkbox" name="a6-pencil" id="a6-6-pencil">
+    <input type="radio" name="a6" id="a6-6">
+    <input type="checkbox" name="a6-pencil" id="a6-7-pencil">
+    <input type="radio" name="a6" id="a6-7">
+    <input type="checkbox" name="a6-pencil" id="a6-8-pencil">
+    <input type="radio" name="a6" id="a6-8">
+    <input type="checkbox" name="a6-pencil" id="a6-9-pencil">
+    <input type="radio" name="a6" id="a6-9">
+
+    <input type="radio" name="a9" id="a9-0" checked="checked">
+    <input type="checkbox" name="a9-pencil" id="a9-1-pencil">
+    <input type="radio" name="a9" id="a9-1">
+    <input type="checkbox" name="a9-pencil" id="a9-2-pencil">
+    <input type="radio" name="a9" id="a9-2">
+    <input type="checkbox" name="a9-pencil" id="a9-3-pencil">
+    <input type="radio" name="a9" id="a9-3">
+    <input type="checkbox" name="a9-pencil" id="a9-4-pencil">
+    <input type="radio" name="a9" id="a9-4">
+    <input type="checkbox" name="a9-pencil" id="a9-5-pencil">
+    <input type="radio" name="a9" id="a9-5">
+    <input type="checkbox" name="a9-pencil" id="a9-6-pencil">
+    <input type="radio" name="a9" id="a9-6">
+    <input type="checkbox" name="a9-pencil" id="a9-7-pencil">
+    <input type="radio" name="a9" id="a9-7">
+    <input type="checkbox" name="a9-pencil" id="a9-8-pencil">
+    <input type="radio" name="a9" id="a9-8">
+    <input type="checkbox" name="a9-pencil" id="a9-9-pencil">
+    <input type="radio" name="a9" id="a9-9">
+
+    <input type="radio" name="b3" id="b3-0" checked="checked">
+    <input type="checkbox" name="b3-pencil" id="b3-1-pencil">
+    <input type="radio" name="b3" id="b3-1">
+    <input type="checkbox" name="b3-pencil" id="b3-2-pencil">
+    <input type="radio" name="b3" id="b3-2">
+    <input type="checkbox" name="b3-pencil" id="b3-3-pencil">
+    <input type="radio" name="b3" id="b3-3">
+    <input type="checkbox" name="b3-pencil" id="b3-4-pencil">
+    <input type="radio" name="b3" id="b3-4">
+    <input type="checkbox" name="b3-pencil" id="b3-5-pencil">
+    <input type="radio" name="b3" id="b3-5">
+    <input type="checkbox" name="b3-pencil" id="b3-6-pencil">
+    <input type="radio" name="b3" id="b3-6">
+    <input type="checkbox" name="b3-pencil" id="b3-7-pencil">
+    <input type="radio" name="b3" id="b3-7">
+    <input type="checkbox" name="b3-pencil" id="b3-8-pencil">
+    <input type="radio" name="b3" id="b3-8">
+    <input type="checkbox" name="b3-pencil" id="b3-9-pencil">
+    <input type="radio" name="b3" id="b3-9">
+
+    <input type="radio" name="b4" id="b4-0" checked="checked">
+    <input type="checkbox" name="b4-pencil" id="b4-1-pencil">
+    <input type="radio" name="b4" id="b4-1">
+    <input type="checkbox" name="b4-pencil" id="b4-2-pencil">
+    <input type="radio" name="b4" id="b4-2">
+    <input type="checkbox" name="b4-pencil" id="b4-3-pencil">
+    <input type="radio" name="b4" id="b4-3">
+    <input type="checkbox" name="b4-pencil" id="b4-4-pencil">
+    <input type="radio" name="b4" id="b4-4">
+    <input type="checkbox" name="b4-pencil" id="b4-5-pencil">
+    <input type="radio" name="b4" id="b4-5">
+    <input type="checkbox" name="b4-pencil" id="b4-6-pencil">
+    <input type="radio" name="b4" id="b4-6">
+    <input type="checkbox" name="b4-pencil" id="b4-7-pencil">
+    <input type="radio" name="b4" id="b4-7">
+    <input type="checkbox" name="b4-pencil" id="b4-8-pencil">
+    <input type="radio" name="b4" id="b4-8">
+    <input type="checkbox" name="b4-pencil" id="b4-9-pencil">
+    <input type="radio" name="b4" id="b4-9">
+
+    <input type="radio" name="b6" id="b6-0" checked="checked">
+    <input type="checkbox" name="b6-pencil" id="b6-1-pencil">
+    <input type="radio" name="b6" id="b6-1">
+    <input type="checkbox" name="b6-pencil" id="b6-2-pencil">
+    <input type="radio" name="b6" id="b6-2">
+    <input type="checkbox" name="b6-pencil" id="b6-3-pencil">
+    <input type="radio" name="b6" id="b6-3">
+    <input type="checkbox" name="b6-pencil" id="b6-4-pencil">
+    <input type="radio" name="b6" id="b6-4">
+    <input type="checkbox" name="b6-pencil" id="b6-5-pencil">
+    <input type="radio" name="b6" id="b6-5">
+    <input type="checkbox" name="b6-pencil" id="b6-6-pencil">
+    <input type="radio" name="b6" id="b6-6">
+    <input type="checkbox" name="b6-pencil" id="b6-7-pencil">
+    <input type="radio" name="b6" id="b6-7">
+    <input type="checkbox" name="b6-pencil" id="b6-8-pencil">
+    <input type="radio" name="b6" id="b6-8">
+    <input type="checkbox" name="b6-pencil" id="b6-9-pencil">
+    <input type="radio" name="b6" id="b6-9">
+
+    <input type="radio" name="b7" id="b7-0" checked="checked">
+    <input type="checkbox" name="b7-pencil" id="b7-1-pencil">
+    <input type="radio" name="b7" id="b7-1">
+    <input type="checkbox" name="b7-pencil" id="b7-2-pencil">
+    <input type="radio" name="b7" id="b7-2">
+    <input type="checkbox" name="b7-pencil" id="b7-3-pencil">
+    <input type="radio" name="b7" id="b7-3">
+    <input type="checkbox" name="b7-pencil" id="b7-4-pencil">
+    <input type="radio" name="b7" id="b7-4">
+    <input type="checkbox" name="b7-pencil" id="b7-5-pencil">
+    <input type="radio" name="b7" id="b7-5">
+    <input type="checkbox" name="b7-pencil" id="b7-6-pencil">
+    <input type="radio" name="b7" id="b7-6">
+    <input type="checkbox" name="b7-pencil" id="b7-7-pencil">
+    <input type="radio" name="b7" id="b7-7">
+    <input type="checkbox" name="b7-pencil" id="b7-8-pencil">
+    <input type="radio" name="b7" id="b7-8">
+    <input type="checkbox" name="b7-pencil" id="b7-9-pencil">
+    <input type="radio" name="b7" id="b7-9">
+
+    <input type="radio" name="b8" id="b8-0" checked="checked">
+    <input type="checkbox" name="b8-pencil" id="b8-1-pencil">
+    <input type="radio" name="b8" id="b8-1">
+    <input type="checkbox" name="b8-pencil" id="b8-2-pencil">
+    <input type="radio" name="b8" id="b8-2">
+    <input type="checkbox" name="b8-pencil" id="b8-3-pencil">
+    <input type="radio" name="b8" id="b8-3">
+    <input type="checkbox" name="b8-pencil" id="b8-4-pencil">
+    <input type="radio" name="b8" id="b8-4">
+    <input type="checkbox" name="b8-pencil" id="b8-5-pencil">
+    <input type="radio" name="b8" id="b8-5">
+    <input type="checkbox" name="b8-pencil" id="b8-6-pencil">
+    <input type="radio" name="b8" id="b8-6">
+    <input type="checkbox" name="b8-pencil" id="b8-7-pencil">
+    <input type="radio" name="b8" id="b8-7">
+    <input type="checkbox" name="b8-pencil" id="b8-8-pencil">
+    <input type="radio" name="b8" id="b8-8">
+    <input type="checkbox" name="b8-pencil" id="b8-9-pencil">
+    <input type="radio" name="b8" id="b8-9">
+
+    <input type="radio" name="c2" id="c2-0" checked="checked">
+    <input type="checkbox" name="c2-pencil" id="c2-1-pencil">
+    <input type="radio" name="c2" id="c2-1">
+    <input type="checkbox" name="c2-pencil" id="c2-2-pencil">
+    <input type="radio" name="c2" id="c2-2">
+    <input type="checkbox" name="c2-pencil" id="c2-3-pencil">
+    <input type="radio" name="c2" id="c2-3">
+    <input type="checkbox" name="c2-pencil" id="c2-4-pencil">
+    <input type="radio" name="c2" id="c2-4">
+    <input type="checkbox" name="c2-pencil" id="c2-5-pencil">
+    <input type="radio" name="c2" id="c2-5">
+    <input type="checkbox" name="c2-pencil" id="c2-6-pencil">
+    <input type="radio" name="c2" id="c2-6">
+    <input type="checkbox" name="c2-pencil" id="c2-7-pencil">
+    <input type="radio" name="c2" id="c2-7">
+    <input type="checkbox" name="c2-pencil" id="c2-8-pencil">
+    <input type="radio" name="c2" id="c2-8">
+    <input type="checkbox" name="c2-pencil" id="c2-9-pencil">
+    <input type="radio" name="c2" id="c2-9">
+
+    <input type="radio" name="c4" id="c4-0" checked="checked">
+    <input type="checkbox" name="c4-pencil" id="c4-1-pencil">
+    <input type="radio" name="c4" id="c4-1">
+    <input type="checkbox" name="c4-pencil" id="c4-2-pencil">
+    <input type="radio" name="c4" id="c4-2">
+    <input type="checkbox" name="c4-pencil" id="c4-3-pencil">
+    <input type="radio" name="c4" id="c4-3">
+    <input type="checkbox" name="c4-pencil" id="c4-4-pencil">
+    <input type="radio" name="c4" id="c4-4">
+    <input type="checkbox" name="c4-pencil" id="c4-5-pencil">
+    <input type="radio" name="c4" id="c4-5">
+    <input type="checkbox" name="c4-pencil" id="c4-6-pencil">
+    <input type="radio" name="c4" id="c4-6">
+    <input type="checkbox" name="c4-pencil" id="c4-7-pencil">
+    <input type="radio" name="c4" id="c4-7">
+    <input type="checkbox" name="c4-pencil" id="c4-8-pencil">
+    <input type="radio" name="c4" id="c4-8">
+    <input type="checkbox" name="c4-pencil" id="c4-9-pencil">
+    <input type="radio" name="c4" id="c4-9">
+
+    <input type="radio" name="c6" id="c6-0" checked="checked">
+    <input type="checkbox" name="c6-pencil" id="c6-1-pencil">
+    <input type="radio" name="c6" id="c6-1">
+    <input type="checkbox" name="c6-pencil" id="c6-2-pencil">
+    <input type="radio" name="c6" id="c6-2">
+    <input type="checkbox" name="c6-pencil" id="c6-3-pencil">
+    <input type="radio" name="c6" id="c6-3">
+    <input type="checkbox" name="c6-pencil" id="c6-4-pencil">
+    <input type="radio" name="c6" id="c6-4">
+    <input type="checkbox" name="c6-pencil" id="c6-5-pencil">
+    <input type="radio" name="c6" id="c6-5">
+    <input type="checkbox" name="c6-pencil" id="c6-6-pencil">
+    <input type="radio" name="c6" id="c6-6">
+    <input type="checkbox" name="c6-pencil" id="c6-7-pencil">
+    <input type="radio" name="c6" id="c6-7">
+    <input type="checkbox" name="c6-pencil" id="c6-8-pencil">
+    <input type="radio" name="c6" id="c6-8">
+    <input type="checkbox" name="c6-pencil" id="c6-9-pencil">
+    <input type="radio" name="c6" id="c6-9">
+
+    <input type="radio" name="c8" id="c8-0" checked="checked">
+    <input type="checkbox" name="c8-pencil" id="c8-1-pencil">
+    <input type="radio" name="c8" id="c8-1">
+    <input type="checkbox" name="c8-pencil" id="c8-2-pencil">
+    <input type="radio" name="c8" id="c8-2">
+    <input type="checkbox" name="c8-pencil" id="c8-3-pencil">
+    <input type="radio" name="c8" id="c8-3">
+    <input type="checkbox" name="c8-pencil" id="c8-4-pencil">
+    <input type="radio" name="c8" id="c8-4">
+    <input type="checkbox" name="c8-pencil" id="c8-5-pencil">
+    <input type="radio" name="c8" id="c8-5">
+    <input type="checkbox" name="c8-pencil" id="c8-6-pencil">
+    <input type="radio" name="c8" id="c8-6">
+    <input type="checkbox" name="c8-pencil" id="c8-7-pencil">
+    <input type="radio" name="c8" id="c8-7">
+    <input type="checkbox" name="c8-pencil" id="c8-8-pencil">
+    <input type="radio" name="c8" id="c8-8">
+    <input type="checkbox" name="c8-pencil" id="c8-9-pencil">
+    <input type="radio" name="c8" id="c8-9">
+
+    <input type="radio" name="c9" id="c9-0" checked="checked">
+    <input type="checkbox" name="c9-pencil" id="c9-1-pencil">
+    <input type="radio" name="c9" id="c9-1">
+    <input type="checkbox" name="c9-pencil" id="c9-2-pencil">
+    <input type="radio" name="c9" id="c9-2">
+    <input type="checkbox" name="c9-pencil" id="c9-3-pencil">
+    <input type="radio" name="c9" id="c9-3">
+    <input type="checkbox" name="c9-pencil" id="c9-4-pencil">
+    <input type="radio" name="c9" id="c9-4">
+    <input type="checkbox" name="c9-pencil" id="c9-5-pencil">
+    <input type="radio" name="c9" id="c9-5">
+    <input type="checkbox" name="c9-pencil" id="c9-6-pencil">
+    <input type="radio" name="c9" id="c9-6">
+    <input type="checkbox" name="c9-pencil" id="c9-7-pencil">
+    <input type="radio" name="c9" id="c9-7">
+    <input type="checkbox" name="c9-pencil" id="c9-8-pencil">
+    <input type="radio" name="c9" id="c9-8">
+    <input type="checkbox" name="c9-pencil" id="c9-9-pencil">
+    <input type="radio" name="c9" id="c9-9">
+
+    <input type="radio" name="d3" id="d3-0" checked="checked">
+    <input type="checkbox" name="d3-pencil" id="d3-1-pencil">
+    <input type="radio" name="d3" id="d3-1">
+    <input type="checkbox" name="d3-pencil" id="d3-2-pencil">
+    <input type="radio" name="d3" id="d3-2">
+    <input type="checkbox" name="d3-pencil" id="d3-3-pencil">
+    <input type="radio" name="d3" id="d3-3">
+    <input type="checkbox" name="d3-pencil" id="d3-4-pencil">
+    <input type="radio" name="d3" id="d3-4">
+    <input type="checkbox" name="d3-pencil" id="d3-5-pencil">
+    <input type="radio" name="d3" id="d3-5">
+    <input type="checkbox" name="d3-pencil" id="d3-6-pencil">
+    <input type="radio" name="d3" id="d3-6">
+    <input type="checkbox" name="d3-pencil" id="d3-7-pencil">
+    <input type="radio" name="d3" id="d3-7">
+    <input type="checkbox" name="d3-pencil" id="d3-8-pencil">
+    <input type="radio" name="d3" id="d3-8">
+    <input type="checkbox" name="d3-pencil" id="d3-9-pencil">
+    <input type="radio" name="d3" id="d3-9">
+
+    <input type="radio" name="d4" id="d4-0" checked="checked">
+    <input type="checkbox" name="d4-pencil" id="d4-1-pencil">
+    <input type="radio" name="d4" id="d4-1">
+    <input type="checkbox" name="d4-pencil" id="d4-2-pencil">
+    <input type="radio" name="d4" id="d4-2">
+    <input type="checkbox" name="d4-pencil" id="d4-3-pencil">
+    <input type="radio" name="d4" id="d4-3">
+    <input type="checkbox" name="d4-pencil" id="d4-4-pencil">
+    <input type="radio" name="d4" id="d4-4">
+    <input type="checkbox" name="d4-pencil" id="d4-5-pencil">
+    <input type="radio" name="d4" id="d4-5">
+    <input type="checkbox" name="d4-pencil" id="d4-6-pencil">
+    <input type="radio" name="d4" id="d4-6">
+    <input type="checkbox" name="d4-pencil" id="d4-7-pencil">
+    <input type="radio" name="d4" id="d4-7">
+    <input type="checkbox" name="d4-pencil" id="d4-8-pencil">
+    <input type="radio" name="d4" id="d4-8">
+    <input type="checkbox" name="d4-pencil" id="d4-9-pencil">
+    <input type="radio" name="d4" id="d4-9">
+
+    <input type="radio" name="d5" id="d5-0" checked="checked">
+    <input type="checkbox" name="d5-pencil" id="d5-1-pencil">
+    <input type="radio" name="d5" id="d5-1">
+    <input type="checkbox" name="d5-pencil" id="d5-2-pencil">
+    <input type="radio" name="d5" id="d5-2">
+    <input type="checkbox" name="d5-pencil" id="d5-3-pencil">
+    <input type="radio" name="d5" id="d5-3">
+    <input type="checkbox" name="d5-pencil" id="d5-4-pencil">
+    <input type="radio" name="d5" id="d5-4">
+    <input type="checkbox" name="d5-pencil" id="d5-5-pencil">
+    <input type="radio" name="d5" id="d5-5">
+    <input type="checkbox" name="d5-pencil" id="d5-6-pencil">
+    <input type="radio" name="d5" id="d5-6">
+    <input type="checkbox" name="d5-pencil" id="d5-7-pencil">
+    <input type="radio" name="d5" id="d5-7">
+    <input type="checkbox" name="d5-pencil" id="d5-8-pencil">
+    <input type="radio" name="d5" id="d5-8">
+    <input type="checkbox" name="d5-pencil" id="d5-9-pencil">
+    <input type="radio" name="d5" id="d5-9">
+
+    <input type="radio" name="d7" id="d7-0" checked="checked">
+    <input type="checkbox" name="d7-pencil" id="d7-1-pencil">
+    <input type="radio" name="d7" id="d7-1">
+    <input type="checkbox" name="d7-pencil" id="d7-2-pencil">
+    <input type="radio" name="d7" id="d7-2">
+    <input type="checkbox" name="d7-pencil" id="d7-3-pencil">
+    <input type="radio" name="d7" id="d7-3">
+    <input type="checkbox" name="d7-pencil" id="d7-4-pencil">
+    <input type="radio" name="d7" id="d7-4">
+    <input type="checkbox" name="d7-pencil" id="d7-5-pencil">
+    <input type="radio" name="d7" id="d7-5">
+    <input type="checkbox" name="d7-pencil" id="d7-6-pencil">
+    <input type="radio" name="d7" id="d7-6">
+    <input type="checkbox" name="d7-pencil" id="d7-7-pencil">
+    <input type="radio" name="d7" id="d7-7">
+    <input type="checkbox" name="d7-pencil" id="d7-8-pencil">
+    <input type="radio" name="d7" id="d7-8">
+    <input type="checkbox" name="d7-pencil" id="d7-9-pencil">
+    <input type="radio" name="d7" id="d7-9">
+
+    <input type="radio" name="d9" id="d9-0" checked="checked">
+    <input type="checkbox" name="d9-pencil" id="d9-1-pencil">
+    <input type="radio" name="d9" id="d9-1">
+    <input type="checkbox" name="d9-pencil" id="d9-2-pencil">
+    <input type="radio" name="d9" id="d9-2">
+    <input type="checkbox" name="d9-pencil" id="d9-3-pencil">
+    <input type="radio" name="d9" id="d9-3">
+    <input type="checkbox" name="d9-pencil" id="d9-4-pencil">
+    <input type="radio" name="d9" id="d9-4">
+    <input type="checkbox" name="d9-pencil" id="d9-5-pencil">
+    <input type="radio" name="d9" id="d9-5">
+    <input type="checkbox" name="d9-pencil" id="d9-6-pencil">
+    <input type="radio" name="d9" id="d9-6">
+    <input type="checkbox" name="d9-pencil" id="d9-7-pencil">
+    <input type="radio" name="d9" id="d9-7">
+    <input type="checkbox" name="d9-pencil" id="d9-8-pencil">
+    <input type="radio" name="d9" id="d9-8">
+    <input type="checkbox" name="d9-pencil" id="d9-9-pencil">
+    <input type="radio" name="d9" id="d9-9">
+
+    <input type="radio" name="e2" id="e2-0" checked="checked">
+    <input type="checkbox" name="e2-pencil" id="e2-1-pencil">
+    <input type="radio" name="e2" id="e2-1">
+    <input type="checkbox" name="e2-pencil" id="e2-2-pencil">
+    <input type="radio" name="e2" id="e2-2">
+    <input type="checkbox" name="e2-pencil" id="e2-3-pencil">
+    <input type="radio" name="e2" id="e2-3">
+    <input type="checkbox" name="e2-pencil" id="e2-4-pencil">
+    <input type="radio" name="e2" id="e2-4">
+    <input type="checkbox" name="e2-pencil" id="e2-5-pencil">
+    <input type="radio" name="e2" id="e2-5">
+    <input type="checkbox" name="e2-pencil" id="e2-6-pencil">
+    <input type="radio" name="e2" id="e2-6">
+    <input type="checkbox" name="e2-pencil" id="e2-7-pencil">
+    <input type="radio" name="e2" id="e2-7">
+    <input type="checkbox" name="e2-pencil" id="e2-8-pencil">
+    <input type="radio" name="e2" id="e2-8">
+    <input type="checkbox" name="e2-pencil" id="e2-9-pencil">
+    <input type="radio" name="e2" id="e2-9">
+
+    <input type="radio" name="e3" id="e3-0" checked="checked">
+    <input type="checkbox" name="e3-pencil" id="e3-1-pencil">
+    <input type="radio" name="e3" id="e3-1">
+    <input type="checkbox" name="e3-pencil" id="e3-2-pencil">
+    <input type="radio" name="e3" id="e3-2">
+    <input type="checkbox" name="e3-pencil" id="e3-3-pencil">
+    <input type="radio" name="e3" id="e3-3">
+    <input type="checkbox" name="e3-pencil" id="e3-4-pencil">
+    <input type="radio" name="e3" id="e3-4">
+    <input type="checkbox" name="e3-pencil" id="e3-5-pencil">
+    <input type="radio" name="e3" id="e3-5">
+    <input type="checkbox" name="e3-pencil" id="e3-6-pencil">
+    <input type="radio" name="e3" id="e3-6">
+    <input type="checkbox" name="e3-pencil" id="e3-7-pencil">
+    <input type="radio" name="e3" id="e3-7">
+    <input type="checkbox" name="e3-pencil" id="e3-8-pencil">
+    <input type="radio" name="e3" id="e3-8">
+    <input type="checkbox" name="e3-pencil" id="e3-9-pencil">
+    <input type="radio" name="e3" id="e3-9">
+
+    <input type="radio" name="e5" id="e5-0" checked="checked">
+    <input type="checkbox" name="e5-pencil" id="e5-1-pencil">
+    <input type="radio" name="e5" id="e5-1">
+    <input type="checkbox" name="e5-pencil" id="e5-2-pencil">
+    <input type="radio" name="e5" id="e5-2">
+    <input type="checkbox" name="e5-pencil" id="e5-3-pencil">
+    <input type="radio" name="e5" id="e5-3">
+    <input type="checkbox" name="e5-pencil" id="e5-4-pencil">
+    <input type="radio" name="e5" id="e5-4">
+    <input type="checkbox" name="e5-pencil" id="e5-5-pencil">
+    <input type="radio" name="e5" id="e5-5">
+    <input type="checkbox" name="e5-pencil" id="e5-6-pencil">
+    <input type="radio" name="e5" id="e5-6">
+    <input type="checkbox" name="e5-pencil" id="e5-7-pencil">
+    <input type="radio" name="e5" id="e5-7">
+    <input type="checkbox" name="e5-pencil" id="e5-8-pencil">
+    <input type="radio" name="e5" id="e5-8">
+    <input type="checkbox" name="e5-pencil" id="e5-9-pencil">
+    <input type="radio" name="e5" id="e5-9">
+
+    <input type="radio" name="e7" id="e7-0" checked="checked">
+    <input type="checkbox" name="e7-pencil" id="e7-1-pencil">
+    <input type="radio" name="e7" id="e7-1">
+    <input type="checkbox" name="e7-pencil" id="e7-2-pencil">
+    <input type="radio" name="e7" id="e7-2">
+    <input type="checkbox" name="e7-pencil" id="e7-3-pencil">
+    <input type="radio" name="e7" id="e7-3">
+    <input type="checkbox" name="e7-pencil" id="e7-4-pencil">
+    <input type="radio" name="e7" id="e7-4">
+    <input type="checkbox" name="e7-pencil" id="e7-5-pencil">
+    <input type="radio" name="e7" id="e7-5">
+    <input type="checkbox" name="e7-pencil" id="e7-6-pencil">
+    <input type="radio" name="e7" id="e7-6">
+    <input type="checkbox" name="e7-pencil" id="e7-7-pencil">
+    <input type="radio" name="e7" id="e7-7">
+    <input type="checkbox" name="e7-pencil" id="e7-8-pencil">
+    <input type="radio" name="e7" id="e7-8">
+    <input type="checkbox" name="e7-pencil" id="e7-9-pencil">
+    <input type="radio" name="e7" id="e7-9">
+
+    <input type="radio" name="e8" id="e8-0" checked="checked">
+    <input type="checkbox" name="e8-pencil" id="e8-1-pencil">
+    <input type="radio" name="e8" id="e8-1">
+    <input type="checkbox" name="e8-pencil" id="e8-2-pencil">
+    <input type="radio" name="e8" id="e8-2">
+    <input type="checkbox" name="e8-pencil" id="e8-3-pencil">
+    <input type="radio" name="e8" id="e8-3">
+    <input type="checkbox" name="e8-pencil" id="e8-4-pencil">
+    <input type="radio" name="e8" id="e8-4">
+    <input type="checkbox" name="e8-pencil" id="e8-5-pencil">
+    <input type="radio" name="e8" id="e8-5">
+    <input type="checkbox" name="e8-pencil" id="e8-6-pencil">
+    <input type="radio" name="e8" id="e8-6">
+    <input type="checkbox" name="e8-pencil" id="e8-7-pencil">
+    <input type="radio" name="e8" id="e8-7">
+    <input type="checkbox" name="e8-pencil" id="e8-8-pencil">
+    <input type="radio" name="e8" id="e8-8">
+    <input type="checkbox" name="e8-pencil" id="e8-9-pencil">
+    <input type="radio" name="e8" id="e8-9">
+
+    <input type="radio" name="f1" id="f1-0" checked="checked">
+    <input type="checkbox" name="f1-pencil" id="f1-1-pencil">
+    <input type="radio" name="f1" id="f1-1">
+    <input type="checkbox" name="f1-pencil" id="f1-2-pencil">
+    <input type="radio" name="f1" id="f1-2">
+    <input type="checkbox" name="f1-pencil" id="f1-3-pencil">
+    <input type="radio" name="f1" id="f1-3">
+    <input type="checkbox" name="f1-pencil" id="f1-4-pencil">
+    <input type="radio" name="f1" id="f1-4">
+    <input type="checkbox" name="f1-pencil" id="f1-5-pencil">
+    <input type="radio" name="f1" id="f1-5">
+    <input type="checkbox" name="f1-pencil" id="f1-6-pencil">
+    <input type="radio" name="f1" id="f1-6">
+    <input type="checkbox" name="f1-pencil" id="f1-7-pencil">
+    <input type="radio" name="f1" id="f1-7">
+    <input type="checkbox" name="f1-pencil" id="f1-8-pencil">
+    <input type="radio" name="f1" id="f1-8">
+    <input type="checkbox" name="f1-pencil" id="f1-9-pencil">
+    <input type="radio" name="f1" id="f1-9">
+
+    <input type="radio" name="f3" id="f3-0" checked="checked">
+    <input type="checkbox" name="f3-pencil" id="f3-1-pencil">
+    <input type="radio" name="f3" id="f3-1">
+    <input type="checkbox" name="f3-pencil" id="f3-2-pencil">
+    <input type="radio" name="f3" id="f3-2">
+    <input type="checkbox" name="f3-pencil" id="f3-3-pencil">
+    <input type="radio" name="f3" id="f3-3">
+    <input type="checkbox" name="f3-pencil" id="f3-4-pencil">
+    <input type="radio" name="f3" id="f3-4">
+    <input type="checkbox" name="f3-pencil" id="f3-5-pencil">
+    <input type="radio" name="f3" id="f3-5">
+    <input type="checkbox" name="f3-pencil" id="f3-6-pencil">
+    <input type="radio" name="f3" id="f3-6">
+    <input type="checkbox" name="f3-pencil" id="f3-7-pencil">
+    <input type="radio" name="f3" id="f3-7">
+    <input type="checkbox" name="f3-pencil" id="f3-8-pencil">
+    <input type="radio" name="f3" id="f3-8">
+    <input type="checkbox" name="f3-pencil" id="f3-9-pencil">
+    <input type="radio" name="f3" id="f3-9">
+
+    <input type="radio" name="f5" id="f5-0" checked="checked">
+    <input type="checkbox" name="f5-pencil" id="f5-1-pencil">
+    <input type="radio" name="f5" id="f5-1">
+    <input type="checkbox" name="f5-pencil" id="f5-2-pencil">
+    <input type="radio" name="f5" id="f5-2">
+    <input type="checkbox" name="f5-pencil" id="f5-3-pencil">
+    <input type="radio" name="f5" id="f5-3">
+    <input type="checkbox" name="f5-pencil" id="f5-4-pencil">
+    <input type="radio" name="f5" id="f5-4">
+    <input type="checkbox" name="f5-pencil" id="f5-5-pencil">
+    <input type="radio" name="f5" id="f5-5">
+    <input type="checkbox" name="f5-pencil" id="f5-6-pencil">
+    <input type="radio" name="f5" id="f5-6">
+    <input type="checkbox" name="f5-pencil" id="f5-7-pencil">
+    <input type="radio" name="f5" id="f5-7">
+    <input type="checkbox" name="f5-pencil" id="f5-8-pencil">
+    <input type="radio" name="f5" id="f5-8">
+    <input type="checkbox" name="f5-pencil" id="f5-9-pencil">
+    <input type="radio" name="f5" id="f5-9">
+
+    <input type="radio" name="f6" id="f6-0" checked="checked">
+    <input type="checkbox" name="f6-pencil" id="f6-1-pencil">
+    <input type="radio" name="f6" id="f6-1">
+    <input type="checkbox" name="f6-pencil" id="f6-2-pencil">
+    <input type="radio" name="f6" id="f6-2">
+    <input type="checkbox" name="f6-pencil" id="f6-3-pencil">
+    <input type="radio" name="f6" id="f6-3">
+    <input type="checkbox" name="f6-pencil" id="f6-4-pencil">
+    <input type="radio" name="f6" id="f6-4">
+    <input type="checkbox" name="f6-pencil" id="f6-5-pencil">
+    <input type="radio" name="f6" id="f6-5">
+    <input type="checkbox" name="f6-pencil" id="f6-6-pencil">
+    <input type="radio" name="f6" id="f6-6">
+    <input type="checkbox" name="f6-pencil" id="f6-7-pencil">
+    <input type="radio" name="f6" id="f6-7">
+    <input type="checkbox" name="f6-pencil" id="f6-8-pencil">
+    <input type="radio" name="f6" id="f6-8">
+    <input type="checkbox" name="f6-pencil" id="f6-9-pencil">
+    <input type="radio" name="f6" id="f6-9">
+
+    <input type="radio" name="f7" id="f7-0" checked="checked">
+    <input type="checkbox" name="f7-pencil" id="f7-1-pencil">
+    <input type="radio" name="f7" id="f7-1">
+    <input type="checkbox" name="f7-pencil" id="f7-2-pencil">
+    <input type="radio" name="f7" id="f7-2">
+    <input type="checkbox" name="f7-pencil" id="f7-3-pencil">
+    <input type="radio" name="f7" id="f7-3">
+    <input type="checkbox" name="f7-pencil" id="f7-4-pencil">
+    <input type="radio" name="f7" id="f7-4">
+    <input type="checkbox" name="f7-pencil" id="f7-5-pencil">
+    <input type="radio" name="f7" id="f7-5">
+    <input type="checkbox" name="f7-pencil" id="f7-6-pencil">
+    <input type="radio" name="f7" id="f7-6">
+    <input type="checkbox" name="f7-pencil" id="f7-7-pencil">
+    <input type="radio" name="f7" id="f7-7">
+    <input type="checkbox" name="f7-pencil" id="f7-8-pencil">
+    <input type="radio" name="f7" id="f7-8">
+    <input type="checkbox" name="f7-pencil" id="f7-9-pencil">
+    <input type="radio" name="f7" id="f7-9">
+
+    <input type="radio" name="g1" id="g1-0" checked="checked">
+    <input type="checkbox" name="g1-pencil" id="g1-1-pencil">
+    <input type="radio" name="g1" id="g1-1">
+    <input type="checkbox" name="g1-pencil" id="g1-2-pencil">
+    <input type="radio" name="g1" id="g1-2">
+    <input type="checkbox" name="g1-pencil" id="g1-3-pencil">
+    <input type="radio" name="g1" id="g1-3">
+    <input type="checkbox" name="g1-pencil" id="g1-4-pencil">
+    <input type="radio" name="g1" id="g1-4">
+    <input type="checkbox" name="g1-pencil" id="g1-5-pencil">
+    <input type="radio" name="g1" id="g1-5">
+    <input type="checkbox" name="g1-pencil" id="g1-6-pencil">
+    <input type="radio" name="g1" id="g1-6">
+    <input type="checkbox" name="g1-pencil" id="g1-7-pencil">
+    <input type="radio" name="g1" id="g1-7">
+    <input type="checkbox" name="g1-pencil" id="g1-8-pencil">
+    <input type="radio" name="g1" id="g1-8">
+    <input type="checkbox" name="g1-pencil" id="g1-9-pencil">
+    <input type="radio" name="g1" id="g1-9">
+
+    <input type="radio" name="g2" id="g2-0" checked="checked">
+    <input type="checkbox" name="g2-pencil" id="g2-1-pencil">
+    <input type="radio" name="g2" id="g2-1">
+    <input type="checkbox" name="g2-pencil" id="g2-2-pencil">
+    <input type="radio" name="g2" id="g2-2">
+    <input type="checkbox" name="g2-pencil" id="g2-3-pencil">
+    <input type="radio" name="g2" id="g2-3">
+    <input type="checkbox" name="g2-pencil" id="g2-4-pencil">
+    <input type="radio" name="g2" id="g2-4">
+    <input type="checkbox" name="g2-pencil" id="g2-5-pencil">
+    <input type="radio" name="g2" id="g2-5">
+    <input type="checkbox" name="g2-pencil" id="g2-6-pencil">
+    <input type="radio" name="g2" id="g2-6">
+    <input type="checkbox" name="g2-pencil" id="g2-7-pencil">
+    <input type="radio" name="g2" id="g2-7">
+    <input type="checkbox" name="g2-pencil" id="g2-8-pencil">
+    <input type="radio" name="g2" id="g2-8">
+    <input type="checkbox" name="g2-pencil" id="g2-9-pencil">
+    <input type="radio" name="g2" id="g2-9">
+
+    <input type="radio" name="g4" id="g4-0" checked="checked">
+    <input type="checkbox" name="g4-pencil" id="g4-1-pencil">
+    <input type="radio" name="g4" id="g4-1">
+    <input type="checkbox" name="g4-pencil" id="g4-2-pencil">
+    <input type="radio" name="g4" id="g4-2">
+    <input type="checkbox" name="g4-pencil" id="g4-3-pencil">
+    <input type="radio" name="g4" id="g4-3">
+    <input type="checkbox" name="g4-pencil" id="g4-4-pencil">
+    <input type="radio" name="g4" id="g4-4">
+    <input type="checkbox" name="g4-pencil" id="g4-5-pencil">
+    <input type="radio" name="g4" id="g4-5">
+    <input type="checkbox" name="g4-pencil" id="g4-6-pencil">
+    <input type="radio" name="g4" id="g4-6">
+    <input type="checkbox" name="g4-pencil" id="g4-7-pencil">
+    <input type="radio" name="g4" id="g4-7">
+    <input type="checkbox" name="g4-pencil" id="g4-8-pencil">
+    <input type="radio" name="g4" id="g4-8">
+    <input type="checkbox" name="g4-pencil" id="g4-9-pencil">
+    <input type="radio" name="g4" id="g4-9">
+
+    <input type="radio" name="g6" id="g6-0" checked="checked">
+    <input type="checkbox" name="g6-pencil" id="g6-1-pencil">
+    <input type="radio" name="g6" id="g6-1">
+    <input type="checkbox" name="g6-pencil" id="g6-2-pencil">
+    <input type="radio" name="g6" id="g6-2">
+    <input type="checkbox" name="g6-pencil" id="g6-3-pencil">
+    <input type="radio" name="g6" id="g6-3">
+    <input type="checkbox" name="g6-pencil" id="g6-4-pencil">
+    <input type="radio" name="g6" id="g6-4">
+    <input type="checkbox" name="g6-pencil" id="g6-5-pencil">
+    <input type="radio" name="g6" id="g6-5">
+    <input type="checkbox" name="g6-pencil" id="g6-6-pencil">
+    <input type="radio" name="g6" id="g6-6">
+    <input type="checkbox" name="g6-pencil" id="g6-7-pencil">
+    <input type="radio" name="g6" id="g6-7">
+    <input type="checkbox" name="g6-pencil" id="g6-8-pencil">
+    <input type="radio" name="g6" id="g6-8">
+    <input type="checkbox" name="g6-pencil" id="g6-9-pencil">
+    <input type="radio" name="g6" id="g6-9">
+
+    <input type="radio" name="g8" id="g8-0" checked="checked">
+    <input type="checkbox" name="g8-pencil" id="g8-1-pencil">
+    <input type="radio" name="g8" id="g8-1">
+    <input type="checkbox" name="g8-pencil" id="g8-2-pencil">
+    <input type="radio" name="g8" id="g8-2">
+    <input type="checkbox" name="g8-pencil" id="g8-3-pencil">
+    <input type="radio" name="g8" id="g8-3">
+    <input type="checkbox" name="g8-pencil" id="g8-4-pencil">
+    <input type="radio" name="g8" id="g8-4">
+    <input type="checkbox" name="g8-pencil" id="g8-5-pencil">
+    <input type="radio" name="g8" id="g8-5">
+    <input type="checkbox" name="g8-pencil" id="g8-6-pencil">
+    <input type="radio" name="g8" id="g8-6">
+    <input type="checkbox" name="g8-pencil" id="g8-7-pencil">
+    <input type="radio" name="g8" id="g8-7">
+    <input type="checkbox" name="g8-pencil" id="g8-8-pencil">
+    <input type="radio" name="g8" id="g8-8">
+    <input type="checkbox" name="g8-pencil" id="g8-9-pencil">
+    <input type="radio" name="g8" id="g8-9">
+
+    <input type="radio" name="h2" id="h2-0" checked="checked">
+    <input type="checkbox" name="h2-pencil" id="h2-1-pencil">
+    <input type="radio" name="h2" id="h2-1">
+    <input type="checkbox" name="h2-pencil" id="h2-2-pencil">
+    <input type="radio" name="h2" id="h2-2">
+    <input type="checkbox" name="h2-pencil" id="h2-3-pencil">
+    <input type="radio" name="h2" id="h2-3">
+    <input type="checkbox" name="h2-pencil" id="h2-4-pencil">
+    <input type="radio" name="h2" id="h2-4">
+    <input type="checkbox" name="h2-pencil" id="h2-5-pencil">
+    <input type="radio" name="h2" id="h2-5">
+    <input type="checkbox" name="h2-pencil" id="h2-6-pencil">
+    <input type="radio" name="h2" id="h2-6">
+    <input type="checkbox" name="h2-pencil" id="h2-7-pencil">
+    <input type="radio" name="h2" id="h2-7">
+    <input type="checkbox" name="h2-pencil" id="h2-8-pencil">
+    <input type="radio" name="h2" id="h2-8">
+    <input type="checkbox" name="h2-pencil" id="h2-9-pencil">
+    <input type="radio" name="h2" id="h2-9">
+
+    <input type="radio" name="h3" id="h3-0" checked="checked">
+    <input type="checkbox" name="h3-pencil" id="h3-1-pencil">
+    <input type="radio" name="h3" id="h3-1">
+    <input type="checkbox" name="h3-pencil" id="h3-2-pencil">
+    <input type="radio" name="h3" id="h3-2">
+    <input type="checkbox" name="h3-pencil" id="h3-3-pencil">
+    <input type="radio" name="h3" id="h3-3">
+    <input type="checkbox" name="h3-pencil" id="h3-4-pencil">
+    <input type="radio" name="h3" id="h3-4">
+    <input type="checkbox" name="h3-pencil" id="h3-5-pencil">
+    <input type="radio" name="h3" id="h3-5">
+    <input type="checkbox" name="h3-pencil" id="h3-6-pencil">
+    <input type="radio" name="h3" id="h3-6">
+    <input type="checkbox" name="h3-pencil" id="h3-7-pencil">
+    <input type="radio" name="h3" id="h3-7">
+    <input type="checkbox" name="h3-pencil" id="h3-8-pencil">
+    <input type="radio" name="h3" id="h3-8">
+    <input type="checkbox" name="h3-pencil" id="h3-9-pencil">
+    <input type="radio" name="h3" id="h3-9">
+
+    <input type="radio" name="h4" id="h4-0" checked="checked">
+    <input type="checkbox" name="h4-pencil" id="h4-1-pencil">
+    <input type="radio" name="h4" id="h4-1">
+    <input type="checkbox" name="h4-pencil" id="h4-2-pencil">
+    <input type="radio" name="h4" id="h4-2">
+    <input type="checkbox" name="h4-pencil" id="h4-3-pencil">
+    <input type="radio" name="h4" id="h4-3">
+    <input type="checkbox" name="h4-pencil" id="h4-4-pencil">
+    <input type="radio" name="h4" id="h4-4">
+    <input type="checkbox" name="h4-pencil" id="h4-5-pencil">
+    <input type="radio" name="h4" id="h4-5">
+    <input type="checkbox" name="h4-pencil" id="h4-6-pencil">
+    <input type="radio" name="h4" id="h4-6">
+    <input type="checkbox" name="h4-pencil" id="h4-7-pencil">
+    <input type="radio" name="h4" id="h4-7">
+    <input type="checkbox" name="h4-pencil" id="h4-8-pencil">
+    <input type="radio" name="h4" id="h4-8">
+    <input type="checkbox" name="h4-pencil" id="h4-9-pencil">
+    <input type="radio" name="h4" id="h4-9">
+
+    <input type="radio" name="h6" id="h6-0" checked="checked">
+    <input type="checkbox" name="h6-pencil" id="h6-1-pencil">
+    <input type="radio" name="h6" id="h6-1">
+    <input type="checkbox" name="h6-pencil" id="h6-2-pencil">
+    <input type="radio" name="h6" id="h6-2">
+    <input type="checkbox" name="h6-pencil" id="h6-3-pencil">
+    <input type="radio" name="h6" id="h6-3">
+    <input type="checkbox" name="h6-pencil" id="h6-4-pencil">
+    <input type="radio" name="h6" id="h6-4">
+    <input type="checkbox" name="h6-pencil" id="h6-5-pencil">
+    <input type="radio" name="h6" id="h6-5">
+    <input type="checkbox" name="h6-pencil" id="h6-6-pencil">
+    <input type="radio" name="h6" id="h6-6">
+    <input type="checkbox" name="h6-pencil" id="h6-7-pencil">
+    <input type="radio" name="h6" id="h6-7">
+    <input type="checkbox" name="h6-pencil" id="h6-8-pencil">
+    <input type="radio" name="h6" id="h6-8">
+    <input type="checkbox" name="h6-pencil" id="h6-9-pencil">
+    <input type="radio" name="h6" id="h6-9">
+
+    <input type="radio" name="h7" id="h7-0" checked="checked">
+    <input type="checkbox" name="h7-pencil" id="h7-1-pencil">
+    <input type="radio" name="h7" id="h7-1">
+    <input type="checkbox" name="h7-pencil" id="h7-2-pencil">
+    <input type="radio" name="h7" id="h7-2">
+    <input type="checkbox" name="h7-pencil" id="h7-3-pencil">
+    <input type="radio" name="h7" id="h7-3">
+    <input type="checkbox" name="h7-pencil" id="h7-4-pencil">
+    <input type="radio" name="h7" id="h7-4">
+    <input type="checkbox" name="h7-pencil" id="h7-5-pencil">
+    <input type="radio" name="h7" id="h7-5">
+    <input type="checkbox" name="h7-pencil" id="h7-6-pencil">
+    <input type="radio" name="h7" id="h7-6">
+    <input type="checkbox" name="h7-pencil" id="h7-7-pencil">
+    <input type="radio" name="h7" id="h7-7">
+    <input type="checkbox" name="h7-pencil" id="h7-8-pencil">
+    <input type="radio" name="h7" id="h7-8">
+    <input type="checkbox" name="h7-pencil" id="h7-9-pencil">
+    <input type="radio" name="h7" id="h7-9">
+
+    <input type="radio" name="i1" id="i1-0" checked="checked">
+    <input type="checkbox" name="i1-pencil" id="i1-1-pencil">
+    <input type="radio" name="i1" id="i1-1">
+    <input type="checkbox" name="i1-pencil" id="i1-2-pencil">
+    <input type="radio" name="i1" id="i1-2">
+    <input type="checkbox" name="i1-pencil" id="i1-3-pencil">
+    <input type="radio" name="i1" id="i1-3">
+    <input type="checkbox" name="i1-pencil" id="i1-4-pencil">
+    <input type="radio" name="i1" id="i1-4">
+    <input type="checkbox" name="i1-pencil" id="i1-5-pencil">
+    <input type="radio" name="i1" id="i1-5">
+    <input type="checkbox" name="i1-pencil" id="i1-6-pencil">
+    <input type="radio" name="i1" id="i1-6">
+    <input type="checkbox" name="i1-pencil" id="i1-7-pencil">
+    <input type="radio" name="i1" id="i1-7">
+    <input type="checkbox" name="i1-pencil" id="i1-8-pencil">
+    <input type="radio" name="i1" id="i1-8">
+    <input type="checkbox" name="i1-pencil" id="i1-9-pencil">
+    <input type="radio" name="i1" id="i1-9">
+
+    <input type="radio" name="i4" id="i4-0" checked="checked">
+    <input type="checkbox" name="i4-pencil" id="i4-1-pencil">
+    <input type="radio" name="i4" id="i4-1">
+    <input type="checkbox" name="i4-pencil" id="i4-2-pencil">
+    <input type="radio" name="i4" id="i4-2">
+    <input type="checkbox" name="i4-pencil" id="i4-3-pencil">
+    <input type="radio" name="i4" id="i4-3">
+    <input type="checkbox" name="i4-pencil" id="i4-4-pencil">
+    <input type="radio" name="i4" id="i4-4">
+    <input type="checkbox" name="i4-pencil" id="i4-5-pencil">
+    <input type="radio" name="i4" id="i4-5">
+    <input type="checkbox" name="i4-pencil" id="i4-6-pencil">
+    <input type="radio" name="i4" id="i4-6">
+    <input type="checkbox" name="i4-pencil" id="i4-7-pencil">
+    <input type="radio" name="i4" id="i4-7">
+    <input type="checkbox" name="i4-pencil" id="i4-8-pencil">
+    <input type="radio" name="i4" id="i4-8">
+    <input type="checkbox" name="i4-pencil" id="i4-9-pencil">
+    <input type="radio" name="i4" id="i4-9">
+
+    <input type="radio" name="i7" id="i7-0" checked="checked">
+    <input type="checkbox" name="i7-pencil" id="i7-1-pencil">
+    <input type="radio" name="i7" id="i7-1">
+    <input type="checkbox" name="i7-pencil" id="i7-2-pencil">
+    <input type="radio" name="i7" id="i7-2">
+    <input type="checkbox" name="i7-pencil" id="i7-3-pencil">
+    <input type="radio" name="i7" id="i7-3">
+    <input type="checkbox" name="i7-pencil" id="i7-4-pencil">
+    <input type="radio" name="i7" id="i7-4">
+    <input type="checkbox" name="i7-pencil" id="i7-5-pencil">
+    <input type="radio" name="i7" id="i7-5">
+    <input type="checkbox" name="i7-pencil" id="i7-6-pencil">
+    <input type="radio" name="i7" id="i7-6">
+    <input type="checkbox" name="i7-pencil" id="i7-7-pencil">
+    <input type="radio" name="i7" id="i7-7">
+    <input type="checkbox" name="i7-pencil" id="i7-8-pencil">
+    <input type="radio" name="i7" id="i7-8">
+    <input type="checkbox" name="i7-pencil" id="i7-9-pencil">
+    <input type="radio" name="i7" id="i7-9">
+
+    <input type="radio" name="i8" id="i8-0" checked="checked">
+    <input type="checkbox" name="i8-pencil" id="i8-1-pencil">
+    <input type="radio" name="i8" id="i8-1">
+    <input type="checkbox" name="i8-pencil" id="i8-2-pencil">
+    <input type="radio" name="i8" id="i8-2">
+    <input type="checkbox" name="i8-pencil" id="i8-3-pencil">
+    <input type="radio" name="i8" id="i8-3">
+    <input type="checkbox" name="i8-pencil" id="i8-4-pencil">
+    <input type="radio" name="i8" id="i8-4">
+    <input type="checkbox" name="i8-pencil" id="i8-5-pencil">
+    <input type="radio" name="i8" id="i8-5">
+    <input type="checkbox" name="i8-pencil" id="i8-6-pencil">
+    <input type="radio" name="i8" id="i8-6">
+    <input type="checkbox" name="i8-pencil" id="i8-7-pencil">
+    <input type="radio" name="i8" id="i8-7">
+    <input type="checkbox" name="i8-pencil" id="i8-8-pencil">
+    <input type="radio" name="i8" id="i8-8">
+    <input type="checkbox" name="i8-pencil" id="i8-9-pencil">
+    <input type="radio" name="i8" id="i8-9">
+
+    <input type="radio" name="i9" id="i9-0" checked="checked">
+    <input type="checkbox" name="i9-pencil" id="i9-1-pencil">
+    <input type="radio" name="i9" id="i9-1">
+    <input type="checkbox" name="i9-pencil" id="i9-2-pencil">
+    <input type="radio" name="i9" id="i9-2">
+    <input type="checkbox" name="i9-pencil" id="i9-3-pencil">
+    <input type="radio" name="i9" id="i9-3">
+    <input type="checkbox" name="i9-pencil" id="i9-4-pencil">
+    <input type="radio" name="i9" id="i9-4">
+    <input type="checkbox" name="i9-pencil" id="i9-5-pencil">
+    <input type="radio" name="i9" id="i9-5">
+    <input type="checkbox" name="i9-pencil" id="i9-6-pencil">
+    <input type="radio" name="i9" id="i9-6">
+    <input type="checkbox" name="i9-pencil" id="i9-7-pencil">
+    <input type="radio" name="i9" id="i9-7">
+    <input type="checkbox" name="i9-pencil" id="i9-8-pencil">
+    <input type="radio" name="i9" id="i9-8">
+    <input type="checkbox" name="i9-pencil" id="i9-9-pencil">
+    <input type="radio" name="i9" id="i9-9">
+
+    <div class="mode-switch">
+        <label for="pen">✒️ Váltás tollra</label>
+        <label for="pencil">✏️ Váltás ceruzára</label>
+    </div>
+
+    <div class="sudoku">
+        <div class="section a">
+            <div class="cell cell-a1">
+                <label for="a1-1-pencil" class="pencil">1</label>
+                <label for="a1-1" class="pen">1</label>
+                <label for="a1-2-pencil" class="pencil">2</label>
+                <label for="a1-2" class="pen">2</label>
+                <label for="a1-3-pencil" class="pencil">3</label>
+                <label for="a1-3" class="pen">3</label>
+                <label for="a1-4-pencil" class="pencil">4</label>
+                <label for="a1-4" class="pen">4</label>
+                <label for="a1-5-pencil" class="pencil">5</label>
+                <label for="a1-5" class="pen">5</label>
+                <label for="a1-6-pencil" class="pencil">6</label>
+                <label for="a1-6" class="pen">6</label>
+                <label for="a1-7-pencil" class="pencil">7</label>
+                <label for="a1-7" class="pen">7</label>
+                <label for="a1-8-pencil" class="pencil">8</label>
+                <label for="a1-8" class="pen">8</label>
+                <label for="a1-9-pencil" class="pencil">9</label>
+                <label for="a1-9" class="pen">9</label>
+                <label for="a1-0" class="unset"></label>
+            </div>
+            <div class="cell cell-a2">
+                <label for="a2-1-pencil" class="pencil">1</label>
+                <label for="a2-1" class="pen">1</label>
+                <label for="a2-2-pencil" class="pencil">2</label>
+                <label for="a2-2" class="pen">2</label>
+                <label for="a2-3-pencil" class="pencil">3</label>
+                <label for="a2-3" class="pen">3</label>
+                <label for="a2-4-pencil" class="pencil">4</label>
+                <label for="a2-4" class="pen">4</label>
+                <label for="a2-5-pencil" class="pencil">5</label>
+                <label for="a2-5" class="pen">5</label>
+                <label for="a2-6-pencil" class="pencil">6</label>
+                <label for="a2-6" class="pen">6</label>
+                <label for="a2-7-pencil" class="pencil">7</label>
+                <label for="a2-7" class="pen">7</label>
+                <label for="a2-8-pencil" class="pencil">8</label>
+                <label for="a2-8" class="pen">8</label>
+                <label for="a2-9-pencil" class="pencil">9</label>
+                <label for="a2-9" class="pen">9</label>
+                <label for="a2-0" class="unset"></label>
+            </div>
+            <div class="cell cell-a3">
+                <label for="a3-1-pencil" class="pencil">1</label>
+                <label for="a3-1" class="pen">1</label>
+                <label for="a3-2-pencil" class="pencil">2</label>
+                <label for="a3-2" class="pen">2</label>
+                <label for="a3-3-pencil" class="pencil">3</label>
+                <label for="a3-3" class="pen">3</label>
+                <label for="a3-4-pencil" class="pencil">4</label>
+                <label for="a3-4" class="pen">4</label>
+                <label for="a3-5-pencil" class="pencil">5</label>
+                <label for="a3-5" class="pen">5</label>
+                <label for="a3-6-pencil" class="pencil">6</label>
+                <label for="a3-6" class="pen">6</label>
+                <label for="a3-7-pencil" class="pencil">7</label>
+                <label for="a3-7" class="pen">7</label>
+                <label for="a3-8-pencil" class="pencil">8</label>
+                <label for="a3-8" class="pen">8</label>
+                <label for="a3-9-pencil" class="pencil">9</label>
+                <label for="a3-9" class="pen">9</label>
+                <label for="a3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-a4">
+                <div class="answer">6</div>
+            </div>
+            <div class="cell cell-a5">
+                <div class="answer">8</div>
+            </div>
+            <div class="cell cell-a6">
+                <label for="a6-1-pencil" class="pencil">1</label>
+                <label for="a6-1" class="pen">1</label>
+                <label for="a6-2-pencil" class="pencil">2</label>
+                <label for="a6-2" class="pen">2</label>
+                <label for="a6-3-pencil" class="pencil">3</label>
+                <label for="a6-3" class="pen">3</label>
+                <label for="a6-4-pencil" class="pencil">4</label>
+                <label for="a6-4" class="pen">4</label>
+                <label for="a6-5-pencil" class="pencil">5</label>
+                <label for="a6-5" class="pen">5</label>
+                <label for="a6-6-pencil" class="pencil">6</label>
+                <label for="a6-6" class="pen">6</label>
+                <label for="a6-7-pencil" class="pencil">7</label>
+                <label for="a6-7" class="pen">7</label>
+                <label for="a6-8-pencil" class="pencil">8</label>
+                <label for="a6-8" class="pen">8</label>
+                <label for="a6-9-pencil" class="pencil">9</label>
+                <label for="a6-9" class="pen">9</label>
+                <label for="a6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-a7">
+                <div class="answer">1</div>
+            </div>
+            <div class="cell cell-a8">
+                <div class="answer">9</div>
+            </div>
+            <div class="cell cell-a9">
+                <label for="a9-1-pencil" class="pencil">1</label>
+                <label for="a9-1" class="pen">1</label>
+                <label for="a9-2-pencil" class="pencil">2</label>
+                <label for="a9-2" class="pen">2</label>
+                <label for="a9-3-pencil" class="pencil">3</label>
+                <label for="a9-3" class="pen">3</label>
+                <label for="a9-4-pencil" class="pencil">4</label>
+                <label for="a9-4" class="pen">4</label>
+                <label for="a9-5-pencil" class="pencil">5</label>
+                <label for="a9-5" class="pen">5</label>
+                <label for="a9-6-pencil" class="pencil">6</label>
+                <label for="a9-6" class="pen">6</label>
+                <label for="a9-7-pencil" class="pencil">7</label>
+                <label for="a9-7" class="pen">7</label>
+                <label for="a9-8-pencil" class="pencil">8</label>
+                <label for="a9-8" class="pen">8</label>
+                <label for="a9-9-pencil" class="pencil">9</label>
+                <label for="a9-9" class="pen">9</label>
+                <label for="a9-0" class="unset"></label>
+            </div>
+        </div>
+        <div class="section b">
+            <div class="cell cell-b1">
+                <div class="answer">2</div>
+            </div>
+            <div class="cell cell-b2">
+                <div class="answer">6</div>
+            </div>
+            <div class="cell cell-b3">
+                <label for="b3-1-pencil" class="pencil">1</label>
+                <label for="b3-1" class="pen">1</label>
+                <label for="b3-2-pencil" class="pencil">2</label>
+                <label for="b3-2" class="pen">2</label>
+                <label for="b3-3-pencil" class="pencil">3</label>
+                <label for="b3-3" class="pen">3</label>
+                <label for="b3-4-pencil" class="pencil">4</label>
+                <label for="b3-4" class="pen">4</label>
+                <label for="b3-5-pencil" class="pencil">5</label>
+                <label for="b3-5" class="pen">5</label>
+                <label for="b3-6-pencil" class="pencil">6</label>
+                <label for="b3-6" class="pen">6</label>
+                <label for="b3-7-pencil" class="pencil">7</label>
+                <label for="b3-7" class="pen">7</label>
+                <label for="b3-8-pencil" class="pencil">8</label>
+                <label for="b3-8" class="pen">8</label>
+                <label for="b3-9-pencil" class="pencil">9</label>
+                <label for="b3-9" class="pen">9</label>
+                <label for="b3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-b4">
+                <label for="b4-1-pencil" class="pencil">1</label>
+                <label for="b4-1" class="pen">1</label>
+                <label for="b4-2-pencil" class="pencil">2</label>
+                <label for="b4-2" class="pen">2</label>
+                <label for="b4-3-pencil" class="pencil">3</label>
+                <label for="b4-3" class="pen">3</label>
+                <label for="b4-4-pencil" class="pencil">4</label>
+                <label for="b4-4" class="pen">4</label>
+                <label for="b4-5-pencil" class="pencil">5</label>
+                <label for="b4-5" class="pen">5</label>
+                <label for="b4-6-pencil" class="pencil">6</label>
+                <label for="b4-6" class="pen">6</label>
+                <label for="b4-7-pencil" class="pencil">7</label>
+                <label for="b4-7" class="pen">7</label>
+                <label for="b4-8-pencil" class="pencil">8</label>
+                <label for="b4-8" class="pen">8</label>
+                <label for="b4-9-pencil" class="pencil">9</label>
+                <label for="b4-9" class="pen">9</label>
+                <label for="b4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-b5">
+                <div class="answer">7</div>
+            </div>
+            <div class="cell cell-b6">
+                <label for="b6-1-pencil" class="pencil">1</label>
+                <label for="b6-1" class="pen">1</label>
+                <label for="b6-2-pencil" class="pencil">2</label>
+                <label for="b6-2" class="pen">2</label>
+                <label for="b6-3-pencil" class="pencil">3</label>
+                <label for="b6-3" class="pen">3</label>
+                <label for="b6-4-pencil" class="pencil">4</label>
+                <label for="b6-4" class="pen">4</label>
+                <label for="b6-5-pencil" class="pencil">5</label>
+                <label for="b6-5" class="pen">5</label>
+                <label for="b6-6-pencil" class="pencil">6</label>
+                <label for="b6-6" class="pen">6</label>
+                <label for="b6-7-pencil" class="pencil">7</label>
+                <label for="b6-7" class="pen">7</label>
+                <label for="b6-8-pencil" class="pencil">8</label>
+                <label for="b6-8" class="pen">8</label>
+                <label for="b6-9-pencil" class="pencil">9</label>
+                <label for="b6-9" class="pen">9</label>
+                <label for="b6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-b7">
+                <label for="b7-1-pencil" class="pencil">1</label>
+                <label for="b7-1" class="pen">1</label>
+                <label for="b7-2-pencil" class="pencil">2</label>
+                <label for="b7-2" class="pen">2</label>
+                <label for="b7-3-pencil" class="pencil">3</label>
+                <label for="b7-3" class="pen">3</label>
+                <label for="b7-4-pencil" class="pencil">4</label>
+                <label for="b7-4" class="pen">4</label>
+                <label for="b7-5-pencil" class="pencil">5</label>
+                <label for="b7-5" class="pen">5</label>
+                <label for="b7-6-pencil" class="pencil">6</label>
+                <label for="b7-6" class="pen">6</label>
+                <label for="b7-7-pencil" class="pencil">7</label>
+                <label for="b7-7" class="pen">7</label>
+                <label for="b7-8-pencil" class="pencil">8</label>
+                <label for="b7-8" class="pen">8</label>
+                <label for="b7-9-pencil" class="pencil">9</label>
+                <label for="b7-9" class="pen">9</label>
+                <label for="b7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-b8">
+                <label for="b8-1-pencil" class="pencil">1</label>
+                <label for="b8-1" class="pen">1</label>
+                <label for="b8-2-pencil" class="pencil">2</label>
+                <label for="b8-2" class="pen">2</label>
+                <label for="b8-3-pencil" class="pencil">3</label>
+                <label for="b8-3" class="pen">3</label>
+                <label for="b8-4-pencil" class="pencil">4</label>
+                <label for="b8-4" class="pen">4</label>
+                <label for="b8-5-pencil" class="pencil">5</label>
+                <label for="b8-5" class="pen">5</label>
+                <label for="b8-6-pencil" class="pencil">6</label>
+                <label for="b8-6" class="pen">6</label>
+                <label for="b8-7-pencil" class="pencil">7</label>
+                <label for="b8-7" class="pen">7</label>
+                <label for="b8-8-pencil" class="pencil">8</label>
+                <label for="b8-8" class="pen">8</label>
+                <label for="b8-9-pencil" class="pencil">9</label>
+                <label for="b8-9" class="pen">9</label>
+                <label for="b8-0" class="unset"></label>
+            </div>
+            <div class="cell cell-b9">
+                <div class="answer">4</div>
+            </div>
+        </div>
+        <div class="section c">
+            <div class="cell cell-c1">
+                <div class="answer">7</div>
+            </div>
+            <div class="cell cell-c2">
+                <label for="c2-1-pencil" class="pencil">1</label>
+                <label for="c2-1" class="pen">1</label>
+                <label for="c2-2-pencil" class="pencil">2</label>
+                <label for="c2-2" class="pen">2</label>
+                <label for="c2-3-pencil" class="pencil">3</label>
+                <label for="c2-3" class="pen">3</label>
+                <label for="c2-4-pencil" class="pencil">4</label>
+                <label for="c2-4" class="pen">4</label>
+                <label for="c2-5-pencil" class="pencil">5</label>
+                <label for="c2-5" class="pen">5</label>
+                <label for="c2-6-pencil" class="pencil">6</label>
+                <label for="c2-6" class="pen">6</label>
+                <label for="c2-7-pencil" class="pencil">7</label>
+                <label for="c2-7" class="pen">7</label>
+                <label for="c2-8-pencil" class="pencil">8</label>
+                <label for="c2-8" class="pen">8</label>
+                <label for="c2-9-pencil" class="pencil">9</label>
+                <label for="c2-9" class="pen">9</label>
+                <label for="c2-0" class="unset"></label>
+            </div>
+            <div class="cell cell-c3">
+                <div class="answer">1</div>
+            </div>
+            <div class="cell cell-c4">
+                <label for="c4-1-pencil" class="pencil">1</label>
+                <label for="c4-1" class="pen">1</label>
+                <label for="c4-2-pencil" class="pencil">2</label>
+                <label for="c4-2" class="pen">2</label>
+                <label for="c4-3-pencil" class="pencil">3</label>
+                <label for="c4-3" class="pen">3</label>
+                <label for="c4-4-pencil" class="pencil">4</label>
+                <label for="c4-4" class="pen">4</label>
+                <label for="c4-5-pencil" class="pencil">5</label>
+                <label for="c4-5" class="pen">5</label>
+                <label for="c4-6-pencil" class="pencil">6</label>
+                <label for="c4-6" class="pen">6</label>
+                <label for="c4-7-pencil" class="pencil">7</label>
+                <label for="c4-7" class="pen">7</label>
+                <label for="c4-8-pencil" class="pencil">8</label>
+                <label for="c4-8" class="pen">8</label>
+                <label for="c4-9-pencil" class="pencil">9</label>
+                <label for="c4-9" class="pen">9</label>
+                <label for="c4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-c5">
+                <div class="answer">9</div>
+            </div>
+            <div class="cell cell-c6">
+                <label for="c6-1-pencil" class="pencil">1</label>
+                <label for="c6-1" class="pen">1</label>
+                <label for="c6-2-pencil" class="pencil">2</label>
+                <label for="c6-2" class="pen">2</label>
+                <label for="c6-3-pencil" class="pencil">3</label>
+                <label for="c6-3" class="pen">3</label>
+                <label for="c6-4-pencil" class="pencil">4</label>
+                <label for="c6-4" class="pen">4</label>
+                <label for="c6-5-pencil" class="pencil">5</label>
+                <label for="c6-5" class="pen">5</label>
+                <label for="c6-6-pencil" class="pencil">6</label>
+                <label for="c6-6" class="pen">6</label>
+                <label for="c6-7-pencil" class="pencil">7</label>
+                <label for="c6-7" class="pen">7</label>
+                <label for="c6-8-pencil" class="pencil">8</label>
+                <label for="c6-8" class="pen">8</label>
+                <label for="c6-9-pencil" class="pencil">9</label>
+                <label for="c6-9" class="pen">9</label>
+                <label for="c6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-c7">
+                <div class="answer">5</div>
+            </div>
+            <div class="cell cell-c8">
+                <label for="c8-1-pencil" class="pencil">1</label>
+                <label for="c8-1" class="pen">1</label>
+                <label for="c8-2-pencil" class="pencil">2</label>
+                <label for="c8-2" class="pen">2</label>
+                <label for="c8-3-pencil" class="pencil">3</label>
+                <label for="c8-3" class="pen">3</label>
+                <label for="c8-4-pencil" class="pencil">4</label>
+                <label for="c8-4" class="pen">4</label>
+                <label for="c8-5-pencil" class="pencil">5</label>
+                <label for="c8-5" class="pen">5</label>
+                <label for="c8-6-pencil" class="pencil">6</label>
+                <label for="c8-6" class="pen">6</label>
+                <label for="c8-7-pencil" class="pencil">7</label>
+                <label for="c8-7" class="pen">7</label>
+                <label for="c8-8-pencil" class="pencil">8</label>
+                <label for="c8-8" class="pen">8</label>
+                <label for="c8-9-pencil" class="pencil">9</label>
+                <label for="c8-9" class="pen">9</label>
+                <label for="c8-0" class="unset"></label>
+            </div>
+            <div class="cell cell-c9">
+                <label for="c9-1-pencil" class="pencil">1</label>
+                <label for="c9-1" class="pen">1</label>
+                <label for="c9-2-pencil" class="pencil">2</label>
+                <label for="c9-2" class="pen">2</label>
+                <label for="c9-3-pencil" class="pencil">3</label>
+                <label for="c9-3" class="pen">3</label>
+                <label for="c9-4-pencil" class="pencil">4</label>
+                <label for="c9-4" class="pen">4</label>
+                <label for="c9-5-pencil" class="pencil">5</label>
+                <label for="c9-5" class="pen">5</label>
+                <label for="c9-6-pencil" class="pencil">6</label>
+                <label for="c9-6" class="pen">6</label>
+                <label for="c9-7-pencil" class="pencil">7</label>
+                <label for="c9-7" class="pen">7</label>
+                <label for="c9-8-pencil" class="pencil">8</label>
+                <label for="c9-8" class="pen">8</label>
+                <label for="c9-9-pencil" class="pencil">9</label>
+                <label for="c9-9" class="pen">9</label>
+                <label for="c9-0" class="unset"></label>
+            </div>
+        </div>
+        <div class="section d">
+            <div class="cell cell-d1">
+                <div class="answer">8</div>
+            </div>
+            <div class="cell cell-d2">
+                <div class="answer">2</div>
+            </div>
+            <div class="cell cell-d3">
+                <label for="d3-1-pencil" class="pencil">1</label>
+                <label for="d3-1" class="pen">1</label>
+                <label for="d3-2-pencil" class="pencil">2</label>
+                <label for="d3-2" class="pen">2</label>
+                <label for="d3-3-pencil" class="pencil">3</label>
+                <label for="d3-3" class="pen">3</label>
+                <label for="d3-4-pencil" class="pencil">4</label>
+                <label for="d3-4" class="pen">4</label>
+                <label for="d3-5-pencil" class="pencil">5</label>
+                <label for="d3-5" class="pen">5</label>
+                <label for="d3-6-pencil" class="pencil">6</label>
+                <label for="d3-6" class="pen">6</label>
+                <label for="d3-7-pencil" class="pencil">7</label>
+                <label for="d3-7" class="pen">7</label>
+                <label for="d3-8-pencil" class="pencil">8</label>
+                <label for="d3-8" class="pen">8</label>
+                <label for="d3-9-pencil" class="pencil">9</label>
+                <label for="d3-9" class="pen">9</label>
+                <label for="d3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-d4">
+                <label for="d4-1-pencil" class="pencil">1</label>
+                <label for="d4-1" class="pen">1</label>
+                <label for="d4-2-pencil" class="pencil">2</label>
+                <label for="d4-2" class="pen">2</label>
+                <label for="d4-3-pencil" class="pencil">3</label>
+                <label for="d4-3" class="pen">3</label>
+                <label for="d4-4-pencil" class="pencil">4</label>
+                <label for="d4-4" class="pen">4</label>
+                <label for="d4-5-pencil" class="pencil">5</label>
+                <label for="d4-5" class="pen">5</label>
+                <label for="d4-6-pencil" class="pencil">6</label>
+                <label for="d4-6" class="pen">6</label>
+                <label for="d4-7-pencil" class="pencil">7</label>
+                <label for="d4-7" class="pen">7</label>
+                <label for="d4-8-pencil" class="pencil">8</label>
+                <label for="d4-8" class="pen">8</label>
+                <label for="d4-9-pencil" class="pencil">9</label>
+                <label for="d4-9" class="pen">9</label>
+                <label for="d4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-d5">
+                <label for="d5-1-pencil" class="pencil">1</label>
+                <label for="d5-1" class="pen">1</label>
+                <label for="d5-2-pencil" class="pencil">2</label>
+                <label for="d5-2" class="pen">2</label>
+                <label for="d5-3-pencil" class="pencil">3</label>
+                <label for="d5-3" class="pen">3</label>
+                <label for="d5-4-pencil" class="pencil">4</label>
+                <label for="d5-4" class="pen">4</label>
+                <label for="d5-5-pencil" class="pencil">5</label>
+                <label for="d5-5" class="pen">5</label>
+                <label for="d5-6-pencil" class="pencil">6</label>
+                <label for="d5-6" class="pen">6</label>
+                <label for="d5-7-pencil" class="pencil">7</label>
+                <label for="d5-7" class="pen">7</label>
+                <label for="d5-8-pencil" class="pencil">8</label>
+                <label for="d5-8" class="pen">8</label>
+                <label for="d5-9-pencil" class="pencil">9</label>
+                <label for="d5-9" class="pen">9</label>
+                <label for="d5-0" class="unset"></label>
+            </div>
+            <div class="cell cell-d6">
+                <div class="answer">4</div>
+            </div>
+            <div class="cell cell-d7">
+                <label for="d7-1-pencil" class="pencil">1</label>
+                <label for="d7-1" class="pen">1</label>
+                <label for="d7-2-pencil" class="pencil">2</label>
+                <label for="d7-2" class="pen">2</label>
+                <label for="d7-3-pencil" class="pencil">3</label>
+                <label for="d7-3" class="pen">3</label>
+                <label for="d7-4-pencil" class="pencil">4</label>
+                <label for="d7-4" class="pen">4</label>
+                <label for="d7-5-pencil" class="pencil">5</label>
+                <label for="d7-5" class="pen">5</label>
+                <label for="d7-6-pencil" class="pencil">6</label>
+                <label for="d7-6" class="pen">6</label>
+                <label for="d7-7-pencil" class="pencil">7</label>
+                <label for="d7-7" class="pen">7</label>
+                <label for="d7-8-pencil" class="pencil">8</label>
+                <label for="d7-8" class="pen">8</label>
+                <label for="d7-9-pencil" class="pencil">9</label>
+                <label for="d7-9" class="pen">9</label>
+                <label for="d7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-d8">
+                <div class="answer">5</div>
+            </div>
+            <div class="cell cell-d9">
+                <label for="d9-1-pencil" class="pencil">1</label>
+                <label for="d9-1" class="pen">1</label>
+                <label for="d9-2-pencil" class="pencil">2</label>
+                <label for="d9-2" class="pen">2</label>
+                <label for="d9-3-pencil" class="pencil">3</label>
+                <label for="d9-3" class="pen">3</label>
+                <label for="d9-4-pencil" class="pencil">4</label>
+                <label for="d9-4" class="pen">4</label>
+                <label for="d9-5-pencil" class="pencil">5</label>
+                <label for="d9-5" class="pen">5</label>
+                <label for="d9-6-pencil" class="pencil">6</label>
+                <label for="d9-6" class="pen">6</label>
+                <label for="d9-7-pencil" class="pencil">7</label>
+                <label for="d9-7" class="pen">7</label>
+                <label for="d9-8-pencil" class="pencil">8</label>
+                <label for="d9-8" class="pen">8</label>
+                <label for="d9-9-pencil" class="pencil">9</label>
+                <label for="d9-9" class="pen">9</label>
+                <label for="d9-0" class="unset"></label>
+            </div>
+        </div>
+        <div class="section e">
+            <div class="cell cell-e1">
+                <div class="answer">1</div>
+            </div>
+            <div class="cell cell-e2">
+                <label for="e2-1-pencil" class="pencil">1</label>
+                <label for="e2-1" class="pen">1</label>
+                <label for="e2-2-pencil" class="pencil">2</label>
+                <label for="e2-2" class="pen">2</label>
+                <label for="e2-3-pencil" class="pencil">3</label>
+                <label for="e2-3" class="pen">3</label>
+                <label for="e2-4-pencil" class="pencil">4</label>
+                <label for="e2-4" class="pen">4</label>
+                <label for="e2-5-pencil" class="pencil">5</label>
+                <label for="e2-5" class="pen">5</label>
+                <label for="e2-6-pencil" class="pencil">6</label>
+                <label for="e2-6" class="pen">6</label>
+                <label for="e2-7-pencil" class="pencil">7</label>
+                <label for="e2-7" class="pen">7</label>
+                <label for="e2-8-pencil" class="pencil">8</label>
+                <label for="e2-8" class="pen">8</label>
+                <label for="e2-9-pencil" class="pencil">9</label>
+                <label for="e2-9" class="pen">9</label>
+                <label for="e2-0" class="unset"></label>
+            </div>
+            <div class="cell cell-e3">
+                <label for="e3-1-pencil" class="pencil">1</label>
+                <label for="e3-1" class="pen">1</label>
+                <label for="e3-2-pencil" class="pencil">2</label>
+                <label for="e3-2" class="pen">2</label>
+                <label for="e3-3-pencil" class="pencil">3</label>
+                <label for="e3-3" class="pen">3</label>
+                <label for="e3-4-pencil" class="pencil">4</label>
+                <label for="e3-4" class="pen">4</label>
+                <label for="e3-5-pencil" class="pencil">5</label>
+                <label for="e3-5" class="pen">5</label>
+                <label for="e3-6-pencil" class="pencil">6</label>
+                <label for="e3-6" class="pen">6</label>
+                <label for="e3-7-pencil" class="pencil">7</label>
+                <label for="e3-7" class="pen">7</label>
+                <label for="e3-8-pencil" class="pencil">8</label>
+                <label for="e3-8" class="pen">8</label>
+                <label for="e3-9-pencil" class="pencil">9</label>
+                <label for="e3-9" class="pen">9</label>
+                <label for="e3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-e4">
+                <div class="answer">6</div>
+            </div>
+            <div class="cell cell-e5">
+                <label for="e5-1-pencil" class="pencil">1</label>
+                <label for="e5-1" class="pen">1</label>
+                <label for="e5-2-pencil" class="pencil">2</label>
+                <label for="e5-2" class="pen">2</label>
+                <label for="e5-3-pencil" class="pencil">3</label>
+                <label for="e5-3" class="pen">3</label>
+                <label for="e5-4-pencil" class="pencil">4</label>
+                <label for="e5-4" class="pen">4</label>
+                <label for="e5-5-pencil" class="pencil">5</label>
+                <label for="e5-5" class="pen">5</label>
+                <label for="e5-6-pencil" class="pencil">6</label>
+                <label for="e5-6" class="pen">6</label>
+                <label for="e5-7-pencil" class="pencil">7</label>
+                <label for="e5-7" class="pen">7</label>
+                <label for="e5-8-pencil" class="pencil">8</label>
+                <label for="e5-8" class="pen">8</label>
+                <label for="e5-9-pencil" class="pencil">9</label>
+                <label for="e5-9" class="pen">9</label>
+                <label for="e5-0" class="unset"></label>
+            </div>
+            <div class="cell cell-e6">
+                <div class="answer">2</div>
+            </div>
+            <div class="cell cell-e7">
+                <label for="e7-1-pencil" class="pencil">1</label>
+                <label for="e7-1" class="pen">1</label>
+                <label for="e7-2-pencil" class="pencil">2</label>
+                <label for="e7-2" class="pen">2</label>
+                <label for="e7-3-pencil" class="pencil">3</label>
+                <label for="e7-3" class="pen">3</label>
+                <label for="e7-4-pencil" class="pencil">4</label>
+                <label for="e7-4" class="pen">4</label>
+                <label for="e7-5-pencil" class="pencil">5</label>
+                <label for="e7-5" class="pen">5</label>
+                <label for="e7-6-pencil" class="pencil">6</label>
+                <label for="e7-6" class="pen">6</label>
+                <label for="e7-7-pencil" class="pencil">7</label>
+                <label for="e7-7" class="pen">7</label>
+                <label for="e7-8-pencil" class="pencil">8</label>
+                <label for="e7-8" class="pen">8</label>
+                <label for="e7-9-pencil" class="pencil">9</label>
+                <label for="e7-9" class="pen">9</label>
+                <label for="e7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-e8">
+                <label for="e8-1-pencil" class="pencil">1</label>
+                <label for="e8-1" class="pen">1</label>
+                <label for="e8-2-pencil" class="pencil">2</label>
+                <label for="e8-2" class="pen">2</label>
+                <label for="e8-3-pencil" class="pencil">3</label>
+                <label for="e8-3" class="pen">3</label>
+                <label for="e8-4-pencil" class="pencil">4</label>
+                <label for="e8-4" class="pen">4</label>
+                <label for="e8-5-pencil" class="pencil">5</label>
+                <label for="e8-5" class="pen">5</label>
+                <label for="e8-6-pencil" class="pencil">6</label>
+                <label for="e8-6" class="pen">6</label>
+                <label for="e8-7-pencil" class="pencil">7</label>
+                <label for="e8-7" class="pen">7</label>
+                <label for="e8-8-pencil" class="pencil">8</label>
+                <label for="e8-8" class="pen">8</label>
+                <label for="e8-9-pencil" class="pencil">9</label>
+                <label for="e8-9" class="pen">9</label>
+                <label for="e8-0" class="unset"></label>
+            </div>
+            <div class="cell cell-e9">
+                <div class="answer">3</div>
+            </div>
+        </div>
+        <div class="section f">
+            <div class="cell cell-f1">
+                <label for="f1-1-pencil" class="pencil">1</label>
+                <label for="f1-1" class="pen">1</label>
+                <label for="f1-2-pencil" class="pencil">2</label>
+                <label for="f1-2" class="pen">2</label>
+                <label for="f1-3-pencil" class="pencil">3</label>
+                <label for="f1-3" class="pen">3</label>
+                <label for="f1-4-pencil" class="pencil">4</label>
+                <label for="f1-4" class="pen">4</label>
+                <label for="f1-5-pencil" class="pencil">5</label>
+                <label for="f1-5" class="pen">5</label>
+                <label for="f1-6-pencil" class="pencil">6</label>
+                <label for="f1-6" class="pen">6</label>
+                <label for="f1-7-pencil" class="pencil">7</label>
+                <label for="f1-7" class="pen">7</label>
+                <label for="f1-8-pencil" class="pencil">8</label>
+                <label for="f1-8" class="pen">8</label>
+                <label for="f1-9-pencil" class="pencil">9</label>
+                <label for="f1-9" class="pen">9</label>
+                <label for="f1-0" class="unset"></label>
+            </div>
+            <div class="cell cell-f2">
+                <div class="answer">4</div>
+            </div>
+            <div class="cell cell-f3">
+                <label for="f3-1-pencil" class="pencil">1</label>
+                <label for="f3-1" class="pen">1</label>
+                <label for="f3-2-pencil" class="pencil">2</label>
+                <label for="f3-2" class="pen">2</label>
+                <label for="f3-3-pencil" class="pencil">3</label>
+                <label for="f3-3" class="pen">3</label>
+                <label for="f3-4-pencil" class="pencil">4</label>
+                <label for="f3-4" class="pen">4</label>
+                <label for="f3-5-pencil" class="pencil">5</label>
+                <label for="f3-5" class="pen">5</label>
+                <label for="f3-6-pencil" class="pencil">6</label>
+                <label for="f3-6" class="pen">6</label>
+                <label for="f3-7-pencil" class="pencil">7</label>
+                <label for="f3-7" class="pen">7</label>
+                <label for="f3-8-pencil" class="pencil">8</label>
+                <label for="f3-8" class="pen">8</label>
+                <label for="f3-9-pencil" class="pencil">9</label>
+                <label for="f3-9" class="pen">9</label>
+                <label for="f3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-f4">
+                <div class="answer">9</div>
+            </div>
+            <div class="cell cell-f5">
+                <label for="f5-1-pencil" class="pencil">1</label>
+                <label for="f5-1" class="pen">1</label>
+                <label for="f5-2-pencil" class="pencil">2</label>
+                <label for="f5-2" class="pen">2</label>
+                <label for="f5-3-pencil" class="pencil">3</label>
+                <label for="f5-3" class="pen">3</label>
+                <label for="f5-4-pencil" class="pencil">4</label>
+                <label for="f5-4" class="pen">4</label>
+                <label for="f5-5-pencil" class="pencil">5</label>
+                <label for="f5-5" class="pen">5</label>
+                <label for="f5-6-pencil" class="pencil">6</label>
+                <label for="f5-6" class="pen">6</label>
+                <label for="f5-7-pencil" class="pencil">7</label>
+                <label for="f5-7" class="pen">7</label>
+                <label for="f5-8-pencil" class="pencil">8</label>
+                <label for="f5-8" class="pen">8</label>
+                <label for="f5-9-pencil" class="pencil">9</label>
+                <label for="f5-9" class="pen">9</label>
+                <label for="f5-0" class="unset"></label>
+            </div>
+            <div class="cell cell-f6">
+                <label for="f6-1-pencil" class="pencil">1</label>
+                <label for="f6-1" class="pen">1</label>
+                <label for="f6-2-pencil" class="pencil">2</label>
+                <label for="f6-2" class="pen">2</label>
+                <label for="f6-3-pencil" class="pencil">3</label>
+                <label for="f6-3" class="pen">3</label>
+                <label for="f6-4-pencil" class="pencil">4</label>
+                <label for="f6-4" class="pen">4</label>
+                <label for="f6-5-pencil" class="pencil">5</label>
+                <label for="f6-5" class="pen">5</label>
+                <label for="f6-6-pencil" class="pencil">6</label>
+                <label for="f6-6" class="pen">6</label>
+                <label for="f6-7-pencil" class="pencil">7</label>
+                <label for="f6-7" class="pen">7</label>
+                <label for="f6-8-pencil" class="pencil">8</label>
+                <label for="f6-8" class="pen">8</label>
+                <label for="f6-9-pencil" class="pencil">9</label>
+                <label for="f6-9" class="pen">9</label>
+                <label for="f6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-f7">
+                <label for="f7-1-pencil" class="pencil">1</label>
+                <label for="f7-1" class="pen">1</label>
+                <label for="f7-2-pencil" class="pencil">2</label>
+                <label for="f7-2" class="pen">2</label>
+                <label for="f7-3-pencil" class="pencil">3</label>
+                <label for="f7-3" class="pen">3</label>
+                <label for="f7-4-pencil" class="pencil">4</label>
+                <label for="f7-4" class="pen">4</label>
+                <label for="f7-5-pencil" class="pencil">5</label>
+                <label for="f7-5" class="pen">5</label>
+                <label for="f7-6-pencil" class="pencil">6</label>
+                <label for="f7-6" class="pen">6</label>
+                <label for="f7-7-pencil" class="pencil">7</label>
+                <label for="f7-7" class="pen">7</label>
+                <label for="f7-8-pencil" class="pencil">8</label>
+                <label for="f7-8" class="pen">8</label>
+                <label for="f7-9-pencil" class="pencil">9</label>
+                <label for="f7-9" class="pen">9</label>
+                <label for="f7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-f8">
+                <div class="answer">2</div>
+            </div>
+            <div class="cell cell-f9">
+                <div class="answer">8</div>
+            </div>
+        </div>
+        <div class="section g">
+            <div class="cell cell-g1">
+                <label for="g1-1-pencil" class="pencil">1</label>
+                <label for="g1-1" class="pen">1</label>
+                <label for="g1-2-pencil" class="pencil">2</label>
+                <label for="g1-2" class="pen">2</label>
+                <label for="g1-3-pencil" class="pencil">3</label>
+                <label for="g1-3" class="pen">3</label>
+                <label for="g1-4-pencil" class="pencil">4</label>
+                <label for="g1-4" class="pen">4</label>
+                <label for="g1-5-pencil" class="pencil">5</label>
+                <label for="g1-5" class="pen">5</label>
+                <label for="g1-6-pencil" class="pencil">6</label>
+                <label for="g1-6" class="pen">6</label>
+                <label for="g1-7-pencil" class="pencil">7</label>
+                <label for="g1-7" class="pen">7</label>
+                <label for="g1-8-pencil" class="pencil">8</label>
+                <label for="g1-8" class="pen">8</label>
+                <label for="g1-9-pencil" class="pencil">9</label>
+                <label for="g1-9" class="pen">9</label>
+                <label for="g1-0" class="unset"></label>
+            </div>
+            <div class="cell cell-g2">
+                <label for="g2-1-pencil" class="pencil">1</label>
+                <label for="g2-1" class="pen">1</label>
+                <label for="g2-2-pencil" class="pencil">2</label>
+                <label for="g2-2" class="pen">2</label>
+                <label for="g2-3-pencil" class="pencil">3</label>
+                <label for="g2-3" class="pen">3</label>
+                <label for="g2-4-pencil" class="pencil">4</label>
+                <label for="g2-4" class="pen">4</label>
+                <label for="g2-5-pencil" class="pencil">5</label>
+                <label for="g2-5" class="pen">5</label>
+                <label for="g2-6-pencil" class="pencil">6</label>
+                <label for="g2-6" class="pen">6</label>
+                <label for="g2-7-pencil" class="pencil">7</label>
+                <label for="g2-7" class="pen">7</label>
+                <label for="g2-8-pencil" class="pencil">8</label>
+                <label for="g2-8" class="pen">8</label>
+                <label for="g2-9-pencil" class="pencil">9</label>
+                <label for="g2-9" class="pen">9</label>
+                <label for="g2-0" class="unset"></label>
+            </div>
+            <div class="cell cell-g3">
+                <div class="answer">9</div>
+            </div>
+            <div class="cell cell-g4">
+                <label for="g4-1-pencil" class="pencil">1</label>
+                <label for="g4-1" class="pen">1</label>
+                <label for="g4-2-pencil" class="pencil">2</label>
+                <label for="g4-2" class="pen">2</label>
+                <label for="g4-3-pencil" class="pencil">3</label>
+                <label for="g4-3" class="pen">3</label>
+                <label for="g4-4-pencil" class="pencil">4</label>
+                <label for="g4-4" class="pen">4</label>
+                <label for="g4-5-pencil" class="pencil">5</label>
+                <label for="g4-5" class="pen">5</label>
+                <label for="g4-6-pencil" class="pencil">6</label>
+                <label for="g4-6" class="pen">6</label>
+                <label for="g4-7-pencil" class="pencil">7</label>
+                <label for="g4-7" class="pen">7</label>
+                <label for="g4-8-pencil" class="pencil">8</label>
+                <label for="g4-8" class="pen">8</label>
+                <label for="g4-9-pencil" class="pencil">9</label>
+                <label for="g4-9" class="pen">9</label>
+                <label for="g4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-g5">
+                <div class="answer">4</div>
+            </div>
+            <div class="cell cell-g6">
+                <label for="g6-1-pencil" class="pencil">1</label>
+                <label for="g6-1" class="pen">1</label>
+                <label for="g6-2-pencil" class="pencil">2</label>
+                <label for="g6-2" class="pen">2</label>
+                <label for="g6-3-pencil" class="pencil">3</label>
+                <label for="g6-3" class="pen">3</label>
+                <label for="g6-4-pencil" class="pencil">4</label>
+                <label for="g6-4" class="pen">4</label>
+                <label for="g6-5-pencil" class="pencil">5</label>
+                <label for="g6-5" class="pen">5</label>
+                <label for="g6-6-pencil" class="pencil">6</label>
+                <label for="g6-6" class="pen">6</label>
+                <label for="g6-7-pencil" class="pencil">7</label>
+                <label for="g6-7" class="pen">7</label>
+                <label for="g6-8-pencil" class="pencil">8</label>
+                <label for="g6-8" class="pen">8</label>
+                <label for="g6-9-pencil" class="pencil">9</label>
+                <label for="g6-9" class="pen">9</label>
+                <label for="g6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-g7">
+                <div class="answer">7</div>
+            </div>
+            <div class="cell cell-g8">
+                <label for="g8-1-pencil" class="pencil">1</label>
+                <label for="g8-1" class="pen">1</label>
+                <label for="g8-2-pencil" class="pencil">2</label>
+                <label for="g8-2" class="pen">2</label>
+                <label for="g8-3-pencil" class="pencil">3</label>
+                <label for="g8-3" class="pen">3</label>
+                <label for="g8-4-pencil" class="pencil">4</label>
+                <label for="g8-4" class="pen">4</label>
+                <label for="g8-5-pencil" class="pencil">5</label>
+                <label for="g8-5" class="pen">5</label>
+                <label for="g8-6-pencil" class="pencil">6</label>
+                <label for="g8-6" class="pen">6</label>
+                <label for="g8-7-pencil" class="pencil">7</label>
+                <label for="g8-7" class="pen">7</label>
+                <label for="g8-8-pencil" class="pencil">8</label>
+                <label for="g8-8" class="pen">8</label>
+                <label for="g8-9-pencil" class="pencil">9</label>
+                <label for="g8-9" class="pen">9</label>
+                <label for="g8-0" class="unset"></label>
+            </div>
+            <div class="cell cell-g9">
+                <div class="answer">3</div>
+            </div>
+        </div>
+        <div class="section h">
+            <div class="cell cell-h1">
+                <div class="answer">3</div>
+            </div>
+            <div class="cell cell-h2">
+                <label for="h2-1-pencil" class="pencil">1</label>
+                <label for="h2-1" class="pen">1</label>
+                <label for="h2-2-pencil" class="pencil">2</label>
+                <label for="h2-2" class="pen">2</label>
+                <label for="h2-3-pencil" class="pencil">3</label>
+                <label for="h2-3" class="pen">3</label>
+                <label for="h2-4-pencil" class="pencil">4</label>
+                <label for="h2-4" class="pen">4</label>
+                <label for="h2-5-pencil" class="pencil">5</label>
+                <label for="h2-5" class="pen">5</label>
+                <label for="h2-6-pencil" class="pencil">6</label>
+                <label for="h2-6" class="pen">6</label>
+                <label for="h2-7-pencil" class="pencil">7</label>
+                <label for="h2-7" class="pen">7</label>
+                <label for="h2-8-pencil" class="pencil">8</label>
+                <label for="h2-8" class="pen">8</label>
+                <label for="h2-9-pencil" class="pencil">9</label>
+                <label for="h2-9" class="pen">9</label>
+                <label for="h2-0" class="unset"></label>
+            </div>
+            <div class="cell cell-h3">
+                <label for="h3-1-pencil" class="pencil">1</label>
+                <label for="h3-1" class="pen">1</label>
+                <label for="h3-2-pencil" class="pencil">2</label>
+                <label for="h3-2" class="pen">2</label>
+                <label for="h3-3-pencil" class="pencil">3</label>
+                <label for="h3-3" class="pen">3</label>
+                <label for="h3-4-pencil" class="pencil">4</label>
+                <label for="h3-4" class="pen">4</label>
+                <label for="h3-5-pencil" class="pencil">5</label>
+                <label for="h3-5" class="pen">5</label>
+                <label for="h3-6-pencil" class="pencil">6</label>
+                <label for="h3-6" class="pen">6</label>
+                <label for="h3-7-pencil" class="pencil">7</label>
+                <label for="h3-7" class="pen">7</label>
+                <label for="h3-8-pencil" class="pencil">8</label>
+                <label for="h3-8" class="pen">8</label>
+                <label for="h3-9-pencil" class="pencil">9</label>
+                <label for="h3-9" class="pen">9</label>
+                <label for="h3-0" class="unset"></label>
+            </div>
+            <div class="cell cell-h4">
+                <label for="h4-1-pencil" class="pencil">1</label>
+                <label for="h4-1" class="pen">1</label>
+                <label for="h4-2-pencil" class="pencil">2</label>
+                <label for="h4-2" class="pen">2</label>
+                <label for="h4-3-pencil" class="pencil">3</label>
+                <label for="h4-3" class="pen">3</label>
+                <label for="h4-4-pencil" class="pencil">4</label>
+                <label for="h4-4" class="pen">4</label>
+                <label for="h4-5-pencil" class="pencil">5</label>
+                <label for="h4-5" class="pen">5</label>
+                <label for="h4-6-pencil" class="pencil">6</label>
+                <label for="h4-6" class="pen">6</label>
+                <label for="h4-7-pencil" class="pencil">7</label>
+                <label for="h4-7" class="pen">7</label>
+                <label for="h4-8-pencil" class="pencil">8</label>
+                <label for="h4-8" class="pen">8</label>
+                <label for="h4-9-pencil" class="pencil">9</label>
+                <label for="h4-9" class="pen">9</label>
+                <label for="h4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-h5">
+                <div class="answer">5</div>
+            </div>
+            <div class="cell cell-h6">
+                <label for="h6-1-pencil" class="pencil">1</label>
+                <label for="h6-1" class="pen">1</label>
+                <label for="h6-2-pencil" class="pencil">2</label>
+                <label for="h6-2" class="pen">2</label>
+                <label for="h6-3-pencil" class="pencil">3</label>
+                <label for="h6-3" class="pen">3</label>
+                <label for="h6-4-pencil" class="pencil">4</label>
+                <label for="h6-4" class="pen">4</label>
+                <label for="h6-5-pencil" class="pencil">5</label>
+                <label for="h6-5" class="pen">5</label>
+                <label for="h6-6-pencil" class="pencil">6</label>
+                <label for="h6-6" class="pen">6</label>
+                <label for="h6-7-pencil" class="pencil">7</label>
+                <label for="h6-7" class="pen">7</label>
+                <label for="h6-8-pencil" class="pencil">8</label>
+                <label for="h6-8" class="pen">8</label>
+                <label for="h6-9-pencil" class="pencil">9</label>
+                <label for="h6-9" class="pen">9</label>
+                <label for="h6-0" class="unset"></label>
+            </div>
+            <div class="cell cell-h7">
+                <label for="h7-1-pencil" class="pencil">1</label>
+                <label for="h7-1" class="pen">1</label>
+                <label for="h7-2-pencil" class="pencil">2</label>
+                <label for="h7-2" class="pen">2</label>
+                <label for="h7-3-pencil" class="pencil">3</label>
+                <label for="h7-3" class="pen">3</label>
+                <label for="h7-4-pencil" class="pencil">4</label>
+                <label for="h7-4" class="pen">4</label>
+                <label for="h7-5-pencil" class="pencil">5</label>
+                <label for="h7-5" class="pen">5</label>
+                <label for="h7-6-pencil" class="pencil">6</label>
+                <label for="h7-6" class="pen">6</label>
+                <label for="h7-7-pencil" class="pencil">7</label>
+                <label for="h7-7" class="pen">7</label>
+                <label for="h7-8-pencil" class="pencil">8</label>
+                <label for="h7-8" class="pen">8</label>
+                <label for="h7-9-pencil" class="pencil">9</label>
+                <label for="h7-9" class="pen">9</label>
+                <label for="h7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-h8">
+                <div class="answer">1</div>
+            </div>
+            <div class="cell cell-h9">
+                <div class="answer">8</div>
+            </div>
+        </div>
+        <div class="section i">
+            <div class="cell cell-i1">
+                <label for="i1-1-pencil" class="pencil">1</label>
+                <label for="i1-1" class="pen">1</label>
+                <label for="i1-2-pencil" class="pencil">2</label>
+                <label for="i1-2" class="pen">2</label>
+                <label for="i1-3-pencil" class="pencil">3</label>
+                <label for="i1-3" class="pen">3</label>
+                <label for="i1-4-pencil" class="pencil">4</label>
+                <label for="i1-4" class="pen">4</label>
+                <label for="i1-5-pencil" class="pencil">5</label>
+                <label for="i1-5" class="pen">5</label>
+                <label for="i1-6-pencil" class="pencil">6</label>
+                <label for="i1-6" class="pen">6</label>
+                <label for="i1-7-pencil" class="pencil">7</label>
+                <label for="i1-7" class="pen">7</label>
+                <label for="i1-8-pencil" class="pencil">8</label>
+                <label for="i1-8" class="pen">8</label>
+                <label for="i1-9-pencil" class="pencil">9</label>
+                <label for="i1-9" class="pen">9</label>
+                <label for="i1-0" class="unset"></label>
+            </div>
+            <div class="cell cell-i2">
+                <div class="answer">7</div>
+            </div>
+            <div class="cell cell-i3">
+                <div class="answer">4</div>
+            </div>
+            <div class="cell cell-i4">
+                <label for="i4-1-pencil" class="pencil">1</label>
+                <label for="i4-1" class="pen">1</label>
+                <label for="i4-2-pencil" class="pencil">2</label>
+                <label for="i4-2" class="pen">2</label>
+                <label for="i4-3-pencil" class="pencil">3</label>
+                <label for="i4-3" class="pen">3</label>
+                <label for="i4-4-pencil" class="pencil">4</label>
+                <label for="i4-4" class="pen">4</label>
+                <label for="i4-5-pencil" class="pencil">5</label>
+                <label for="i4-5" class="pen">5</label>
+                <label for="i4-6-pencil" class="pencil">6</label>
+                <label for="i4-6" class="pen">6</label>
+                <label for="i4-7-pencil" class="pencil">7</label>
+                <label for="i4-7" class="pen">7</label>
+                <label for="i4-8-pencil" class="pencil">8</label>
+                <label for="i4-8" class="pen">8</label>
+                <label for="i4-9-pencil" class="pencil">9</label>
+                <label for="i4-9" class="pen">9</label>
+                <label for="i4-0" class="unset"></label>
+            </div>
+            <div class="cell cell-i5">
+                <div class="answer">3</div>
+            </div>
+            <div class="cell cell-i6">
+                <div class="answer">6</div>
+            </div>
+            <div class="cell cell-i7">
+                <label for="i7-1-pencil" class="pencil">1</label>
+                <label for="i7-1" class="pen">1</label>
+                <label for="i7-2-pencil" class="pencil">2</label>
+                <label for="i7-2" class="pen">2</label>
+                <label for="i7-3-pencil" class="pencil">3</label>
+                <label for="i7-3" class="pen">3</label>
+                <label for="i7-4-pencil" class="pencil">4</label>
+                <label for="i7-4" class="pen">4</label>
+                <label for="i7-5-pencil" class="pencil">5</label>
+                <label for="i7-5" class="pen">5</label>
+                <label for="i7-6-pencil" class="pencil">6</label>
+                <label for="i7-6" class="pen">6</label>
+                <label for="i7-7-pencil" class="pencil">7</label>
+                <label for="i7-7" class="pen">7</label>
+                <label for="i7-8-pencil" class="pencil">8</label>
+                <label for="i7-8" class="pen">8</label>
+                <label for="i7-9-pencil" class="pencil">9</label>
+                <label for="i7-9" class="pen">9</label>
+                <label for="i7-0" class="unset"></label>
+            </div>
+            <div class="cell cell-i8">
+                <label for="i8-1-pencil" class="pencil">1</label>
+                <label for="i8-1" class="pen">1</label>
+                <label for="i8-2-pencil" class="pencil">2</label>
+                <label for="i8-2" class="pen">2</label>
+                <label for="i8-3-pencil" class="pencil">3</label>
+                <label for="i8-3" class="pen">3</label>
+                <label for="i8-4-pencil" class="pencil">4</label>
+                <label for="i8-4" class="pen">4</label>
+                <label for="i8-5-pencil" class="pencil">5</label>
+                <label for="i8-5" class="pen">5</label>
+                <label for="i8-6-pencil" class="pencil">6</label>
+                <label for="i8-6" class="pen">6</label>
+                <label for="i8-7-pencil" class="pencil">7</label>
+                <label for="i8-7" class="pen">7</label>
+                <label for="i8-8-pencil" class="pencil">8</label>
+                <label for="i8-8" class="pen">8</label>
+                <label for="i8-9-pencil" class="pencil">9</label>
+                <label for="i8-9" class="pen">9</label>
+                <label for="i8-0" class="unset"></label>
+            </div>
+            <div class="cell cell-i9">
+                <label for="i9-1-pencil" class="pencil">1</label>
+                <label for="i9-1" class="pen">1</label>
+                <label for="i9-2-pencil" class="pencil">2</label>
+                <label for="i9-2" class="pen">2</label>
+                <label for="i9-3-pencil" class="pencil">3</label>
+                <label for="i9-3" class="pen">3</label>
+                <label for="i9-4-pencil" class="pencil">4</label>
+                <label for="i9-4" class="pen">4</label>
+                <label for="i9-5-pencil" class="pencil">5</label>
+                <label for="i9-5" class="pen">5</label>
+                <label for="i9-6-pencil" class="pencil">6</label>
+                <label for="i9-6" class="pen">6</label>
+                <label for="i9-7-pencil" class="pencil">7</label>
+                <label for="i9-7" class="pen">7</label>
+                <label for="i9-8-pencil" class="pencil">8</label>
+                <label for="i9-8" class="pen">8</label>
+                <label for="i9-9-pencil" class="pencil">9</label>
+                <label for="i9-9" class="pen">9</label>
+                <label for="i9-0" class="unset"></label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="win">
+        <div class="win-message">
+            <h2>Gratulálok, nyertél!</h2>
+            <p>Töltsd újra az oldalt, hogy újrakezd a játékot.</p>
+        </div>
+    </div>
+    <button class="restart-button"><a href="./sudoku.html">A játék újrakezdése</a></button>
+</body>
+</html>
