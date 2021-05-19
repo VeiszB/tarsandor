@@ -4,7 +4,8 @@
 
 body {
   height: 100%;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   min-height: 90rem;
   display: flex;
   flex-direction: column;
@@ -53,7 +54,7 @@ input#pencil:checked ~ .mode-switch label[for="pencil"] {
 
 .restart-button {
   font-size: 3rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding: 1.5rem 2.5rem;
   background-color: white;
   border-radius: 25px;
