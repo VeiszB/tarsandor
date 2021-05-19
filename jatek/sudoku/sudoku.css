@@ -52,6 +52,12 @@ input#pencil:checked ~ .mode-switch label[for="pencil"] {
   display: none;
 }
 
+.sudoku-buttons {
+  display: flex;
+  width: 70rem;
+  justify-content: space-between;
+}
+
 .restart-button {
   font-size: 3rem;
   margin-top: 3rem;
