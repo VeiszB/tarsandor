@@ -84,7 +84,7 @@ $(document).ready(() => {
 		//else if (/how|what|why/.test(message)) reply = userMessage + " what?";
 		//else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
 		//else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
-        else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
+        //else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
 
 		return reply;
 	};

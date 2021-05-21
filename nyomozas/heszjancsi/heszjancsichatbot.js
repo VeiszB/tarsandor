@@ -115,7 +115,7 @@ $(document).ready(() => {
 
 		else if (/bor|üveg|korty/.test(message)) reply = [`Képzeld, este már a rádió is bemondta:`,
 		`A mai napon a rendőrség közleménye alapján letartóztatásba került egy fiatal férfi, akit egy vidéki református lelkész kirablásával vádolnak. A feltételezett elkövető egy héten keresztül minden nap felkereste a parókiát, hogy értéktárgyakat lopjon, de végül csak az úrvacsorára szánt bort töltötte át műanyag flakonokba, és hogy ne bukjon le azonnal, vízzel pótolta a hiányt. A férfi korábban a helybéli presszó tulajdonosával is összekülönbözött és fizetés nélkül távozott a helyszínről. A károsult tiszteletestől megtudtuk, hogy a hét elején egy hosszú hajú fiatalember azzal a szokatlan hírrel állított be hozzá mezítláb, hogy ő Jézus Krisztus. A tiszteletes megkínálta lebbencslevessel, amit az vonakodás nélkül elfogadott, majd megkérdezte tőle, hogy melyik busszal érkezett. Később úgy vélte, Krisztussal mégis inkább a katolikus papnak kell törődni, és kellő tisztelettel átirányította a másik parókiára. Riporterünknek kifejtette, hogy azért különös, hogy a Megváltó tanulóbérlettel közlekedik, a tizenöt órás buszra ugyanis csak azzal lehet felszállni.`,
-		`Köszönöm, hogy segítettél! Ha máskor is erre jársz, köszönj be az utcánkba. A viszontlátásra!`];
+		`Köszönöm, hogy segítettél! Ha máskor is erre jársz, köszönj be a mi utcánkba. A viszontlátásra!`];
 
 
 
@@ -123,7 +123,7 @@ $(document).ready(() => {
 		//else if (/how|what|why/.test(message)) reply = userMessage + " what?";
 		//else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
 		//else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
-        else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
+        //else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
 
 		return reply;
 	};
