@@ -80,15 +80,20 @@ $(document).ready(() => {
 
 		else if (/^dorogi|^hesz|^vida/.test(message)) reply = [`Na, látom, tudott segíteni Piroska.`,
 		`Megtaláltad a tiszteletest is. Rettenetes a kézírása, még szerencse, hogy te ki tudtad olvasni.`,
-		`Akiket felsoroltál, mind nagy iszákos rajtam kívül. Közülük bárki lehetett. Ráírok Sudákra, hátha tud valamit. A buszmegállóban birkózott az alumíniumoszloppal, mikor indultam a Csapágyba. Részegen őszinte, még ha goromba is. Pillanat.`,
+		`Akiket felsoroltál, Dorogi, Vida, Hesz, Béres, mind nagy iszákos rajtam kívül. Közülük bárki lehetett. Ráírok Sudákra, hátha tud valamit. A buszmegállóban birkózott az alumíniumoszloppal, mikor indultam a Csapágyba. Részegen őszinte, még ha goromba is. Pillanat.`,
 		`Ezt válaszolta:`,
 		`tfaa űő z qn üvűi... ösisxű!`,
-		`Úgy látom, megint összeakadt a nyelve a bortól. Én nem megyek vele semmire, hátha te igen. Na, sikerült dekódolni? Ha igen, másold be!`];
+		`Úgy látom, megint összeakadt a nyelve a bortól. Én nem megyek vele semmire, hátha te igen. Na, sikerült dekódolni? Ha igen, másold be!`,
+		`Ha elakadtál, keresgélj a facebookon!`
+	];
 
 
 		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Fú, házszámot megint nem tudok mondani, de ez segíthet:`,
 		`link`,
 		`Ha megvan a megoldás, keresgélj a Facebookon! Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`];
+		
+		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`,
+		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`];
 
 		else if (/^béres/.test(message)) reply = [`Akkor lehet, hogy ő volt? Illik a karaktérébe? Keresgélj a játék honlapján!`];
 
@@ -98,6 +103,8 @@ $(document).ready(() => {
 		`<a href="https://veiszb.github.io/tarsandor/jatek/puzzle/puzzle" target="_blank">Menetrend</a>`,];
 
 		else if (/17.28|1728|17 28|^28/.test(message)) reply = [`Hívtam a rendőrséget! Majd csekkolom, hogy az összes megmaradt bor visszajusson a tiszteleteshez, egy korty se vesszen kárba… vagyis… izé… jusson el az úrvacsorára.`];
+
+
 
 
 
