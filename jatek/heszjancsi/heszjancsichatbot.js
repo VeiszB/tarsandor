@@ -89,11 +89,14 @@ $(document).ready(() => {
 
 
 		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet!`,
-		`link az útvesztőről`,
-		`A presszó becsületes nevét most kapásból nem tudom megmondani, mi helybeliek nem használjuk. De rajzoltam egy térképet, amiből kiderítheted! Ha megvan a név, írd le nekem is! `];
+		`A presszó becsületes nevét most kapásból nem tudom megmondani, mi helybeliek nem használjuk. De rajzoltam egy térképet, amiből kiderítheted! Ha megvan a név, írd le nekem is! `,
+		`link az útvesztőről`,];
+
+		else if (/orgona|orgona presszó/.test(message)) reply = [`Á, tényleg! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Régen csak a pultban tartotta, aztán egyszerre bepöccent és elzárta egy számzáras diplomatatáskába. Senki se érti, mi ütött belé. Szimatolj egy kicsit a presszó fészbookján. Az hátha nyújt valami támpontot a számzár megfejtéséhez. Ha megvan a kód, írd meg nekem! Én addig elcsenem a táskát.`,];
 		
-		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`,
-		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`];
+		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Ez ügyes volt! Egyedül biztos meg nem fejtettem volna. Nézd csak, ezt tudtam levideózni:`,
+		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`,
+		`Rémes, milyen macskakaparással ír ez a Misi! Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`];
 
 		else if (/^béres/.test(message)) reply = [`Akkor lehet, hogy ő volt? Illik a karaktérébe? Keresgélj a játék honlapján!`];
 
