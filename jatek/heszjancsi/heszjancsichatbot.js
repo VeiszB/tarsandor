@@ -96,7 +96,7 @@ $(document).ready(() => {
 		
 		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Ez ügyes volt! Egyedül biztos meg nem fejtettem volna. Nézd csak, ezt tudtam levideózni:`,
 		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`,
-		`Rémes, milyen macskakaparással ír ez a Misi! Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`];
+		`Rémes, milyen macskakaparással ír ez a Misi! Segíts, én nem tudom kiolvasni! Kinek van túl sok tartozása ahhoz, hogy ne lehessen több hitele?`];
 
 		else if (/^béres/.test(message)) reply = [`Akkor lehet, hogy ő volt? Illik a karaktérébe? Keresgélj a játék honlapján!`];
 
@@ -105,9 +105,16 @@ $(document).ready(() => {
 		else if (/^jézus/.test(message)) reply = [`Hát őt meg anyósom látta is! Mindig a hármassal érkezik. De hanyassal indul a városba? Ezt nem hallottad véletlen? Emlékezz, mit mondott Piroska! Mert akkor a menetrendből kiderítheted, mikor érkezik Debrecenbe, hogy elfogják. Viszont a menetrendet mindig összetépi valaki. Próbáld kirakni a darabkákat! Írd be a választ!`,
 		`<a href="https://veiszb.github.io/tarsandor/jatek/puzzle/puzzle" target="_blank">Menetrend</a>`,];
 
-		else if (/17.28|1728|17 28|^28/.test(message)) reply = [`Hívtam a rendőrséget! Majd csekkolom, hogy az összes megmaradt bor visszajusson a tiszteleteshez, egy korty se vesszen kárba… vagyis… izé… jusson el az úrvacsorára.`];
+		else if (/17.28|1728|17 28|^28/.test(message)) reply = [`Hívtam a rendőrséget!`, 
+		
+		`GRATULÁLOK!!! Nélküled nem jártunk volna sikerrel.`,
+		`Majd csekkolom, hogy az összes megmaradt bor visszajusson a tiszteleteshez, egy korty se vesszen kárba… vagyis… izé… jusson el az úrvacsorára.`,
+		`A "hiteles" elszámolás végett írd meg, hogy hány üveg és korty bort sikerült megmentened. A pontos adathoz állítsd le a számlálót.`
+	];
 
 
+		else if (/bor|üveg|korty/.test(message)) reply = [`Képzeld, este már a rádió is bemondta:`,
+		`A mai napon a rendőrség közleménye alapján letartóztatásba került egy fiatal férfi, akit egy vidéki református lelkész kirablásával vádolnak. A feltételezett elkövető egy héten keresztül minden nap felkereste a parókiát, hogy értéktárgyakat lopjon, de végül csak az úrvacsorára szánt bort töltötte át műanyag flakonokba, és hogy ne bukjon le azonnal, vízzel pótolta a hiányt. A férfi korábban a helybéli presszó tulajdonosával is összekülönbözött és fizetés nélkül távozott a helyszínről. A károsult tiszteletestől megtudtuk, hogy a hét elején egy hosszú hajú fiatalember azzal a szokatlan hírrel állított be hozzá mezítláb, hogy ő Jézus Krisztus. A tiszteletes megkínálta lebbencslevessel, amit az vonakodás nélkül elfogadott, majd megkérdezte tőle, hogy melyik busszal érkezett. Később úgy vélte, Krisztussal mégis inkább a katolikus papnak kell törődni, és kellő tisztelettel átirányította a másik parókiára. Riporterünknek kifejtette, hogy azért különös, hogy a Megváltó tanulóbérlettel közlekedik, a tizenöt órás buszra ugyanis csak azzal lehet felszállni.`];
 
 
 
