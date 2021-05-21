@@ -89,7 +89,7 @@ $(document).ready(() => {
 
 
 		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet!`,
-		`link`,
+		`link az útvesztőről`,
 		`A presszó becsületes nevét most kapásból nem tudom megmondani, mi helybeliek nem használjuk. De rajzoltam egy térképet, amiből kiderítheted! Ha megvan a név, írd le nekem is! `];
 		
 		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`,
