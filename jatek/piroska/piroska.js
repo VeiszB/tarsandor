@@ -71,14 +71,20 @@ $(document).ready(() => {
 
 		// Generate some different replies
 		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!`, `Mi a telefonszámom?`];
-		else if (/822-591|822591/.test(message)) reply = [`Szia ${$userName}! Itt Piroska.`, `Biztos te vagy, akit a Jancsi küldött a bor miatt. Sajnos nem sokat tudok. Csak annyit, hogy szerdán valahogy elterjedt, hogy előző nap látták a tiszteletest egy rekesz borral. Meg is nőtt a népszerűsége rögvest. Nem elég, hogy beállított hozzá Jézus a hármas busszal, még ezek is megrohamozták. Valószínűleg megpróbálták kiimádkozni belőle még az úrvacsora előtt, elvégre az is csak bor. De állítólag akkor már nem volt meg. Egyedül a mindenható a megmondhatója, hova lett. Hozzá pedig Végső Márton tiszteletes van a legközelebb. Próbáld megkeresni Facebookon! Aztán ne felejts el beszámolni Hesz Jancsinak arról, hogy mire jutottál.`];
+		else if (/822-591|822591/.test(message)) 
+		reply = [`Szia ${$userName}! Itt Piroska.`, 
+		`Biztos te vagy, akit a Jancsi küldött a bor miatt. Sajnos nem sokat tudok.`,
+		`Valahogy elterjedt, hogy szerdán látták a tiszteletest egy rekesz borral. Meg is nőtt a népszerűsége rögvest. Nem elég, hogy a héten váratlanul minden egyes nap beállított hozzá Jézus, aki csak a 16.45-össel volt hajlandó elmenni, vagy a fél utca is megrohamozta. Valószínűleg megpróbálták kiimádkozni belőle az italt még az úrvacsora előtt, elvégre az is csak bor.`,
+		`Aztán mára kiderült, hogy nincs is már meg. Csak az üvegek feltöltve vízzel. Egyedül a mindenható a megmondhatója, hogy vált vízzé itt minálunk a bor. Hozzá pedig Végső Márton tiszteletes van a legközelebb. Próbáld megkeresni Facebookon! Aztán ne felejts el beszámolni Hesz Jancsinak arról, hogy kik jártak nála a héten!`,];
 		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Mi a telefonszámom? Megtaláltad?`];
+		
 
-		else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
-		else if (/how|what|why/.test(message)) reply = userMessage + " what?";
-		else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
-		else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
-        else if (/name/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
+
+		//else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
+		//else if (/how|what|why/.test(message)) reply = userMessage + " what?";
+		//else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
+		//else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
+        else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
 
 		return reply;
 	};

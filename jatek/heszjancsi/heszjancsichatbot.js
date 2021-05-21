@@ -70,18 +70,42 @@ $(document).ready(() => {
 		let reply = [`Sajnálom, nem értem.`, `Próbáld újra!`];
 
 		// Generate some different replies
-		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan
-		baj van, és akkor menni kell. De azért, ha valami van, mondjad. Itt mindig üzenhetsz nekem.`, `Szóval ahhoz, hogy ki tudd nyomozni, hova lett a misebor, menj a Görbe utcába, keresd P - - r - - át. Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked.`, `A házszámot nem nagyon tudják errefelé, ne is kérdezd.
-		Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az
-		orvosnak, hogy drága doktor úr, hazatalálok én magamtól is,
-		nem kell nekem tudni, hogy hány szám alatt lakok. Úgyhogy ebben nem tudok én se segíteni neked, de nézz körül a Facebook profilomban, ott hátha találsz valami használhatót.`];
-		else if (/test/.test(message)) reply = [`Ok`, `Feel free to test as much as you want`];
+		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) 
+		reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan baj van, és akkor menni kell, nincs idő nyomozni. Hiába van péntek, ma is behívtak. De azért, ha valami van, mondjad. Itt mindig üzenhetsz nekem.`, 
+		`Szóval ahhoz, hogy ki tudd nyomozni, hova lett az úrvacsorára szánt bor, keresd Piroskát! Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked. `,
+		`A házszámot nem nagyon tudják errefelé, ne is kérdezd. Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az orvosnak, hogy drága doktor úr, hazatalálok én magamtól is, nem kell nekem tudni, hogy hány szám alatt lakok. Hívd inkább telefonon! Nézz körül a Facebook profilomban, ott meg kell lennie a számnak!`];
+
+		//else if (/test/.test(message)) reply = [`Ok`, `Feel free to test as much as you want`];
 		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Illik először köszönni, nemde?`];
-		else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
-		else if (/how|what|why/.test(message)) reply = userMessage + " what?";
-		else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
-		else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
-        else if (/name/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
+
+		else if (/^dorogi|^hesz|^vida/.test(message)) reply = [`Na, látom, tudott segíteni Piroska.`,
+		`Megtaláltad a tiszteletest is. Rettenetes a kézírása, még szerencse, hogy te ki tudtad olvasni.`,
+		`Akiket felsoroltál, mind nagy iszákos rajtam kívül. Közülük bárki lehetett. Ráírok Sudákra, hátha tud valamit. A buszmegállóban birkózott az alumíniumoszloppal, mikor indultam a Csapágyba. Részegen őszinte, még ha goromba is. Pillanat.`,
+		`Ezt válaszolta:`,
+		`tfaa űő z qn üvűi... ösisxű!`,
+		`Úgy látom, megint összeakadt a nyelve a bortól. Én nem megyek vele semmire, hátha te igen. Na, sikerült dekódolni? Ha igen, másold be!`];
+
+
+		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Fú, házszámot megint nem tudok mondani, de ez segíthet:`,
+		`link`,
+		`Ha megvan a megoldás, keresgélj a Facebookon! Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`];
+
+		else if (/^béres/.test(message)) reply = [`Akkor lehet, hogy ő volt? Illik a karaktérébe? Keresgélj a játék honlapján!`];
+
+		else if (/^nem/.test(message)) reply = [`Én már semmit se értek. Akkor mégis ki lehetett? Nem pusmogtak semmit a népek a Misiben?`];
+
+		else if (/^jézus/.test(message)) reply = [`Hát őt meg anyósom látta is! Mindig a hármassal érkezik. De hanyassal indul a városba? Ezt nem hallottad véletlen? Emlékezz, mit mondott Piroska! Mert akkor a menetrendből kiderítheted, mikor érkezik Debrecenbe, hogy elfogják. Viszont a menetrendet mindig összetépi valaki. Próbáld kirakni a darabkákat! Írd be a választ!`,
+		`<a href="https://veiszb.github.io/tarsandor/jatek/puzzle/puzzle" target="_blank">Menetrend</a>`,];
+
+		else if (/17.28|1728|17 28|^28/.test(message)) reply = [`Hívtam a rendőrséget! Majd csekkolom, hogy az összes megmaradt bor visszajusson a tiszteleteshez, egy korty se vesszen kárba… vagyis… izé… jusson el az úrvacsorára.`];
+
+
+
+		//else if (/class\=\"fa/.test(message)) reply = [`I see you've found the smileys`, `Cool! <span class="far fa-grin-beam fa-2x"></span>`, `Did you need something?`];
+		//else if (/how|what|why/.test(message)) reply = userMessage + " what?";
+		//else if (/^huh+|boring|lame|wtf|pff/.test(message)) reply = [`<span class="far fa-dizzy fa-2x"></span>`, `I'm sorry you feel that way`, `How can I make it better?`];
+		//else if (/bye|ciao|adieu|salu/.test(message)) reply = [`Ok, bye :)`];
+        else if (/link/.test(message)) reply = [`<a href="https://hexdocs.pm/linkify/Linkify.html" target="_blank">blabla</a>`];
 
 		return reply;
 	};

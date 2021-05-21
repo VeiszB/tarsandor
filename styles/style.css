@@ -3632,16 +3632,63 @@ header .video-container::after {
   border-radius: 10px;
   -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.karakter-logo {
+.karakter-logo-hesz {
   width: 180px;
   height: 180px;
   background-color: rgba(0, 0, 0, 0.4);
   background-image: url(../img/jatek/heszjancsi.png);
   background-size: cover;
   border-radius: 50%;
-  float: left;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-beres {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/beres.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-piroska {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/piroskaneni.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-vegsomarton {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/vegsomarton.png);
+  background-size: cover;
+  border-radius: 50%;
   shape-outside: circle();
   margin: 30px 20px 30px 0;
   -webkit-box-shadow: -2px 2px 400px #808080;
@@ -3655,16 +3702,18 @@ header .video-container::after {
   text-transform: uppercase;
   -webkit-transform: translateX(-85px);
           transform: translateX(-85px);
-  margin: 0 0 5px;
+  margin-top: 2rem;
   padding: 0;
   font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
 }
 
 .karakter-h3 {
   font-family: "Play", sans-serif;
   text-transform: none;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: normal;
   -webkit-transform: translateX(-85px);
           transform: translateX(-85px);
   margin: 0 0 20px;
@@ -3676,8 +3725,8 @@ header .video-container::after {
           transform: translateX(-95px);
   font-family: "Play", sans-serif;
   text-transform: none;
+  padding-bottom: 2rem;
   margin: 0;
-  padding: 0;
   text-align: justify;
   line-height: 28px;
 }
