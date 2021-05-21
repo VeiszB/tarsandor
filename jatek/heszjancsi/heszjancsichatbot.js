@@ -88,9 +88,9 @@ $(document).ready(() => {
 	];
 
 
-		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Fú, házszámot megint nem tudok mondani, de ez segíthet:`,
+		else if (/^húzz|^misibe!/.test(message)) reply = [`Hű, ez jó ötlet!`,
 		`link`,
-		`Ha megvan a megoldás, keresgélj a Facebookon! Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`];
+		`A presszó becsületes nevét most kapásból nem tudom megmondani, mi helybeliek nem használjuk. De rajzoltam egy térképet, amiből kiderítheted! Ha megvan a név, írd le nekem is! `];
 		
 		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Rémes, milyen macskakaparással ír ez a Misi. Segíts, én nem tudom kiolvasni! Kinek nincs hitele?`,
 		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`];
