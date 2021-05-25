@@ -3697,6 +3697,81 @@ header .video-container::after {
           transform: translate(-70%, -10%);
 }
 
+.karakter-logo-vidabacsi {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/vidabacsi.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-misi {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/misi.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-pappterka {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/pappterka.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-dorogi {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/dorogi.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
+.karakter-logo-sudák {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(../img/jatek/sudák.png);
+  background-size: cover;
+  border-radius: 50%;
+  shape-outside: circle();
+  margin: 30px 20px 30px 0;
+  -webkit-box-shadow: -2px 2px 400px #808080;
+          box-shadow: -2px 2px 400px #808080;
+  -webkit-transform: translate(-70%, -10%);
+          transform: translate(-70%, -10%);
+}
+
 .karakter-h1 {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
