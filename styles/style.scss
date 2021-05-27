@@ -33,11 +33,9 @@ html {
 @import "tajekoztato";
 @import "karakterek";
 @import "nyomozas";
+@import "timer";
 
-/* MEDIA QUERIES */
-
-/* HOME PAGE */
-
+/* MEDIA QUERIES */ /* HOME PAGE */
 @media screen and (max-width: 1462px) {
   .footer-menu {
     width: 40%;

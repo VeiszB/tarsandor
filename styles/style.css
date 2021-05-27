@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -3839,6 +3840,134 @@ header .video-container::after {
   font-family: "Kelly Slab", cursive;
   text-transform: uppercase;
   color: #ffc266;
+}
+
+canvas {
+  margin: 0;
+  padding: 0;
+}
+
+.timer-container {
+  font-family: "Orbitron", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: auto;
+  margin: 5vh auto;
+  background-color: #464646;
+  border-radius: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.timer {
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.timer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.timer__buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer__input {
+  width: auto;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  padding: 2rem 2rem 2rem 4rem;
+}
+
+.timer__caret {
+  width: auto;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.timer__canvas {
+  text-align: center;
+}
+
+.timer__footer {
+  text-align: center;
+  color: rgba(170, 167, 185, 0.5);
+}
+
+canvas {
+  display: inline;
+}
+
+/* buttons */
+.timer-btn {
+  font-size: 2.4rem;
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  color: #ffab66c0;
+  margin-top: 0rem;
+  font-family: "Kelly Slab", cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.timer-btn--restart {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.timer-btn__svg {
+  width: 20px;
+  height: auto;
+}
+
+.timer-btn__svg,
+.timer-btn__svg > path {
+  fill: currentColor;
+}
+
+/* Hide number input arrows, because they're ugly */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* MEDIA QUERIES */

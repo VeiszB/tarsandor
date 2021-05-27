@@ -4,12 +4,12 @@ var interval;
 var paused = false;
 
 // Start is pressed
-document.getElementById("btn-start").addEventListener("click", function () {
+document.getElementById("timer-btn-start").addEventListener("click", function () {
   paused = false;
 
-  document.querySelector("#btn-start").classList.add("hidden");
-  document.querySelector("#btn-pause").classList.remove("hidden");
-  document.querySelector("#btn-restart").classList.remove("hidden");
+  document.querySelector("#timer-btn-start").classList.add("hidden");
+  document.querySelector("#timer-btn-pause").classList.remove("hidden");
+  document.querySelector("#timer-btn-restart").classList.remove("hidden");
   document.querySelector(".timer__canvas").classList.remove("hidden");
 
   enableInputEditable(false);
@@ -19,20 +19,20 @@ document.getElementById("btn-start").addEventListener("click", function () {
 });
 
 // Restart is pressed
-document.getElementById("btn-restart").addEventListener("click", function () {
+document.getElementById("timer-btn-restart").addEventListener("click", function () {
   initialise();
 });
 
 // Pause is pressed
-document.getElementById("btn-pause").addEventListener("click", function () {
+document.getElementById("timer-btn-pause").addEventListener("click", function () {
   paused = !paused;
 
   if (paused) {
-    document.querySelector("#btn-pause .btn-play").classList.remove("hidden");
-    document.querySelector("#btn-pause .btn-pause").classList.add("hidden");
+    document.querySelector("#timer-btn-pause .timer-btn-play").classList.remove("hidden");
+    document.querySelector("#timer-btn-pause .timer-btn-pause").classList.add("hidden");
   } else {
-    document.querySelector("#btn-pause .btn-play").classList.add("hidden");
-    document.querySelector("#btn-pause .btn-pause").classList.remove("hidden");
+    document.querySelector("#timer-btn-pause .timer-btn-play").classList.add("hidden");
+    document.querySelector("#timer-btn-pause .timer-btn-pause").classList.remove("hidden");
   }
 });
 
@@ -45,11 +45,11 @@ function initialise() {
 
   document.getElementById("input-minutes").textContent = "60";
   document.getElementById("input-seconds").textContent = "00";
-  document.getElementById("btn-start").classList.remove("hidden");
-  document.getElementById("btn-pause").classList.add("hidden");
-  document.getElementById("btn-restart").classList.add("hidden");
-  document.querySelector("#btn-pause .btn-play").classList.add("hidden");
-  document.querySelector("#btn-pause .btn-pause").classList.remove("hidden");
+  document.getElementById("timer-btn-start").classList.remove("hidden");
+  document.getElementById("timer-btn-pause").classList.add("hidden");
+  document.getElementById("timer-btn-restart").classList.add("hidden");
+  document.querySelector("#timer-btn-pause .timer-btn-play").classList.add("hidden");
+  document.querySelector("#timer-btn-pause .timer-btn-pause").classList.remove("hidden");
 }
 
 function calculateSeconds() {
@@ -79,8 +79,8 @@ function startTimer(totalSeconds) {
     remaining--;
 
     if (remaining <= 0) {
-      document.querySelector("#btn-pause").classList.add("hidden");
-      document.querySelector("#btn-complete").classList.remove("hidden");
+      document.querySelector("#timer-btn-pause").classList.add("hidden");
+      document.querySelector("#timer-btn-complete").classList.remove("hidden");
       clearInterval(interval);
     }
 
