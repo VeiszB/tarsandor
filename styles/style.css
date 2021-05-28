@@ -3842,6 +3842,13 @@ header .video-container::after {
   color: #ffc266;
 }
 
+#nyomozas-main {
+  background-image: url(../img/jatek/epuletek2.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
+}
+
 canvas {
   margin: 0;
   padding: 0;

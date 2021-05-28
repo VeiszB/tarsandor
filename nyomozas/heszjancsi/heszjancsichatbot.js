@@ -72,8 +72,10 @@ $(document).ready(() => {
 		// Generate some different replies
 		if (/^hi$|^hell?o|^howdy|^hoi|^hey|^ola|^szia|^üdv|^adj|^jó|^csókolom|^jancsi|^szevasz|^csá|^csőcsdumicsá|^haligali|^szeva/.test(message)) 
 		reply = [`Szia ${$userName}!`, `De, jó, hogy segítesz! Gyorsan elmondom, amit kell, aztán tűzök. Tudod a Csapágyműben még most is nekem szólnak, ha valami olyan baj van, és akkor menni kell, nincs idő nyomozni. Hiába van péntek, ma is behívtak. De azért, ha valami van, mondjad. Itt mindig üzenhetsz nekem.`, 
-		`Szóval ahhoz, hogy ki tudd nyomozni, hova lett az úrvacsorára szánt bor, keresd Piroskát! Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked. `,
-		`A házszámot nem nagyon tudják errefelé, ne is kérdezd. Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az orvosnak, hogy drága doktor úr, hazatalálok én magamtól is, nem kell nekem tudni, hogy hány szám alatt lakok. Hívd inkább telefonon! Nézz körül a Facebook profilomban, ott meg kell lennie a számnak!`];
+		`Szóval ahhoz, hogy ki tudd nyomozni, hova lett az úrvacsorára szánt bor:`, 
+		`<a href="http://www.tarsandor.hu/nyomozas/piroska/piroska.html" target="_blank">keresd Piroskát!</a>`, 
+		`Vele jól lehet beszélgetni, el lehet mondani mindent, ami az embert nyomja. Meg aztán nála sok mindenki megfordul. Hátha tud segíteni neked. `,
+		`A házszámot nem nagyon tudják errefelé, ne is kérdezd. Van, aki még a sajátját se, Kiss néni azt mondta a múltkor az orvosnak, hogy drága doktor úr, hazatalálok én magamtól is, nem kell nekem tudni, hogy hány szám alatt lakok. Hívd inkább telefonon! Nézz körül a Facebook-profilomban, ott meg kell lennie a számnak!`];
 
 		//else if (/test/.test(message)) reply = [`Ok`, `Feel free to test as much as you want`];
 		else if (/tipp|segíts|segítség|sos/.test(message)) reply = [`Illik először köszönni, nemde?`];
@@ -84,7 +86,7 @@ $(document).ready(() => {
 		`Ezt válaszolta:`,
 		`tfaa űő z qn üvűi... ösisxű!`,
 		`Úgy látom, megint összeakadt a nyelve a bortól. Én nem megyek vele semmire, hátha te igen. Na, sikerült dekódolni? Ha igen, másold be!`,
-		`Ha elakadtál, keresgélj a facebookon!`
+		`Ha elakadtál, keresgélj a Facebookon!`
 	];
 
 
@@ -92,7 +94,7 @@ $(document).ready(() => {
 		`A presszó becsületes nevét most kapásból nem tudom megmondani, mi helybeliek nem használjuk. De rajzoltam egy térképet, amiből kiderítheted! Ha megvan a név, írd le nekem is! `,
 		`link az útvesztőről`,];
 
-		else if (/orgona|orgona presszó/.test(message)) reply = [`Á, tényleg! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Régen csak a pultban tartotta, aztán egyszerre bepöccent és elzárta egy számzáras diplomatatáskába. Senki se érti, mi ütött belé. Szimatolj egy kicsit a presszó fészbookján. Az hátha nyújt valami támpontot a számzár megfejtéséhez. Ha megvan a kód, írd meg nekem! Én addig elcsenem a táskát.`,];
+		else if (/orgona|orgona presszó/.test(message)) reply = [`Á, tényleg! A presszó tulaja egy kockás füzetbe vezeti a tartozásokat. Régen csak a pultban tartotta, aztán egyszerre bepöccent és elzárta egy számzáras diplomatatáskába. Senki se érti, mi ütött belé. Szimatolj egy kicsit a presszó Facebookján. Az hátha nyújt valami támpontot a számzár megfejtéséhez. Ha megvan a kód, írd meg nekem! Én addig elcsenem a táskát.`,];
 		
 		else if (/596576|596 576|596-576|569|576/.test(message)) reply = [`Ez ügyes volt! Egyedül biztos meg nem fejtettem volna. Nézd csak, ezt tudtam levideózni:`,
 		`<a href="https://www.youtube.com/watch?v=a2JkgiM_DYI" target="_blank">Táska</a>`,
@@ -102,8 +104,8 @@ $(document).ready(() => {
 
 		else if (/^nem/.test(message)) reply = [`Én már semmit se értek. Akkor mégis ki lehetett? Nem pusmogtak semmit a népek a Misiben?`];
 
-		else if (/^jézus/.test(message)) reply = [`Hát őt meg anyósom látta is! Mindig a hármassal érkezik. De hanyassal indul a városba? Ezt nem hallottad véletlen? Emlékezz, mit mondott Piroska! Mert akkor a menetrendből kiderítheted, mikor érkezik Debrecenbe, hogy elfogják. Viszont a menetrendet mindig összetépi valaki. Próbáld kirakni a darabkákat! Írd be a választ!`,
-		`<a href="https://veiszb.github.io/tarsandor/jatek/puzzle/puzzle" target="_blank">Menetrend</a>`,];
+		else if (/^jézus|jezus/.test(message)) reply = [`Hát őt meg anyósom látta is! Mindig a hármassal érkezik. De hanyassal indul a városba? Ezt nem hallottad véletlen? Emlékezz, mit mondott Piroska! Mert akkor a menetrendből kiderítheted, mikor érkezik Debrecenbe, így el tudják fogni. Viszont a menetrendet mindig összetépi valaki. Próbáld kirakni a darabkákat! Írd be a választ!`,
+		`<a href="http://www.tarsandor.hu/nyomozas/puzzle/puzzle.html" target="_blank">Menetrend</a>`,];
 
 		else if (/17.28|1728|17 28|^28/.test(message)) reply = [`Hívtam a rendőrséget!`, 
 		
